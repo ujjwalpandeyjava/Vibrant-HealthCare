@@ -85,16 +85,16 @@ export default function Navbar() {
               </Link>
               <div className="absolute left-0 mt-0 w-52 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
                 <div className="p-2 flex flex-col gap-1">
-                  <Link href="/search?category=Ultrasound%20Machine" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
+                  <Link href="/products/ultrasound-machine" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
                     Ultrasound Machine
                   </Link>
-                  <Link href="/search?category=Transducer" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
+                  <Link href="/products/transducer" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
                     Transducer
                   </Link>
-                  <Link href="/search?category=Spares" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
+                  <Link href="/products/spares" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
                     Spares
                   </Link>
-                  <Link href="/search?category=Accessories" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
+                  <Link href="/products/accessories" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
                     Accessories
                   </Link>
                 </div>
@@ -188,16 +188,16 @@ export default function Navbar() {
               </button>
               {productsOpen && (
                 <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 dark:bg-slate-800/50 rounded-lg mt-1">
-                  <Link href="/search?category=Ultrasound%20Machine" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                  <Link href="/products/ultrasound-machine" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
                     Ultrasound Machine
                   </Link>
-                  <Link href="/search?category=Transducer" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                  <Link href="/products/transducer" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
                     Transducer
                   </Link>
-                  <Link href="/search?category=Spares" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                  <Link href="/products/spares" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
                     Spares
                   </Link>
-                  <Link href="/search?category=Accessories" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                  <Link href="/products/accessories" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
                     Accessories
                   </Link>
                 </div>

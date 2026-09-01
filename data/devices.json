@@ -116,12 +116,90 @@
     }
   },
   {
+    "id": "l12-4-probe",
+    "name": "L12-4 Linear Array Probe",
+    "model": "L12-4",
+    "category": "Transducer",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "TR-GE-L124-005",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/voluson-e10.svg",
+    "images": [
+      "/images/devices/voluson-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Linear Probe",
+      "weight": "0.7 kg",
+      "powerRequirements": "N/A",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Vascular & Small Parts",
+        "Frequency": "4.0 - 12.0 MHz",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "s5-1-probe",
+    "name": "S5-1 Sector Cardiac Transducer",
+    "model": "S5-1",
+    "category": "Transducer",
+    "manufacturer": "Philips",
+    "serialNumber": "TR-PH-S51-006",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Phased Array Probe",
+      "weight": "0.75 kg",
+      "powerRequirements": "N/A",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Adult Cardiac & Transcranial",
+        "Frequency": "1.0 - 5.0 MHz",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "v6-2-probe",
+    "name": "V6-2 3D/4D Endovaginal Probe",
+    "model": "V6-2",
+    "category": "Transducer",
+    "manufacturer": "Siemens Healthineers",
+    "serialNumber": "TR-SI-V62-007",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/voluson-e10.svg",
+    "images": [
+      "/images/devices/voluson-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Endocavity Probe",
+      "weight": "0.9 kg",
+      "powerRequirements": "N/A",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "3D/4D Endovaginal",
+        "Frequency": "2.0 - 6.0 MHz",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
     "id": "csound-gpu-board",
     "name": "GE cSound GPU Beamformer Board",
     "model": "cSound GPU v2",
     "category": "Spares",
     "manufacturer": "GE Healthcare",
-    "serialNumber": "SP-GE-CS-005",
+    "serialNumber": "SP-GE-CS-008",
     "status": "In Stock",
     "location": "Warehouse A",
     "image": "/images/devices/voluson-e10.svg",
@@ -141,12 +219,87 @@
     }
   },
   {
+    "id": "nsight-power-module",
+    "name": "Philips nSIGHT Power Supply Module",
+    "model": "nSIGHT PS-500",
+    "category": "Spares",
+    "manufacturer": "Philips",
+    "serialNumber": "SP-PH-PS-009",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Power Supply Chassis",
+      "weight": "3.5 kg",
+      "powerRequirements": "100-240V AC",
+      "operatingTemperature": "10°C to 45°C",
+      "other": {
+        "Application": "EPIQ 7 & EPIQ 5 Power Subsystem",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "biomatrix-rf-board",
+    "name": "Siemens BioMatrix RF Receiver Board",
+    "model": "BioMatrix RF-32",
+    "category": "Spares",
+    "manufacturer": "Siemens Healthineers",
+    "serialNumber": "SP-SI-RF-010",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/magnetom-vida.svg",
+    "images": [
+      "/images/devices/magnetom-vida.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Rack PCB",
+      "weight": "1.8 kg",
+      "powerRequirements": "24V DC",
+      "operatingTemperature": "15°C to 30°C",
+      "other": {
+        "Application": "MAGNETOM MRI Signal Reception",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "xray-generator-tube",
+    "name": "High Voltage CT X-Ray Generator Tube",
+    "model": "Performix HD Tube",
+    "category": "Spares",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "SP-GE-XT-011",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/revolution-ct.svg",
+    "images": [
+      "/images/devices/revolution-ct.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Heavy Tube Assembly",
+      "weight": "45.0 kg",
+      "powerRequirements": "140 kV",
+      "operatingTemperature": "20°C to 30°C",
+      "other": {
+        "Application": "Revolution & Optima CT Gantry",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
     "id": "gel-warmer-cart",
     "name": "Multi-Bottle Ultrasound Gel Warmer",
     "model": "GW-3000",
     "category": "Accessories",
     "manufacturer": "Vibrant Medical",
-    "serialNumber": "AC-VM-GW-006",
+    "serialNumber": "AC-VM-GW-012",
     "status": "In Stock",
     "location": "Warehouse A",
     "image": "/images/devices/epiq-7.svg",
@@ -162,6 +315,81 @@
       "other": {
         "Application": "Patient Comfort & Clinic Accessory",
         "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "ergonomic-cart",
+    "name": "Universal Ergonomic Ultrasound Cart & Arm",
+    "model": "UC-Cart-Pro",
+    "category": "Accessories",
+    "manufacturer": "Vibrant Medical",
+    "serialNumber": "AC-VM-UC-013",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "600 x 600 x 1200 mm",
+      "weight": "22.0 kg",
+      "powerRequirements": "N/A",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Portable Ultrasound Mounting & Mobility",
+        "Warranty": "2 Years Included"
+      }
+    }
+  },
+  {
+    "id": "medical-keyboard",
+    "name": "Sanitizable Medical Keyboard & Touchpad",
+    "model": "MK-Sanitize-100",
+    "category": "Accessories",
+    "manufacturer": "Vibrant Medical",
+    "serialNumber": "AC-VM-MK-014",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/voluson-e10.svg",
+    "images": [
+      "/images/devices/voluson-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "400 x 150 x 25 mm",
+      "weight": "0.9 kg",
+      "powerRequirements": "USB 5V",
+      "operatingTemperature": "0°C to 50°C",
+      "other": {
+        "Application": "IP68 Waterproof Sterile Environment",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "ecg-trunk-cable",
+    "name": "ECG 10-Lead Trunk Cable & Leadwires",
+    "model": "ECG-TL-10",
+    "category": "Accessories",
+    "manufacturer": "Philips",
+    "serialNumber": "AC-PH-ECG-015",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "3 Meter Cable",
+      "weight": "0.4 kg",
+      "powerRequirements": "N/A",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "EPIQ & Affiniti Patient Monitoring",
+        "Warranty": "6 Months Included"
       }
     }
   },
