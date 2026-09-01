@@ -54,39 +54,36 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <Link 
-              href="/" 
-              className={`font-medium text-sm transition-colors ${
-                pathname === "/" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
-              }`}
+            <Link
+              href="/"
+              className={`font-medium text-sm transition-colors ${pathname === "/" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
+                }`}
             >
               Home
             </Link>
 
-            <Link 
-              href="/about-us" 
-              className={`font-medium text-sm transition-colors ${
-                pathname === "/about-us" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
-              }`}
+            <Link
+              href="/about-us"
+              className={`font-medium text-sm transition-colors ${pathname === "/about-us" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
+                }`}
             >
               About Us
             </Link>
 
             {/* Products Dropdown */}
             <div className="relative group">
-              <Link 
-                href="/search" 
-                className={`flex items-center space-x-1 font-medium text-sm py-2 transition-colors ${
-                  pathname.startsWith("/search") ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
-                }`}
+              <Link
+                href="/products"
+                className={`flex items-center space-x-1 font-medium text-sm py-2 transition-colors ${pathname.startsWith("/search") || pathname.startsWith("/products") ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
+                  }`}
               >
                 <span>Products</span>
                 <FiChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
               </Link>
               <div className="absolute left-0 mt-0 w-52 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
                 <div className="p-2 flex flex-col gap-1">
-                  <Link href="/products/ultrasound-machine" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
-                    Ultrasound Machine
+                  <Link href="/products/machine" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
+                    Machines
                   </Link>
                   <Link href="/products/transducer" className="block px-4 py-2 text-sm text-textMuted dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary dark:hover:text-blue-400 rounded-lg transition-colors">
                     Transducer
@@ -103,11 +100,10 @@ export default function Navbar() {
 
             {/* Professional Service Dropdown */}
             <div className="relative group">
-              <Link 
-                href="/professional-service" 
-                className={`flex items-center space-x-1 font-medium text-sm py-2 transition-colors ${
-                  pathname.startsWith("/professional-service") ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
-                }`}
+              <Link
+                href="/professional-service"
+                className={`flex items-center space-x-1 font-medium text-sm py-2 transition-colors ${pathname.startsWith("/professional-service") ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
+                  }`}
               >
                 <span>Professional Service</span>
                 <FiChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
@@ -121,20 +117,18 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link 
-              href="/sell-machine" 
-              className={`font-medium text-sm transition-colors ${
-                pathname === "/sell-machine" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
-              }`}
+            <Link
+              href="/sell-machine"
+              className={`font-medium text-sm transition-colors ${pathname === "/sell-machine" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
+                }`}
             >
               Sell Your Machine
             </Link>
 
-            <Link 
-              href="/contact" 
-              className={`font-medium text-sm transition-colors ${
-                pathname === "/contact" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
-              }`}
+            <Link
+              href="/contact"
+              className={`font-medium text-sm transition-colors ${pathname === "/contact" ? "text-primary dark:text-blue-400 font-semibold" : "text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
+                }`}
             >
               Contact Us
             </Link>
@@ -142,7 +136,7 @@ export default function Navbar() {
 
           {/* Right Action Icons (Theme toggle + Mobile Menu Hamburger) */}
           <div className="flex items-center space-x-3 lg:hidden">
-            <button 
+            <button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-yellow-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
               aria-label="Toggle Dark Mode"
@@ -163,15 +157,15 @@ export default function Navbar() {
         {/* Mobile / Tablet Drawer Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-100 dark:border-slate-800 mt-3 pt-4 pb-6 px-2 space-y-3 animate-in fade-in slide-in-from-top-2 duration-200">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
             >
               Home
             </Link>
 
-            <Link 
-              href="/about-us" 
+            <Link
+              href="/about-us"
               className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
             >
               About Us
@@ -189,7 +183,7 @@ export default function Navbar() {
               {productsOpen && (
                 <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 dark:bg-slate-800/50 rounded-lg mt-1">
                   <Link href="/products/ultrasound-machine" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Ultrasound Machine
+                    Machines
                   </Link>
                   <Link href="/products/transducer" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
                     Transducer
@@ -228,15 +222,15 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link 
-              href="/sell-machine" 
+            <Link
+              href="/sell-machine"
               className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
             >
               Sell Your Machine
             </Link>
 
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
             >
               Contact Us

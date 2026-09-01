@@ -4,6 +4,10 @@
     "name": "Logiq E10 Ultrasound System",
     "model": "Logiq E10",
     "category": "Ultrasound Machine",
+    "machineType": "4D Machines",
+    "tier": "High-end",
+    "description": "The GE Logiq E10 is a premium ultrasound system powered by cSound architecture, designed for comprehensive general imaging and advanced radiology. It provides extraordinary image quality and streamlined workflow.",
+    "yearLaunched": "2018",
     "manufacturer": "GE Healthcare",
     "serialNumber": "US-GE-LE10-001",
     "status": "In Stock",
@@ -34,6 +38,10 @@
     "name": "Voluson E10 Women's Health",
     "model": "Voluson E10",
     "category": "Ultrasound Machine",
+    "machineType": "4D Machines",
+    "tier": "High-end",
+    "description": "The Voluson E10 is the ultimate women's health ultrasound system, providing unmatched 4D imaging clarity. Designed specifically for complex OB/GYN and maternal-fetal medicine.",
+    "yearLaunched": "2015",
     "manufacturer": "GE Healthcare",
     "serialNumber": "US-GE-VE10-002",
     "status": "In Stock",
@@ -64,6 +72,10 @@
     "name": "EPIQ 7 Cardiovascular",
     "model": "EPIQ 7",
     "category": "Ultrasound Machine",
+    "machineType": "Color Doppler",
+    "tier": "Midrange",
+    "description": "The Philips EPIQ 7 features nSIGHT architecture for exceptional acoustic performance. Optimized for highly sensitive cardiovascular color Doppler and strain elastography.",
+    "yearLaunched": "2013",
     "manufacturer": "Philips",
     "serialNumber": "US-PH-EQ7-003",
     "status": "In Stock",
@@ -86,6 +98,195 @@
         "Architecture": "nSIGHT",
         "Processing": "xMATRIX",
         "Warranty": "2 Years Included"
+      }
+    }
+  },
+  {
+    "id": "mindray-m9",
+    "name": "Mindray M9 Portable Premium",
+    "model": "M9",
+    "category": "Ultrasound Machine",
+    "machineType": "Portable",
+    "tier": "Economy",
+    "description": "The Mindray M9 is a premium hand-carried ultrasound machine delivering highly versatile Color Doppler imaging in a compact, portable format. Ideal for point-of-care and emergency.",
+    "yearLaunched": "2016",
+    "manufacturer": "Mindray",
+    "serialNumber": "US-MI-M9-004",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg",
+      "/images/devices/logiq-e10.svg",
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "360 x 300 x 60 mm",
+      "weight": "6 kg",
+      "powerRequirements": "Battery / 100-240V",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Point of Care",
+        "Monitor": "15.6\" LED",
+        "Architecture": "mQuadro",
+        "Processing": "Compact",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "acuson-sequoia",
+    "name": "Siemens ACUSON Sequoia",
+    "model": "ACUSON Sequoia",
+    "category": "Ultrasound Machine",
+    "machineType": "Color Doppler",
+    "tier": "High-end",
+    "description": "The Siemens ACUSON Sequoia is a premium high-end ultrasound system featuring BioAcoustic imaging technology. It provides deep penetration and unmatched clarity for complex cases.",
+    "yearLaunched": "2018",
+    "manufacturer": "Siemens Healthineers",
+    "serialNumber": "US-SI-SEQ-005",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1250 x 600 x 1750 mm",
+      "weight": "125 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "General Imaging, Liver",
+        "Monitor": "22\" OLED",
+        "Architecture": "BioAcoustic",
+        "Warranty": "3 Years Included"
+      }
+    }
+  },
+  {
+    "id": "voluson-s8",
+    "name": "GE Voluson S8",
+    "model": "Voluson S8",
+    "category": "Ultrasound Machine",
+    "machineType": "4D Machines",
+    "tier": "Midrange",
+    "description": "The GE Voluson S8 is an advanced midrange ultrasound system offering excellent 4D imaging capabilities. Ideal for busy OB/GYN practices requiring reliable performance.",
+    "yearLaunched": "2016",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "US-GE-VS8-006",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/voluson-e10.svg",
+    "images": [
+      "/images/devices/voluson-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1100 x 550 x 1600 mm",
+      "weight": "95 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "OB/GYN",
+        "Monitor": "19\" High-Res",
+        "Architecture": "Voluson Core",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "affiniti-70",
+    "name": "Philips Affiniti 70",
+    "model": "Affiniti 70",
+    "category": "Ultrasound Machine",
+    "machineType": "Color Doppler",
+    "tier": "Midrange",
+    "description": "The Philips Affiniti 70 delivers outstanding midrange performance for general imaging and cardiovascular applications. Features precision beamforming and PureWave transducers.",
+    "yearLaunched": "2014",
+    "manufacturer": "Philips",
+    "serialNumber": "US-PH-AF70-007",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1100 x 550 x 1600 mm",
+      "weight": "85 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Shared Service",
+        "Monitor": "21.5\" LCD",
+        "Architecture": "Precision Beamforming",
+        "Warranty": "2 Years Included"
+      }
+    }
+  },
+  {
+    "id": "sonoscape-s22",
+    "name": "SonoScape S22",
+    "model": "S22",
+    "category": "Ultrasound Machine",
+    "machineType": "Color Doppler",
+    "tier": "Economy",
+    "description": "The SonoScape S22 is a cost-effective, economy ultrasound system that doesn't compromise on essential imaging quality. Perfect for clinics and smaller hospitals.",
+    "yearLaunched": "2015",
+    "manufacturer": "SonoScape",
+    "serialNumber": "US-SS-S22-008",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1000 x 500 x 1400 mm",
+      "weight": "65 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "General Purpose",
+        "Monitor": "18.5\" LED",
+        "Architecture": "Standard",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "chison-eco6",
+    "name": "Chison ECO6 Portable",
+    "model": "ECO6",
+    "category": "Ultrasound Machine",
+    "machineType": "Portable",
+    "tier": "Economy",
+    "description": "The Chison ECO6 is an ultra-portable economy ultrasound device featuring a built-in battery and versatile color Doppler capabilities for on-the-go diagnostics.",
+    "yearLaunched": "2017",
+    "manufacturer": "Chison",
+    "serialNumber": "US-CH-ECO6-009",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "335 x 155 x 350 mm",
+      "weight": "6.5 kg",
+      "powerRequirements": "Battery / 100-240V",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Point of Care",
+        "Monitor": "12\" LED",
+        "Architecture": "Compact",
+        "Warranty": "1 Year Included"
       }
     }
   },
@@ -117,16 +318,16 @@
   },
   {
     "id": "l12-4-probe",
-    "name": "L12-4 Linear Array Probe",
+    "name": "L12-4 High-Resolution Linear Transducer",
     "model": "L12-4",
     "category": "Transducer",
     "manufacturer": "GE Healthcare",
-    "serialNumber": "TR-GE-L124-005",
+    "serialNumber": "TR-GE-L124-007",
     "status": "In Stock",
     "location": "Warehouse A",
-    "image": "/images/devices/voluson-e10.svg",
+    "image": "/images/devices/l12-4-probe.svg",
     "images": [
-      "/images/devices/voluson-e10.svg"
+      "/images/devices/l12-4-probe.svg"
     ],
     "schematic": "/schematics/placeholder.svg",
     "specifications": {
@@ -142,64 +343,12 @@
     }
   },
   {
-    "id": "s5-1-probe",
-    "name": "S5-1 Sector Cardiac Transducer",
-    "model": "S5-1",
-    "category": "Transducer",
-    "manufacturer": "Philips",
-    "serialNumber": "TR-PH-S51-006",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/epiq-7.svg",
-    "images": [
-      "/images/devices/epiq-7.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
-    "specifications": {
-      "dimensions": "Phased Array Probe",
-      "weight": "0.75 kg",
-      "powerRequirements": "N/A",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "Adult Cardiac & Transcranial",
-        "Frequency": "1.0 - 5.0 MHz",
-        "Warranty": "1 Year Included"
-      }
-    }
-  },
-  {
-    "id": "v6-2-probe",
-    "name": "V6-2 3D/4D Endovaginal Probe",
-    "model": "V6-2",
-    "category": "Transducer",
-    "manufacturer": "Siemens Healthineers",
-    "serialNumber": "TR-SI-V62-007",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/voluson-e10.svg",
-    "images": [
-      "/images/devices/voluson-e10.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
-    "specifications": {
-      "dimensions": "Endocavity Probe",
-      "weight": "0.9 kg",
-      "powerRequirements": "N/A",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "3D/4D Endovaginal",
-        "Frequency": "2.0 - 6.0 MHz",
-        "Warranty": "1 Year Included"
-      }
-    }
-  },
-  {
     "id": "csound-gpu-board",
     "name": "GE cSound GPU Beamformer Board",
     "model": "cSound GPU v2",
     "category": "Spares",
     "manufacturer": "GE Healthcare",
-    "serialNumber": "SP-GE-CS-008",
+    "serialNumber": "SP-GE-CS-005",
     "status": "In Stock",
     "location": "Warehouse A",
     "image": "/images/devices/voluson-e10.svg",
@@ -219,76 +368,53 @@
     }
   },
   {
-    "id": "nsight-power-module",
-    "name": "Philips nSIGHT Power Supply Module",
-    "model": "nSIGHT PS-500",
-    "category": "Spares",
-    "manufacturer": "Philips",
-    "serialNumber": "SP-PH-PS-009",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/epiq-7.svg",
-    "images": [
-      "/images/devices/epiq-7.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
-    "specifications": {
-      "dimensions": "Power Supply Chassis",
-      "weight": "3.5 kg",
-      "powerRequirements": "100-240V AC",
-      "operatingTemperature": "10°C to 45°C",
-      "other": {
-        "Application": "EPIQ 7 & EPIQ 5 Power Subsystem",
-        "Warranty": "1 Year Included"
-      }
-    }
-  },
-  {
-    "id": "biomatrix-rf-board",
-    "name": "Siemens BioMatrix RF Receiver Board",
-    "model": "BioMatrix RF-32",
-    "category": "Spares",
-    "manufacturer": "Siemens Healthineers",
-    "serialNumber": "SP-SI-RF-010",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/magnetom-vida.svg",
-    "images": [
-      "/images/devices/magnetom-vida.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
-    "specifications": {
-      "dimensions": "Rack PCB",
-      "weight": "1.8 kg",
-      "powerRequirements": "24V DC",
-      "operatingTemperature": "15°C to 30°C",
-      "other": {
-        "Application": "MAGNETOM MRI Signal Reception",
-        "Warranty": "1 Year Included"
-      }
-    }
-  },
-  {
-    "id": "xray-generator-tube",
-    "name": "High Voltage CT X-Ray Generator Tube",
+    "id": "ct-xray-tube",
+    "name": "CT High Voltage X-Ray Tube Assembly",
     "model": "Performix HD Tube",
     "category": "Spares",
     "manufacturer": "GE Healthcare",
-    "serialNumber": "SP-GE-XT-011",
+    "serialNumber": "SP-GE-CT-008",
     "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/revolution-ct.svg",
+    "location": "Warehouse C",
+    "image": "/images/devices/ct-xray-tube.svg",
     "images": [
-      "/images/devices/revolution-ct.svg"
+      "/images/devices/ct-xray-tube.svg"
     ],
     "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "Heavy Tube Assembly",
-      "weight": "45.0 kg",
-      "powerRequirements": "140 kV",
-      "operatingTemperature": "20°C to 30°C",
+      "dimensions": "600 x 400 x 400 mm",
+      "weight": "85 kg",
+      "powerRequirements": "140 kVp",
+      "operatingTemperature": "15°C to 30°C",
       "other": {
-        "Application": "Revolution & Optima CT Gantry",
+        "Application": "CT Scanner Replacement Tube",
+        "Heat Capacity": "8.0 MHU",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "mri-compressor",
+    "name": "MRI Cryocooler Helium Compressor Unit",
+    "model": "F-70 Helium Compressor",
+    "category": "Spares",
+    "manufacturer": "Siemens Healthineers",
+    "serialNumber": "SP-SI-HC-009",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/mri-compressor.svg",
+    "images": [
+      "/images/devices/mri-compressor.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "500 x 500 x 650 mm",
+      "weight": "120 kg",
+      "powerRequirements": "480V 3-Phase",
+      "operatingTemperature": "5°C to 25°C",
+      "other": {
+        "Application": "MRI Magnet Cooling",
+        "Refrigerant": "High Purity Helium",
         "Warranty": "1 Year Included"
       }
     }
@@ -299,7 +425,7 @@
     "model": "GW-3000",
     "category": "Accessories",
     "manufacturer": "Vibrant Medical",
-    "serialNumber": "AC-VM-GW-012",
+    "serialNumber": "AC-VM-GW-006",
     "status": "In Stock",
     "location": "Warehouse A",
     "image": "/images/devices/epiq-7.svg",
@@ -319,77 +445,28 @@
     }
   },
   {
-    "id": "ergonomic-cart",
-    "name": "Universal Ergonomic Ultrasound Cart & Arm",
-    "model": "UC-Cart-Pro",
-    "category": "Accessories",
-    "manufacturer": "Vibrant Medical",
-    "serialNumber": "AC-VM-UC-013",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/logiq-e10.svg",
-    "images": [
-      "/images/devices/logiq-e10.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
-    "specifications": {
-      "dimensions": "600 x 600 x 1200 mm",
-      "weight": "22.0 kg",
-      "powerRequirements": "N/A",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "Portable Ultrasound Mounting & Mobility",
-        "Warranty": "2 Years Included"
-      }
-    }
-  },
-  {
-    "id": "medical-keyboard",
-    "name": "Sanitizable Medical Keyboard & Touchpad",
-    "model": "MK-Sanitize-100",
-    "category": "Accessories",
-    "manufacturer": "Vibrant Medical",
-    "serialNumber": "AC-VM-MK-014",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/voluson-e10.svg",
-    "images": [
-      "/images/devices/voluson-e10.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
-    "specifications": {
-      "dimensions": "400 x 150 x 25 mm",
-      "weight": "0.9 kg",
-      "powerRequirements": "USB 5V",
-      "operatingTemperature": "0°C to 50°C",
-      "other": {
-        "Application": "IP68 Waterproof Sterile Environment",
-        "Warranty": "1 Year Included"
-      }
-    }
-  },
-  {
-    "id": "ecg-trunk-cable",
-    "name": "ECG 10-Lead Trunk Cable & Leadwires",
-    "model": "ECG-TL-10",
+    "id": "display-monitor",
+    "name": "32\" 4K Surgical Display Monitor",
+    "model": "SM-3200 4K",
     "category": "Accessories",
     "manufacturer": "Philips",
-    "serialNumber": "AC-PH-ECG-015",
+    "serialNumber": "AC-PH-DM-010",
     "status": "In Stock",
     "location": "Warehouse B",
-    "image": "/images/devices/epiq-7.svg",
+    "image": "/images/devices/display-monitor.svg",
     "images": [
-      "/images/devices/epiq-7.svg"
+      "/images/devices/display-monitor.svg"
     ],
     "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "3 Meter Cable",
-      "weight": "0.4 kg",
-      "powerRequirements": "N/A",
+      "dimensions": "750 x 100 x 450 mm",
+      "weight": "8.5 kg",
+      "powerRequirements": "100-240V",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "EPIQ & Affiniti Patient Monitoring",
-        "Warranty": "6 Months Included"
+        "Application": "OR Surgical & Imaging Display",
+        "Resolution": "3840 x 2160 Ultra HD",
+        "Warranty": "2 Years Included"
       }
     }
   },

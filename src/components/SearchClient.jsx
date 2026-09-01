@@ -6,7 +6,7 @@ import Link from "next/link";
 import { MdSearch, MdClose } from "react-icons/md";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
 
-export default function SearchClient({ initialDevices = [] }) {
+export default function SearchClient({ initialDevices = [], hideBanner = false }) {
   const searchParams = useSearchParams();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -146,10 +146,12 @@ export default function SearchClient({ initialDevices = [] }) {
 
   return (
     <div className="flex flex-col w-full animate-in fade-in duration-300">
-      <ProfessionalServiceBanner 
-        bannerText="MEDICAL EQUIPMENT" 
-        bannerImage="https://lh3.googleusercontent.com/aida-public/AB6AXuA60cjCj6J8WH_Q5RNrTtWAyHNYo3fo9Z7qIsugj1OqpP0Q5GBxmLzhCV-R0uKg29x-sl6LI_Y7cX8KlbMPThSIe0fUvrnfCCmqmM9PCft1RrlFdEwPLelV-uOMDFYdH_X_FF3qbVbCxjnwdGty7WLwmT3EscBGhoYD3FgjD6NJLWdQimut0vpwLENt5MNPRYIerLeJansXTGSrkwzHIxQ6xn6x2-f3W59QGgGqepXT9qtTxvBlUEPC-w" 
-      />
+      {!hideBanner && (
+        <ProfessionalServiceBanner 
+          bannerText="MEDICAL EQUIPMENT" 
+          bannerImage="https://lh3.googleusercontent.com/aida-public/AB6AXuA60cjCj6J8WH_Q5RNrTtWAyHNYo3fo9Z7qIsugj1OqpP0Q5GBxmLzhCV-R0uKg29x-sl6LI_Y7cX8KlbMPThSIe0fUvrnfCCmqmM9PCft1RrlFdEwPLelV-uOMDFYdH_X_FF3qbVbCxjnwdGty7WLwmT3EscBGhoYD3FgjD6NJLWdQimut0vpwLENt5MNPRYIerLeJansXTGSrkwzHIxQ6xn6x2-f3W59QGgGqepXT9qtTxvBlUEPC-w" 
+        />
+      )}
       <div className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 py-8">
         {/* Breadcrumb & Header Area */}
         <div className="mb-8">
