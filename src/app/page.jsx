@@ -15,7 +15,7 @@ export default async function LandingPage() {
   return (
     <div className="flex flex-col gap-16 pb-16 animate-in fade-in duration-300">
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 w-full px-4 md:px-8">
+      <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 w-full py-10 px-4 md:px-8 ">
         <div className="lg:w-1/2 space-y-6">
           <div className="inline-flex items-center space-x-2 bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-300 px-3 py-1 rounded-full text-xs font-semibold">
             <MdCheckCircle className="h-4 w-4" />

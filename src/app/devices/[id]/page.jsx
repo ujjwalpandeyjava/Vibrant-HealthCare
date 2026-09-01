@@ -1,5 +1,6 @@
 import DeviceGallery from "@/components/DeviceGallery";
 import ProductActions from "@/components/ProductActions";
+import DeviceTabs from "@/components/DeviceTabs";
 import { getAllDevices, getDeviceById } from "@/lib/getDevices";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -111,7 +112,17 @@ export default async function DeviceDetailPage({ params }) {
       {highlights.length > 0 && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
           {highlights.map((h, i) => {
-            const IconComponent = Icons[h.logo] || Icons.MdSpeed;
+            let IconComponent;
+            const title = h.title.toLowerCase();
+            if (title.includes("architecture")) IconComponent = Icons.MdArchitecture;
+            else if (title.includes("monitor") || title.includes("output")) IconComponent = Icons.MdTv;
+            else if (title.includes("processing")) IconComponent = Icons.MdMemory;
+            else if (title.includes("warranty")) IconComponent = Icons.MdVerified;
+            else {
+              const defaultIcons = [Icons.MdSpeed, Icons.MdTv, Icons.MdMemory, Icons.MdVerified];
+              IconComponent = defaultIcons[i % defaultIcons.length];
+            }
+
             return (
               <div key={i} className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-xl p-4 flex items-center gap-4">
                 <IconComponent className="text-primary text-[24px]" />
@@ -126,54 +137,7 @@ export default async function DeviceDetailPage({ params }) {
       )}
 
       {/* Detailed Specs Tabs */}
-      <div className="pt-8">
-        <div className="border-b border-outline-variant dark:border-slate-700 flex gap-8 mb-6">
-          <button className="pb-4 border-b-2 border-primary text-primary font-semibold text-sm">Technical Specs</button>
-          <button className="pb-4 border-b-2 border-transparent text-on-surface-variant dark:text-gray-300 hover:text-on-surface dark:text-white font-semibold text-sm">Transducers</button>
-          <button className="pb-4 border-b-2 border-transparent text-on-surface-variant dark:text-gray-300 hover:text-on-surface dark:text-white font-semibold text-sm">Warranty & Support</button>
-        </div>
-        <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-2xl p-8">
-          <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
-            <div className="flex gap-4">
-              <MdRadioButtonChecked className="text-primary mt-1 text-[24px]" />
-              <div>
-                <h4 className="text-base font-semibold text-on-surface dark:text-white">Dimensions</h4>
-                <p className="text-sm text-on-surface-variant dark:text-gray-300 mt-1">{specifications.dimensions}</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <MdRadioButtonChecked className="text-primary mt-1 text-[24px]" />
-              <div>
-                <h4 className="text-base font-semibold text-on-surface dark:text-white">Weight</h4>
-                <p className="text-sm text-on-surface-variant dark:text-gray-300 mt-1">{specifications.weight}</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <MdRadioButtonChecked className="text-primary mt-1 text-[24px]" />
-              <div>
-                <h4 className="text-base font-semibold text-on-surface dark:text-white">Power Requirements</h4>
-                <p className="text-sm text-on-surface-variant dark:text-gray-300 mt-1">{specifications.powerRequirements}</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <MdRadioButtonChecked className="text-primary mt-1 text-[24px]" />
-              <div>
-                <h4 className="text-base font-semibold text-on-surface dark:text-white">Operating Temperature</h4>
-                <p className="text-sm text-on-surface-variant dark:text-gray-300 mt-1">{specifications.operatingTemperature}</p>
-              </div>
-            </div>
-            {Object.entries(otherSpecs).map(([key, value]) => (
-              <div key={key} className="flex gap-4">
-                <MdRadioButtonChecked className="text-primary mt-1 text-[24px]" />
-                <div>
-                  <h4 className="text-base font-semibold text-on-surface dark:text-white">{key}</h4>
-                  <p className="text-sm text-on-surface-variant dark:text-gray-300 mt-1">{value}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <DeviceTabs tabs={specifications.tabs} baseSpecs={specifications} />
     </div>
   );
 }

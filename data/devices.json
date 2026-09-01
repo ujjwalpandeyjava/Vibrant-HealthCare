@@ -1,1299 +1,1625 @@
 [
-  {
-    "code": 1000,
-    "id": "logiq-e10",
-    "name": "Logiq E10 Ultrasound System",
-    "model": "Logiq E10",
-    "category": "Ultrasound Machine",
-    "machineType": "4D Machines",
-    "tier": "High-end",
-    "description": "The GE Logiq E10 is a premium ultrasound system powered by cSound architecture, designed for comprehensive general imaging and advanced radiology. It provides extraordinary image quality and streamlined workflow.",
-    "yearLaunched": "2018",
-    "manufacturer": "GE Healthcare",
-    "serialNumber": "US-GE-LE10-001",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "120 x 60 x 170 cm",
-      "weight": "110 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "General Imaging"
-      },
-      "highlights": [
-        {
-          "detail": "cSound",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "22\" OLED",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "GPU-based",
-          "title": "Processing",
-          "logo": "MdMemory"
-        },
-        {
-          "detail": "3 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "cSound Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "22\" OLED Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
+    {
+        "code":  1000,
+        "id":  "logiq-e10",
+        "name":  "Logiq E10 Ultrasound System",
+        "model":  "Logiq E10",
+        "category":  "Ultrasound Machine",
+        "machineType":  "4D Machines",
+        "tier":  "High-end",
+        "description":  "The GE Logiq E10 is a premium ultrasound system powered by cSound architecture, designed for comprehensive general imaging and advanced radiology. It provides extraordinary image quality and streamlined workflow.",
+        "yearLaunched":  "2018",
+        "manufacturer":  "GE Healthcare",
+        "serialNumber":  "US-GE-LE10-001",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "120 x 60 x 170 cm",
+                               "weight":  "110 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "cSound",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "22\" OLED",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "GPU-based",
+                                                      "title":  "Processing"
+                                                  },
+                                                  {
+                                                      "detail":  "3 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "cSound Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "22\" OLED Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "General Imaging",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "3 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+                                                            {
+                                                                "description":  "General Imaging",
+                                                                "title":  "Application"
+                                                            }
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1001,
+        "id":  "voluson-e10",
+        "name":  "Voluson E10 Women\u0027s Health",
+        "model":  "Voluson E10",
+        "category":  "Ultrasound Machine",
+        "machineType":  "4D Machines",
+        "tier":  "High-end",
+        "description":  "The Voluson E10 is the ultimate women\u0027s health ultrasound system, providing unmatched 4D imaging clarity. Designed specifically for complex OB/GYN and maternal-fetal medicine.",
+        "yearLaunched":  "2015",
+        "manufacturer":  "GE Healthcare",
+        "serialNumber":  "US-GE-VE10-002",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "115 x 58 x 165 cm",
+                               "weight":  "105 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "Radiance System",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "23\" Widescreen",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "Advanced",
+                                                      "title":  "Processing"
+                                                  },
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "Radiance System Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "23\" Widescreen Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "OB/GYN",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1002,
+        "id":  "epiq-7",
+        "name":  "EPIQ 7 Cardiovascular",
+        "model":  "EPIQ 7",
+        "category":  "Ultrasound Machine",
+        "machineType":  "Color Doppler",
+        "tier":  "Midrange",
+        "description":  "The Philips EPIQ 7 features nSIGHT architecture for exceptional acoustic performance. Optimized for highly sensitive cardiovascular color Doppler and strain elastography.",
+        "yearLaunched":  "2013",
+        "manufacturer":  "Philips",
+        "serialNumber":  "US-PH-EQ7-003",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "110 x 55 x 160 cm",
+                               "weight":  "100 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "nSIGHT",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "21.5\" LCD",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "xMATRIX",
+                                                      "title":  "Processing"
+                                                  },
+                                                  {
+                                                      "detail":  "2 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "nSIGHT Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "21.5\" LCD Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Cardiology",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "2 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1003,
+        "id":  "mindray-m9",
+        "name":  "Mindray M9 Portable Premium",
+        "model":  "M9",
+        "category":  "Ultrasound Machine",
+        "machineType":  "Portable",
+        "tier":  "Economy",
+        "description":  "The Mindray M9 is a premium hand-carried ultrasound machine delivering highly versatile Color Doppler imaging in a compact, portable format. Ideal for point-of-care and emergency.",
+        "yearLaunched":  "2016",
+        "manufacturer":  "Mindray",
+        "serialNumber":  "US-MI-M9-004",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "36 x 30 x 6 cm",
+                               "weight":  "6 kg",
+                               "powerRequirements":  "Battery / 100-240V",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "mQuadro",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "15.6\" LED",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "Compact",
+                                                      "title":  "Processing"
+                                                  },
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "mQuadro Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "15.6\" LED Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Point of Care",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1004,
+        "id":  "acuson-sequoia",
+        "name":  "Siemens ACUSON Sequoia",
+        "model":  "ACUSON Sequoia",
+        "category":  "Ultrasound Machine",
+        "machineType":  "Color Doppler",
+        "tier":  "High-end",
+        "description":  "The Siemens ACUSON Sequoia is a premium high-end ultrasound system featuring BioAcoustic imaging technology. It provides deep penetration and unmatched clarity for complex cases.",
+        "yearLaunched":  "2018",
+        "manufacturer":  "Siemens Healthineers",
+        "serialNumber":  "US-SI-SEQ-005",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "125 x 60 x 175 cm",
+                               "weight":  "125 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "BioAcoustic",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "22\" OLED",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "3 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "BioAcoustic Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "22\" OLED Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "General Imaging, Liver",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "3 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1005,
+        "id":  "voluson-s8",
+        "name":  "GE Voluson S8",
+        "model":  "Voluson S8",
+        "category":  "Ultrasound Machine",
+        "machineType":  "4D Machines",
+        "tier":  "Midrange",
+        "description":  "The GE Voluson S8 is an advanced midrange ultrasound system offering excellent 4D imaging capabilities. Ideal for busy OB/GYN practices requiring reliable performance.",
+        "yearLaunched":  "2016",
+        "manufacturer":  "GE Healthcare",
+        "serialNumber":  "US-GE-VS8-006",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "110 x 55 x 160 cm",
+                               "weight":  "95 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "Voluson Core",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "19\" High-Res",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "Voluson Core Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "19\" High-Res Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "OB/GYN",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1006,
+        "id":  "affiniti-70",
+        "name":  "Philips Affiniti 70",
+        "model":  "Affiniti 70",
+        "category":  "Ultrasound Machine",
+        "machineType":  "Color Doppler",
+        "tier":  "Midrange",
+        "description":  "The Philips Affiniti 70 delivers outstanding midrange performance for general imaging and cardiovascular applications. Features precision beamforming and PureWave transducers.",
+        "yearLaunched":  "2014",
+        "manufacturer":  "Philips",
+        "serialNumber":  "US-PH-AF70-007",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "110 x 55 x 160 cm",
+                               "weight":  "85 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "Precision Beamforming",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "21.5\" LCD",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "2 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "Precision Beamforming Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "21.5\" LCD Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Shared Service",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "2 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1007,
+        "id":  "sonoscape-s22",
+        "name":  "SonoScape S22",
+        "model":  "S22",
+        "category":  "Ultrasound Machine",
+        "machineType":  "Color Doppler",
+        "tier":  "Economy",
+        "description":  "The SonoScape S22 is a cost-effective, economy ultrasound system that doesn\u0027t compromise on essential imaging quality. Perfect for clinics and smaller hospitals.",
+        "yearLaunched":  "2015",
+        "manufacturer":  "SonoScape",
+        "serialNumber":  "US-SS-S22-008",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "100 x 50 x 140 cm",
+                               "weight":  "65 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "Standard",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "18.5\" LED",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "18.5\" LED Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "General Purpose",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1008,
+        "id":  "chison-eco6",
+        "name":  "Chison ECO6 Portable",
+        "model":  "ECO6",
+        "category":  "Ultrasound Machine",
+        "machineType":  "Portable",
+        "tier":  "Economy",
+        "description":  "The Chison ECO6 is an ultra-portable economy ultrasound device featuring a built-in battery and versatile color Doppler capabilities for on-the-go diagnostics.",
+        "yearLaunched":  "2017",
+        "manufacturer":  "Chison",
+        "serialNumber":  "US-CH-ECO6-009",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "33.5 x 15.5 x 35 cm",
+                               "weight":  "6.5 kg",
+                               "powerRequirements":  "Battery / 100-240V",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "Compact",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "12\" LED",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "Compact Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "12\" LED Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Point of Care",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1009,
+        "id":  "mindray-dc40",
+        "name":  "Mindray DC-40",
+        "model":  "DC-40",
+        "category":  "Ultrasound Machine",
+        "machineType":  "4D Machines",
+        "tier":  "Economy",
+        "description":  "The Mindray DC-40 is a highly capable economy ultrasound system offering excellent 2D, 3D, and 4D imaging. It provides a full range of clinical applications at an affordable price.",
+        "yearLaunched":  "2017",
+        "manufacturer":  "Mindray",
+        "serialNumber":  "US-MI-DC40-010",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_1.jpg",
+                       "/images/devices/real/img_2.jpg",
+                       "/images/devices/real/img_3.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "135 x 52 x 140 cm",
+                               "weight":  "55 kg",
+                               "powerRequirements":  "100-240V, 50/60Hz",
+                               "operatingTemperature":  "10°C to 40°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "Standard",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "15\" LED",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "15\" LED Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "OB/GYN, General Imaging",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1010,
+        "id":  "ge-ric5-9h",
+        "name":  "GE RIC5-9H 3D/4D TV Probe",
+        "model":  "RIC5-9H",
+        "category":  "Transducer",
+        "probeType":  "3D/4D",
+        "description":  "RealTime 4D endocavitary transducer for high-resolution OB/GYN and urology imaging.",
+        "bandwidth":  "3 – 10 MHz (Logiq E9, Logiq S8), 4 – 9 MHz (Voluson E6, E8 Expert)",
+        "applications":  "Obstetrics, Gynecology, Urology",
+        "manufacturer":  "GE",
+        "serialNumber":  "TR-GE-RIC59H-001",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Standard Endocavitary Probe",
+                               "weight":  "0.9 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "3 – 10 MHz",
+                                                                 "title":  "Bandwidth"
+                                                             },
+                                                             {
+                                                                 "description":  "Obstetrics, Gynecology, Urology",
+                                                                 "title":  "Applications"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1011,
+        "id":  "ge-ric5-9-rs",
+        "name":  "GE RIC5-9-RS 3D/4D Endocavitary Probe",
+        "model":  "RIC5-9-RS",
+        "category":  "Transducer",
+        "probeType":  "3D/4D",
+        "description":  "Compact RS connector 3D/4D endocavitary probe designed for Voluson S-series systems.",
+        "bandwidth":  "4 – 9 MHz",
+        "applications":  "Obstetrics, Gynecology, Urology",
+        "manufacturer":  "GE",
+        "serialNumber":  "TR-GE-RIC59RS-002",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "RS Connector Probe",
+                               "weight":  "0.85 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "4 – 9 MHz",
+                                                                 "title":  "Bandwidth"
+                                                             },
+                                                             {
+                                                                 "description":  "Obstetrics, Gynecology, Urology",
+                                                                 "title":  "Applications"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1012,
+        "id":  "ge-ric5-9w",
+        "name":  "GE RIC5-9W 3D/4D TV Probe",
+        "model":  "RIC5-9W",
+        "category":  "Transducer",
+        "probeType":  "TV",
+        "description":  "Wide-angle RealTime 4D endocavitary transducer for transvaginal diagnostic exams.",
+        "bandwidth":  "5 – 9 MHz",
+        "applications":  "RealTime 4D endocavitary transducer",
+        "manufacturer":  "GE",
+        "serialNumber":  "TR-GE-RIC59W-003",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Wide Angle TV Probe",
+                               "weight":  "0.8 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "5 – 9 MHz",
+                                                                 "title":  "Bandwidth"
+                                                             },
+                                                             {
+                                                                 "description":  "Transvaginal \u0026 OB/GYN",
+                                                                 "title":  "Applications"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1013,
+        "id":  "c5-1-probe",
+        "name":  "Philips C5-1 Convex Transducer Probe",
+        "model":  "C5-1",
+        "category":  "Transducer",
+        "probeType":  "Convex",
+        "description":  "PureWave crystal technology convex transducer for deep abdominal and general imaging.",
+        "bandwidth":  "1 – 5 MHz",
+        "applications":  "Abdominal, OB/GYN, Renal",
+        "manufacturer":  "Philips",
+        "serialNumber":  "TR-PH-C51-004",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Convex Probe",
+                               "weight":  "0.8 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "1 – 5 MHz",
+                                                                 "title":  "Bandwidth"
+                                                             },
+                                                             {
+                                                                 "description":  "Abdominal \u0026 OB/GYN",
+                                                                 "title":  "Applications"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1014,
+        "id":  "l12-4-probe",
+        "name":  "GE L12-4 High-Resolution Linear Transducer",
+        "model":  "L12-4",
+        "category":  "Transducer",
+        "probeType":  "Linear",
+        "description":  "High-frequency linear array transducer ideal for superficial imaging and vascular studies.",
+        "bandwidth":  "4 – 12 MHz",
+        "applications":  "Vascular, Small Parts, Musculoskeletal",
+        "manufacturer":  "GE",
+        "serialNumber":  "TR-GE-L124-007",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Linear Probe",
+                               "weight":  "0.7 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "4 – 12 MHz",
+                                                                 "title":  "Bandwidth"
+                                                             },
+                                                             {
+                                                                 "description":  "Vascular \u0026 Small Parts",
+                                                                 "title":  "Applications"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1015,
+        "id":  "siemens-v5m",
+        "name":  "Siemens V5M Cardiac Phased Array",
+        "model":  "V5M",
+        "category":  "Transducer",
+        "probeType":  "Cardiac",
+        "description":  "Phased array cardiac transducer optimized for high-frame-rate echocardiography.",
+        "bandwidth":  "3.5 – 5.5 MHz",
+        "applications":  "Adult Cardiology, TEE",
+        "manufacturer":  "Siemens",
+        "serialNumber":  "TR-SI-V5M-008",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Cardiac Probe",
+                               "weight":  "0.75 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "3.5 – 5.5 MHz",
+                                                                 "title":  "Bandwidth"
+                                                             },
+                                                             {
+                                                                 "description":  "Cardiology",
+                                                                 "title":  "Applications"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1016,
+        "id":  "csound-gpu-board",
+        "name":  "GE cSound GPU Beamformer Board",
+        "model":  "cSound GPU v2",
+        "category":  "Spares",
+        "spareType":  "Boards",
+        "description":  "Replacement GPU processing board for GE Logiq E10 / E9 systems.",
+        "manufacturer":  "GE",
+        "serialNumber":  "SP-GE-CS-005",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Internal Board",
+                               "weight":  "1.2 kg",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "6 Months Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Logiq E10 Processing",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "6 Months Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1017,
+        "id":  "ct-xray-tube",
+        "name":  "CT High Voltage X-Ray Tube Assembly",
+        "model":  "Performix HD Tube",
+        "category":  "Spares",
+        "spareType":  "Tubes",
+        "description":  "High voltage performix HD replacement x-ray tube for CT scanner systems.",
+        "manufacturer":  "GE",
+        "serialNumber":  "SP-GE-CT-008",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "60 x 40 x 40 cm",
+                               "weight":  "85 kg",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "8.0 MHU",
+                                                                 "title":  "Heat Capacity"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1018,
+        "id":  "mri-compressor",
+        "name":  "MRI Cryocooler Helium Compressor Unit",
+        "model":  "F-70 Helium Compressor",
+        "category":  "Spares",
+        "spareType":  "Compressors",
+        "description":  "High-purity helium cryocooler compressor unit for Siemens MRI cooling systems.",
+        "manufacturer":  "Siemens",
+        "serialNumber":  "SP-SI-HC-009",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "50 x 50 x 65 cm",
+                               "weight":  "120 kg",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Helium",
+                                                                 "title":  "Refrigerant"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1019,
+        "id":  "gel-warmer-cart",
+        "name":  "Multi-Bottle Ultrasound Gel Warmer",
+        "model":  "GW-3000",
+        "category":  "Accessories",
+        "accessoryType":  "Warmers",
+        "manufacturer":  "GE",
+        "description":  "Temperature-controlled multi-bottle gel warmer designed for patient comfort during ultrasound exams.",
+        "applications":  "Clinical \u0026 Diagnostic Ultrasound",
+        "serialNumber":  "AC-GE-GW-006",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "30 x 20 x 20 cm",
+                               "weight":  "2.5 kg",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "1 Year Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Patient Comfort \u0026 Clinic Accessory",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "1 Year Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1020,
+        "id":  "display-monitor",
+        "name":  "32\" 4K Surgical Display Monitor",
+        "model":  "SM-3200 4K",
+        "category":  "Accessories",
+        "accessoryType":  "Monitors",
+        "manufacturer":  "Philips",
+        "description":  "Ultra-high-definition 4K medical-grade surgical display monitor for imaging systems.",
+        "applications":  "Surgical OR \u0026 Diagnostic Display",
+        "serialNumber":  "AC-PH-DM-010",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "75 x 10 x 45 cm",
+                               "weight":  "8.5 kg",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "3840 x 2160 Ultra HD",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "2 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "3840 x 2160 Ultra HD Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "2 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1024,
+        "id":  "probe-sheath-kit",
+        "name":  "Sterile Ultrasound Probe Sheath \u0026 Gel Kit",
+        "model":  "SPS-100",
+        "category":  "Accessories",
+        "accessoryType":  "Covers",
+        "manufacturer":  "Siemens",
+        "description":  "Latex-free sterile transducer covers with acoustic coupling gel packets for endocavitary procedures.",
+        "applications":  "Sterile Interventional Procedures \u0026 OB/GYN",
+        "serialNumber":  "AC-SI-SPS-011",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_4.jpg",
+                       "/images/devices/real/img_5.jpg",
+                       "/images/devices/real/img_6.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Standard Latex-Free Sheaths",
+                               "weight":  "1.0 kg",
+                               "highlights":  [
+
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Gamma Sterilized",
+                                                                 "title":  "Sterility"
+                                                             },
+                                                             {
+                                                                 "description":  "100 Kits / Box",
+                                                                 "title":  "Pack Quantity"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "Standard Warranty Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1021,
+        "id":  "magnetom-vida",
+        "name":  "MAGNETOM Vida",
+        "model":  "MAGNETOM Vida",
+        "category":  "MRI",
+        "manufacturer":  "Siemens Healthineers",
+        "serialNumber":  "MRI-SI-MV-001",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_7.jpg",
+                       "/images/devices/real/img_8.jpg",
+                       "/images/devices/real/img_9.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Large Room",
+                               "weight":  "4500 kg",
+                               "powerRequirements":  "400V, 3-Phase",
+                               "operatingTemperature":  "20°C to 24°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "BioMatrix",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "5 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "BioMatrix Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "3T",
+                                                                 "title":  "Field Strength"
+                                                             },
+                                                             {
+                                                                 "description":  "70 cm",
+                                                                 "title":  "Bore Size"
+                                                             },
+                                                             {
+                                                                 "description":  "Whole Body",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "5 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1022,
+        "id":  "revolution-ct",
+        "name":  "Revolution CT",
+        "model":  "Revolution CT",
+        "category":  "CT Scanners",
+        "manufacturer":  "GE Healthcare",
+        "serialNumber":  "CT-GE-REV-001",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_7.jpg",
+                       "/images/devices/real/img_8.jpg",
+                       "/images/devices/real/img_9.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Large Room",
+                               "weight":  "2500 kg",
+                               "powerRequirements":  "400V, 3-Phase",
+                               "operatingTemperature":  "20°C to 24°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "0.23 mm",
+                                                      "title":  "Monitor / Output"
+                                                  },
+                                                  {
+                                                      "detail":  "0.28s rotation",
+                                                      "title":  "Processing"
+                                                  },
+                                                  {
+                                                      "detail":  "3 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "Reliable architecture for consistent imaging performance.",
+                                                     "title":  "Standard Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "High-resolution display tailored for clinical precision.",
+                                                     "title":  "0.23 mm Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "160 mm",
+                                                                 "title":  "Coverage"
+                                                             },
+                                                             {
+                                                                 "description":  "Cardiovascular \u0026 Neuro",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "3 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
+    },
+    {
+        "code":  1023,
+        "id":  "optima-xr646",
+        "name":  "Optima XR646",
+        "model":  "Optima XR646",
+        "category":  "X-Ray",
+        "manufacturer":  "GE Healthcare",
+        "serialNumber":  "XR-GE-OP-001",
+        "status":  true,
+        "images":  [
+                       "/images/devices/real/img_7.jpg",
+                       "/images/devices/real/img_8.jpg",
+                       "/images/devices/real/img_9.jpg"
+                   ],
+        "specifications":  {
+                               "dimensions":  "Medium Room",
+                               "weight":  "800 kg",
+                               "powerRequirements":  "200-240V",
+                               "operatingTemperature":  "15°C to 35°C",
+                               "highlights":  [
+                                                  {
+                                                      "detail":  "FlashPad HD",
+                                                      "title":  "Architecture"
+                                                  },
+                                                  {
+                                                      "detail":  "Auto-tracking",
+                                                      "title":  "Processing"
+                                                  },
+                                                  {
+                                                      "detail":  "2 Years Included",
+                                                      "title":  "Warranty"
+                                                  }
+                                              ],
+                               "coreSpecs":  [
+                                                 {
+                                                     "description":  "State-of-the-art framework for optimal performance and clarity.",
+                                                     "title":  "FlashPad HD Architecture"
+                                                 },
+                                                 {
+                                                     "description":  "Clear output for precise diagnostic assessment.",
+                                                     "title":  "Standard Output Display"
+                                                 },
+                                                 {
+                                                     "description":  "Automated tools included for faster throughput and efficiency.",
+                                                     "title":  "Advanced Workflow"
+                                                 }
+                                             ],
+                               "tabs":  {
+                                            "techSpec":  [
+                                                             {
+                                                                 "description":  "Ceiling",
+                                                                 "title":  "Mounting"
+                                                             },
+                                                             {
+                                                                 "description":  "General Radiography",
+                                                                 "title":  "Application"
+                                                             }
+                                                         ],
+                                            "warrantyandSupport":  [
+                                                                       "2 Years Included",
+                                                                       "24/7 Online Support Access",
+                                                                       "Remote Troubleshooting Available"
+                                                                   ],
+                                            "details":  [
+
+                                                        ]
+                                        }
+                           }
     }
-  },
-  {
-    "code": 1001,
-    "id": "voluson-e10",
-    "name": "Voluson E10 Women\u0027s Health",
-    "model": "Voluson E10",
-    "category": "Ultrasound Machine",
-    "machineType": "4D Machines",
-    "tier": "High-end",
-    "description": "The Voluson E10 is the ultimate women\u0027s health ultrasound system, providing unmatched 4D imaging clarity. Designed specifically for complex OB/GYN and maternal-fetal medicine.",
-    "yearLaunched": "2015",
-    "manufacturer": "GE Healthcare",
-    "serialNumber": "US-GE-VE10-002",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "115 x 58 x 165 cm",
-      "weight": "105 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "OB/GYN"
-      },
-      "highlights": [
-        {
-          "detail": "Radiance System",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "23\" Widescreen",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "Advanced",
-          "title": "Processing",
-          "logo": "MdMemory"
-        },
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "Radiance System Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "23\" Widescreen Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1002,
-    "id": "epiq-7",
-    "name": "EPIQ 7 Cardiovascular",
-    "model": "EPIQ 7",
-    "category": "Ultrasound Machine",
-    "machineType": "Color Doppler",
-    "tier": "Midrange",
-    "description": "The Philips EPIQ 7 features nSIGHT architecture for exceptional acoustic performance. Optimized for highly sensitive cardiovascular color Doppler and strain elastography.",
-    "yearLaunched": "2013",
-    "manufacturer": "Philips",
-    "serialNumber": "US-PH-EQ7-003",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "110 x 55 x 160 cm",
-      "weight": "100 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "Cardiology"
-      },
-      "highlights": [
-        {
-          "detail": "nSIGHT",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "21.5\" LCD",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "xMATRIX",
-          "title": "Processing",
-          "logo": "MdMemory"
-        },
-        {
-          "detail": "2 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "nSIGHT Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "21.5\" LCD Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1003,
-    "id": "mindray-m9",
-    "name": "Mindray M9 Portable Premium",
-    "model": "M9",
-    "category": "Ultrasound Machine",
-    "machineType": "Portable",
-    "tier": "Economy",
-    "description": "The Mindray M9 is a premium hand-carried ultrasound machine delivering highly versatile Color Doppler imaging in a compact, portable format. Ideal for point-of-care and emergency.",
-    "yearLaunched": "2016",
-    "manufacturer": "Mindray",
-    "serialNumber": "US-MI-M9-004",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "36 x 30 x 6 cm",
-      "weight": "6 kg",
-      "powerRequirements": "Battery / 100-240V",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "Point of Care"
-      },
-      "highlights": [
-        {
-          "detail": "mQuadro",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "15.6\" LED",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "Compact",
-          "title": "Processing",
-          "logo": "MdMemory"
-        },
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "mQuadro Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "15.6\" LED Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1004,
-    "id": "acuson-sequoia",
-    "name": "Siemens ACUSON Sequoia",
-    "model": "ACUSON Sequoia",
-    "category": "Ultrasound Machine",
-    "machineType": "Color Doppler",
-    "tier": "High-end",
-    "description": "The Siemens ACUSON Sequoia is a premium high-end ultrasound system featuring BioAcoustic imaging technology. It provides deep penetration and unmatched clarity for complex cases.",
-    "yearLaunched": "2018",
-    "manufacturer": "Siemens Healthineers",
-    "serialNumber": "US-SI-SEQ-005",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "125 x 60 x 175 cm",
-      "weight": "125 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "General Imaging, Liver"
-      },
-      "highlights": [
-        {
-          "detail": "BioAcoustic",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "22\" OLED",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "3 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "BioAcoustic Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "22\" OLED Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1005,
-    "id": "voluson-s8",
-    "name": "GE Voluson S8",
-    "model": "Voluson S8",
-    "category": "Ultrasound Machine",
-    "machineType": "4D Machines",
-    "tier": "Midrange",
-    "description": "The GE Voluson S8 is an advanced midrange ultrasound system offering excellent 4D imaging capabilities. Ideal for busy OB/GYN practices requiring reliable performance.",
-    "yearLaunched": "2016",
-    "manufacturer": "GE Healthcare",
-    "serialNumber": "US-GE-VS8-006",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "110 x 55 x 160 cm",
-      "weight": "95 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "OB/GYN"
-      },
-      "highlights": [
-        {
-          "detail": "Voluson Core",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "19\" High-Res",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "Voluson Core Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "19\" High-Res Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1006,
-    "id": "affiniti-70",
-    "name": "Philips Affiniti 70",
-    "model": "Affiniti 70",
-    "category": "Ultrasound Machine",
-    "machineType": "Color Doppler",
-    "tier": "Midrange",
-    "description": "The Philips Affiniti 70 delivers outstanding midrange performance for general imaging and cardiovascular applications. Features precision beamforming and PureWave transducers.",
-    "yearLaunched": "2014",
-    "manufacturer": "Philips",
-    "serialNumber": "US-PH-AF70-007",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "110 x 55 x 160 cm",
-      "weight": "85 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "Shared Service"
-      },
-      "highlights": [
-        {
-          "detail": "Precision Beamforming",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "21.5\" LCD",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "2 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "Precision Beamforming Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "21.5\" LCD Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1007,
-    "id": "sonoscape-s22",
-    "name": "SonoScape S22",
-    "model": "S22",
-    "category": "Ultrasound Machine",
-    "machineType": "Color Doppler",
-    "tier": "Economy",
-    "description": "The SonoScape S22 is a cost-effective, economy ultrasound system that doesn\u0027t compromise on essential imaging quality. Perfect for clinics and smaller hospitals.",
-    "yearLaunched": "2015",
-    "manufacturer": "SonoScape",
-    "serialNumber": "US-SS-S22-008",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "100 x 50 x 140 cm",
-      "weight": "65 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "General Purpose"
-      },
-      "highlights": [
-        {
-          "detail": "Standard",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "18.5\" LED",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "18.5\" LED Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1008,
-    "id": "chison-eco6",
-    "name": "Chison ECO6 Portable",
-    "model": "ECO6",
-    "category": "Ultrasound Machine",
-    "machineType": "Portable",
-    "tier": "Economy",
-    "description": "The Chison ECO6 is an ultra-portable economy ultrasound device featuring a built-in battery and versatile color Doppler capabilities for on-the-go diagnostics.",
-    "yearLaunched": "2017",
-    "manufacturer": "Chison",
-    "serialNumber": "US-CH-ECO6-009",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "33.5 x 15.5 x 35 cm",
-      "weight": "6.5 kg",
-      "powerRequirements": "Battery / 100-240V",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "Point of Care"
-      },
-      "highlights": [
-        {
-          "detail": "Compact",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "12\" LED",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "Compact Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "12\" LED Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1009,
-    "id": "mindray-dc40",
-    "name": "Mindray DC-40",
-    "model": "DC-40",
-    "category": "Ultrasound Machine",
-    "machineType": "4D Machines",
-    "tier": "Economy",
-    "description": "The Mindray DC-40 is a highly capable economy ultrasound system offering excellent 2D, 3D, and 4D imaging. It provides a full range of clinical applications at an affordable price.",
-    "yearLaunched": "2017",
-    "manufacturer": "Mindray",
-    "serialNumber": "US-MI-DC40-010",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_1.jpg",
-      "/images/devices/real/img_2.jpg",
-      "/images/devices/real/img_3.jpg"
-    ],
-    "specifications": {
-      "dimensions": "135 x 52 x 140 cm",
-      "weight": "55 kg",
-      "powerRequirements": "100-240V, 50/60Hz",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "OB/GYN, General Imaging"
-      },
-      "highlights": [
-        {
-          "detail": "Standard",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "15\" LED",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "15\" LED Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1010,
-    "id": "ge-ric5-9h",
-    "name": "GE RIC5-9H 3D/4D TV Probe",
-    "model": "RIC5-9H",
-    "category": "Transducer",
-    "probeType": "3D/4D",
-    "description": "RealTime 4D endocavitary transducer for high-resolution OB/GYN and urology imaging.",
-    "bandwidth": "3 – 10 MHz (Logiq E9, Logiq S8), 4 – 9 MHz (Voluson E6, E8 Expert)",
-    "applications": "Obstetrics, Gynecology, Urology",
-    "manufacturer": "GE",
-    "serialNumber": "TR-GE-RIC59H-001",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Standard Endocavitary Probe",
-      "weight": "0.9 kg",
-      "other": {
-        "Bandwidth": "3 – 10 MHz",
-        "Applications": "Obstetrics, Gynecology, Urology"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1011,
-    "id": "ge-ric5-9-rs",
-    "name": "GE RIC5-9-RS 3D/4D Endocavitary Probe",
-    "model": "RIC5-9-RS",
-    "category": "Transducer",
-    "probeType": "3D/4D",
-    "description": "Compact RS connector 3D/4D endocavitary probe designed for Voluson S-series systems.",
-    "bandwidth": "4 – 9 MHz",
-    "applications": "Obstetrics, Gynecology, Urology",
-    "manufacturer": "GE",
-    "serialNumber": "TR-GE-RIC59RS-002",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "RS Connector Probe",
-      "weight": "0.85 kg",
-      "other": {
-        "Bandwidth": "4 – 9 MHz",
-        "Applications": "Obstetrics, Gynecology, Urology"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1012,
-    "id": "ge-ric5-9w",
-    "name": "GE RIC5-9W 3D/4D TV Probe",
-    "model": "RIC5-9W",
-    "category": "Transducer",
-    "probeType": "TV",
-    "description": "Wide-angle RealTime 4D endocavitary transducer for transvaginal diagnostic exams.",
-    "bandwidth": "5 – 9 MHz",
-    "applications": "RealTime 4D endocavitary transducer",
-    "manufacturer": "GE",
-    "serialNumber": "TR-GE-RIC59W-003",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Wide Angle TV Probe",
-      "weight": "0.8 kg",
-      "other": {
-        "Bandwidth": "5 – 9 MHz",
-        "Applications": "Transvaginal \u0026 OB/GYN"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1013,
-    "id": "c5-1-probe",
-    "name": "Philips C5-1 Convex Transducer Probe",
-    "model": "C5-1",
-    "category": "Transducer",
-    "probeType": "Convex",
-    "description": "PureWave crystal technology convex transducer for deep abdominal and general imaging.",
-    "bandwidth": "1 – 5 MHz",
-    "applications": "Abdominal, OB/GYN, Renal",
-    "manufacturer": "Philips",
-    "serialNumber": "TR-PH-C51-004",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Convex Probe",
-      "weight": "0.8 kg",
-      "other": {
-        "Bandwidth": "1 – 5 MHz",
-        "Applications": "Abdominal \u0026 OB/GYN"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1014,
-    "id": "l12-4-probe",
-    "name": "GE L12-4 High-Resolution Linear Transducer",
-    "model": "L12-4",
-    "category": "Transducer",
-    "probeType": "Linear",
-    "description": "High-frequency linear array transducer ideal for superficial imaging and vascular studies.",
-    "bandwidth": "4 – 12 MHz",
-    "applications": "Vascular, Small Parts, Musculoskeletal",
-    "manufacturer": "GE",
-    "serialNumber": "TR-GE-L124-007",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Linear Probe",
-      "weight": "0.7 kg",
-      "other": {
-        "Bandwidth": "4 – 12 MHz",
-        "Applications": "Vascular \u0026 Small Parts"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1015,
-    "id": "siemens-v5m",
-    "name": "Siemens V5M Cardiac Phased Array",
-    "model": "V5M",
-    "category": "Transducer",
-    "probeType": "Cardiac",
-    "description": "Phased array cardiac transducer optimized for high-frame-rate echocardiography.",
-    "bandwidth": "3.5 – 5.5 MHz",
-    "applications": "Adult Cardiology, TEE",
-    "manufacturer": "Siemens",
-    "serialNumber": "TR-SI-V5M-008",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Cardiac Probe",
-      "weight": "0.75 kg",
-      "other": {
-        "Bandwidth": "3.5 – 5.5 MHz",
-        "Applications": "Cardiology"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1016,
-    "id": "csound-gpu-board",
-    "name": "GE cSound GPU Beamformer Board",
-    "model": "cSound GPU v2",
-    "category": "Spares",
-    "spareType": "Boards",
-    "description": "Replacement GPU processing board for GE Logiq E10 / E9 systems.",
-    "manufacturer": "GE",
-    "serialNumber": "SP-GE-CS-005",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Internal Board",
-      "weight": "1.2 kg",
-      "other": {
-        "Application": "Logiq E10 Processing"
-      },
-      "highlights": [
-        {
-          "detail": "6 Months Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1017,
-    "id": "ct-xray-tube",
-    "name": "CT High Voltage X-Ray Tube Assembly",
-    "model": "Performix HD Tube",
-    "category": "Spares",
-    "spareType": "Tubes",
-    "description": "High voltage performix HD replacement x-ray tube for CT scanner systems.",
-    "manufacturer": "GE",
-    "serialNumber": "SP-GE-CT-008",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "60 x 40 x 40 cm",
-      "weight": "85 kg",
-      "other": {
-        "Heat Capacity": "8.0 MHU"
-      },
-      "highlights": [
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1018,
-    "id": "mri-compressor",
-    "name": "MRI Cryocooler Helium Compressor Unit",
-    "model": "F-70 Helium Compressor",
-    "category": "Spares",
-    "spareType": "Compressors",
-    "description": "High-purity helium cryocooler compressor unit for Siemens MRI cooling systems.",
-    "manufacturer": "Siemens",
-    "serialNumber": "SP-SI-HC-009",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "50 x 50 x 65 cm",
-      "weight": "120 kg",
-      "other": {
-        "Refrigerant": "Helium"
-      },
-      "highlights": [
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1019,
-    "id": "gel-warmer-cart",
-    "name": "Multi-Bottle Ultrasound Gel Warmer",
-    "model": "GW-3000",
-    "category": "Accessories",
-    "accessoryType": "Warmers",
-    "manufacturer": "GE",
-    "description": "Temperature-controlled multi-bottle gel warmer designed for patient comfort during ultrasound exams.",
-    "applications": "Clinical \u0026 Diagnostic Ultrasound",
-    "serialNumber": "AC-GE-GW-006",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "30 x 20 x 20 cm",
-      "weight": "2.5 kg",
-      "other": {
-        "Application": "Patient Comfort \u0026 Clinic Accessory"
-      },
-      "highlights": [
-        {
-          "detail": "1 Year Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1020,
-    "id": "display-monitor",
-    "name": "32\" 4K Surgical Display Monitor",
-    "model": "SM-3200 4K",
-    "category": "Accessories",
-    "accessoryType": "Monitors",
-    "manufacturer": "Philips",
-    "description": "Ultra-high-definition 4K medical-grade surgical display monitor for imaging systems.",
-    "applications": "Surgical OR \u0026 Diagnostic Display",
-    "serialNumber": "AC-PH-DM-010",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "75 x 10 x 45 cm",
-      "weight": "8.5 kg",
-      "other": {},
-      "highlights": [
-        {
-          "detail": "3840 x 2160 Ultra HD",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "2 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "3840 x 2160 Ultra HD Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1024,
-    "id": "probe-sheath-kit",
-    "name": "Sterile Ultrasound Probe Sheath \u0026 Gel Kit",
-    "model": "SPS-100",
-    "category": "Accessories",
-    "accessoryType": "Covers",
-    "manufacturer": "Siemens",
-    "description": "Latex-free sterile transducer covers with acoustic coupling gel packets for endocavitary procedures.",
-    "applications": "Sterile Interventional Procedures \u0026 OB/GYN",
-    "serialNumber": "AC-SI-SPS-011",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_4.jpg",
-      "/images/devices/real/img_5.jpg",
-      "/images/devices/real/img_6.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Standard Latex-Free Sheaths",
-      "weight": "1.0 kg",
-      "other": {
-        "Sterility": "Gamma Sterilized",
-        "Pack Quantity": "100 Kits / Box"
-      },
-      "highlights": [],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1021,
-    "id": "magnetom-vida",
-    "name": "MAGNETOM Vida",
-    "model": "MAGNETOM Vida",
-    "category": "MRI",
-    "manufacturer": "Siemens Healthineers",
-    "serialNumber": "MRI-SI-MV-001",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_7.jpg",
-      "/images/devices/real/img_8.jpg",
-      "/images/devices/real/img_9.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Large Room",
-      "weight": "4500 kg",
-      "powerRequirements": "400V, 3-Phase",
-      "operatingTemperature": "20°C to 24°C",
-      "other": {
-        "Field Strength": "3T",
-        "Bore Size": "70 cm",
-        "Application": "Whole Body"
-      },
-      "highlights": [
-        {
-          "detail": "BioMatrix",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "5 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "BioMatrix Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1022,
-    "id": "revolution-ct",
-    "name": "Revolution CT",
-    "model": "Revolution CT",
-    "category": "CT Scanners",
-    "manufacturer": "GE Healthcare",
-    "serialNumber": "CT-GE-REV-001",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_7.jpg",
-      "/images/devices/real/img_8.jpg",
-      "/images/devices/real/img_9.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Large Room",
-      "weight": "2500 kg",
-      "powerRequirements": "400V, 3-Phase",
-      "operatingTemperature": "20°C to 24°C",
-      "other": {
-        "Coverage": "160 mm",
-        "Application": "Cardiovascular \u0026 Neuro"
-      },
-      "highlights": [
-        {
-          "detail": "0.23 mm",
-          "title": "Monitor / Output",
-          "logo": "MdTv"
-        },
-        {
-          "detail": "0.28s rotation",
-          "title": "Processing",
-          "logo": "MdMemory"
-        },
-        {
-          "detail": "3 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "Reliable architecture for consistent imaging performance.",
-          "title": "Standard Architecture"
-        },
-        {
-          "description": "High-resolution display tailored for clinical precision.",
-          "title": "0.23 mm Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  },
-  {
-    "code": 1023,
-    "id": "optima-xr646",
-    "name": "Optima XR646",
-    "model": "Optima XR646",
-    "category": "X-Ray",
-    "manufacturer": "GE Healthcare",
-    "serialNumber": "XR-GE-OP-001",
-    "status": true,
-    "images": [
-      "/images/devices/real/img_7.jpg",
-      "/images/devices/real/img_8.jpg",
-      "/images/devices/real/img_9.jpg"
-    ],
-    "specifications": {
-      "dimensions": "Medium Room",
-      "weight": "800 kg",
-      "powerRequirements": "200-240V",
-      "operatingTemperature": "15°C to 35°C",
-      "other": {
-        "Mounting": "Ceiling",
-        "Application": "General Radiography"
-      },
-      "highlights": [
-        {
-          "detail": "FlashPad HD",
-          "title": "Architecture",
-          "logo": "MdArchitecture"
-        },
-        {
-          "detail": "Auto-tracking",
-          "title": "Processing",
-          "logo": "MdMemory"
-        },
-        {
-          "detail": "2 Years Included",
-          "title": "Warranty",
-          "logo": "MdVerified"
-        }
-      ],
-      "coreSpecs": [
-        {
-          "description": "State-of-the-art framework for optimal performance and clarity.",
-          "title": "FlashPad HD Architecture"
-        },
-        {
-          "description": "Clear output for precise diagnostic assessment.",
-          "title": "Standard Output Display"
-        },
-        {
-          "description": "Automated tools included for faster throughput and efficiency.",
-          "title": "Advanced Workflow"
-        }
-      ]
-    }
-  }
 ]
