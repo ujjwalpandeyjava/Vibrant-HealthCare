@@ -138,6 +138,8 @@ export default function ProductInquirySection({ categoryName = "Products" }) {
                   </label>
                   <input
                     type="tel"
+                    maxLength="12"
+                    onInput={(e) => { e.target.value = e.target.value.replace(/[^\d\+\-\s\(\)]/g, '') }}
                     pattern="[\d\+\-\s]+"
                     title="Phone number can only contain digits, spaces, plus, and minus signs."
                     id="inquiry-phone"
