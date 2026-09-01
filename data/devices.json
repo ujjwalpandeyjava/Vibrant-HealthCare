@@ -1,0 +1,258 @@
+[
+  {
+    "id": "logiq-e10",
+    "name": "Logiq E10 Ultrasound System",
+    "model": "Logiq E10",
+    "category": "Ultrasound Machine",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "US-GE-LE10-001",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg",
+      "/images/devices/logiq-e10.svg",
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1200 x 600 x 1700 mm",
+      "weight": "110 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "General Imaging",
+        "Monitor": "22\" OLED",
+        "Architecture": "cSound",
+        "Processing": "GPU-based",
+        "Warranty": "3 Years Included"
+      }
+    }
+  },
+  {
+    "id": "voluson-e10",
+    "name": "Voluson E10 Women's Health",
+    "model": "Voluson E10",
+    "category": "Ultrasound Machine",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "US-GE-VE10-002",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/voluson-e10.svg",
+    "images": [
+      "/images/devices/voluson-e10.svg",
+      "/images/devices/voluson-e10.svg",
+      "/images/devices/voluson-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1150 x 580 x 1650 mm",
+      "weight": "105 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "OB/GYN",
+        "Monitor": "23\" Widescreen",
+        "Architecture": "Radiance System",
+        "Processing": "Advanced",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "epiq-7",
+    "name": "EPIQ 7 Cardiovascular",
+    "model": "EPIQ 7",
+    "category": "Ultrasound Machine",
+    "manufacturer": "Philips",
+    "serialNumber": "US-PH-EQ7-003",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg",
+      "/images/devices/epiq-7.svg",
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1100 x 550 x 1600 mm",
+      "weight": "100 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Cardiology",
+        "Monitor": "21.5\" LCD",
+        "Architecture": "nSIGHT",
+        "Processing": "xMATRIX",
+        "Warranty": "2 Years Included"
+      }
+    }
+  },
+  {
+    "id": "c5-1-probe",
+    "name": "C5-1 Convex Transducer Probe",
+    "model": "C5-1",
+    "category": "Transducer",
+    "manufacturer": "Philips",
+    "serialNumber": "TR-PH-C51-004",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Standard Probe",
+      "weight": "0.8 kg",
+      "powerRequirements": "N/A",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "Abdominal & OB/GYN",
+        "Frequency": "1.0 - 5.0 MHz",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "csound-gpu-board",
+    "name": "GE cSound GPU Beamformer Board",
+    "model": "cSound GPU v2",
+    "category": "Spares",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "SP-GE-CS-005",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/voluson-e10.svg",
+    "images": [
+      "/images/devices/voluson-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Internal Board",
+      "weight": "1.2 kg",
+      "powerRequirements": "12V DC",
+      "operatingTemperature": "10°C to 45°C",
+      "other": {
+        "Application": "Logiq E10 / E9 Processing",
+        "Warranty": "6 Months Included"
+      }
+    }
+  },
+  {
+    "id": "gel-warmer-cart",
+    "name": "Multi-Bottle Ultrasound Gel Warmer",
+    "model": "GW-3000",
+    "category": "Accessories",
+    "manufacturer": "Vibrant Medical",
+    "serialNumber": "AC-VM-GW-006",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/epiq-7.svg",
+    "images": [
+      "/images/devices/epiq-7.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "300 x 200 x 200 mm",
+      "weight": "2.5 kg",
+      "powerRequirements": "110-220V",
+      "operatingTemperature": "37°C constant",
+      "other": {
+        "Application": "Patient Comfort & Clinic Accessory",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "id": "magnetom-vida",
+    "name": "MAGNETOM Vida",
+    "model": "MAGNETOM Vida",
+    "category": "MRI",
+    "manufacturer": "Siemens Healthineers",
+    "serialNumber": "MRI-SI-MV-001",
+    "status": "Available",
+    "location": "Warehouse C",
+    "image": "/images/devices/magnetom-vida.svg",
+    "images": [
+      "/images/devices/magnetom-vida.svg",
+      "/images/devices/magnetom-vida.svg",
+      "/images/devices/magnetom-vida.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Large Room",
+      "weight": "4500 kg",
+      "powerRequirements": "400V, 3-Phase",
+      "operatingTemperature": "20°C to 24°C",
+      "other": {
+        "Field Strength": "3T",
+        "Bore Size": "70 cm",
+        "Technology": "BioMatrix",
+        "Application": "Whole Body",
+        "Warranty": "5 Years Included"
+      }
+    }
+  },
+  {
+    "id": "revolution-ct",
+    "name": "Revolution CT",
+    "model": "Revolution CT",
+    "category": "CT Scanners",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "CT-GE-REV-001",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/revolution-ct.svg",
+    "images": [
+      "/images/devices/revolution-ct.svg",
+      "/images/devices/revolution-ct.svg",
+      "/images/devices/revolution-ct.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Large Room",
+      "weight": "2500 kg",
+      "powerRequirements": "400V, 3-Phase",
+      "operatingTemperature": "20°C to 24°C",
+      "other": {
+        "Coverage": "160 mm",
+        "Resolution": "0.23 mm",
+        "Speed": "0.28s rotation",
+        "Application": "Cardiovascular & Neuro",
+        "Warranty": "3 Years Included"
+      }
+    }
+  },
+  {
+    "id": "optima-xr646",
+    "name": "Optima XR646",
+    "model": "Optima XR646",
+    "category": "X-Ray",
+    "manufacturer": "GE Healthcare",
+    "serialNumber": "XR-GE-OP-001",
+    "status": "Available",
+    "location": "Warehouse A",
+    "image": "/images/devices/optima-xr646.svg",
+    "images": [
+      "/images/devices/optima-xr646.svg",
+      "/images/devices/optima-xr646.svg",
+      "/images/devices/optima-xr646.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "Medium Room",
+      "weight": "800 kg",
+      "powerRequirements": "200-240V",
+      "operatingTemperature": "15°C to 35°C",
+      "other": {
+        "Detector": "FlashPad HD",
+        "Mounting": "Ceiling",
+        "Application": "General Radiography",
+        "Automation": "Auto-tracking",
+        "Warranty": "2 Years Included"
+      }
+    }
+  }
+]
