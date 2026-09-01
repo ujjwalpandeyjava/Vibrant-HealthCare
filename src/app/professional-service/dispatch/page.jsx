@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MdLocalShipping, MdCheckCircle } from "react-icons/md";
+import ServiceModalButton from "@/components/ServiceModalButton";
 
 export const metadata = {
   title: "Dispatch | Professional Services",
@@ -51,9 +52,11 @@ export default function DispatchPage() {
           </div>
           
           <div className="pt-8">
-            <Link href="/contact" className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors inline-block">
-              Contact Dispatch
-            </Link>
+            <ServiceModalButton 
+              buttonText="Contact Dispatch" 
+              modalTitle="Contact Dispatch Team"
+              prefilledMessage="I need to contact the dispatch team regarding an urgent equipment failure or technical issue."
+            />
           </div>
         </div>
 

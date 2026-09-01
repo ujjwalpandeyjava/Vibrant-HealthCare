@@ -3,8 +3,15 @@ import Image from "next/image";
 import { FiArrowRight, FiChevronRight } from "react-icons/fi";
 import { MdCheckCircle, MdMedicalServices, MdBuild, MdAccessTime, MdSettings } from "react-icons/md";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import { getAllDevices } from "@/lib/getDevices";
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const allDevices = await getAllDevices();
+  const mostSoldCodes = [1000, 1001, 1004, 1010, 1012, 1015];
+  const mostSoldProducts = mostSoldCodes
+    .map((code) => allDevices.find((d) => d.code === code))
+    .filter(Boolean);
+
   return (
     <div className="flex flex-col gap-16 pb-16 animate-in fade-in duration-300">
       {/* Hero Section */}
@@ -32,9 +39,9 @@ export default function LandingPage() {
         </div>
         <div className="lg:w-1/2 relative w-full">
           <div className="bg-white dark:bg-slate-800 rounded-3xl p-4 shadow-xl relative z-10 aspect-[4/3]">
-            <img 
-              alt="Medical Scene" 
-              className="rounded-2xl w-full h-full object-cover" 
+            <img
+              alt="Medical Scene"
+              className="rounded-2xl w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgg4LKGbJwySt-yQyn-jN7Qa-6xoo96ICIXnlz3iZBqcF18P5Nlfqu0rTke2xIyB0bnPWnJOIboog6w8KekWPYwtbCR4PNJSgleWF2ODOjTg31ofCuHvwsXiQuZSzV2zgLFT_ainMpSczZbxl_ANkxOMYDNuqlwVK7YM3u4Js7KNcNCDi79AvsJf6qAjRWf_QowEZVgQRbjb9jWB7vEUUxd3abZdepGvpiZBw-AMoKCwLo3Ywb8k4Sng"
             />
           </div>
@@ -50,61 +57,69 @@ export default function LandingPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Equipment Card */}
-          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow">
-            <div className="bg-blue-50 dark:bg-blue-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-primary mb-4">
-              <MdMedicalServices className="h-6 w-6" />
+          <Link href="/search" className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group flex flex-col justify-between">
+            <div>
+              <div className="bg-blue-50 dark:bg-blue-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-primary mb-4">
+                <MdMedicalServices className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white group-hover:text-primary transition-colors">Equipment</h3>
+              <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Latest medical technology sourced from trusted global manufacturers.</p>
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white">Equipment</h3>
-            <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Latest medical technology sourced from trusted global manufacturers.</p>
-            <Link href="/search" className="text-primary text-sm font-medium flex items-center space-x-1 hover:underline">
+            <div className="text-primary text-sm font-medium flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
               <span>Browse</span>
               <FiArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-          {/* Repair Card */}
-          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow">
-            <div className="bg-red-50 dark:bg-red-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-red-500 mb-4">
-              <MdBuild className="h-6 w-6" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white">Repair</h3>
-            <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Rapid response emergency repairs to minimize your clinic's downtime.</p>
-            <a href="#" className="text-primary text-sm font-medium flex items-center space-x-1 hover:underline">
+          </Link>
+          {/* Repair Card */}
+          <Link href="/professional-service/repairs" className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group flex flex-col justify-between">
+            <div>
+              <div className="bg-red-50 dark:bg-red-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-red-500 mb-4">
+                <MdBuild className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white group-hover:text-primary transition-colors">Repair</h3>
+              <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Rapid response emergency repairs to minimize your clinic's downtime.</p>
+            </div>
+            <div className="text-primary text-sm font-medium flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
               <span>Request</span>
               <FiArrowRight className="h-4 w-4" />
-            </a>
-          </div>
-          {/* Maintenance Card */}
-          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow">
-            <div className="bg-green-50 dark:bg-green-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-green-500 mb-4">
-              <MdAccessTime className="h-6 w-6" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white">Maintenance</h3>
-            <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Preventative care plans customized for your specific equipment fleet.</p>
-            <a href="#" className="text-primary text-sm font-medium flex items-center space-x-1 hover:underline">
+          </Link>
+          {/* Maintenance Card */}
+          <Link href="/professional-service/maintenance" className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group flex flex-col justify-between">
+            <div>
+              <div className="bg-green-50 dark:bg-green-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-green-500 mb-4">
+                <MdAccessTime className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white group-hover:text-primary transition-colors">Maintenance</h3>
+              <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Preventative care plans customized for your specific equipment fleet.</p>
+            </div>
+            <div className="text-primary text-sm font-medium flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
               <span>Plans</span>
               <FiArrowRight className="h-4 w-4" />
-            </a>
-          </div>
-          {/* Parts Card */}
-          <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow">
-            <div className="bg-purple-50 dark:bg-purple-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-purple-500 mb-4">
-              <MdSettings className="h-6 w-6" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white">Parts</h3>
-            <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Extensive inventory of OEM and certified replacement components.</p>
-            <a href="#" className="text-primary text-sm font-medium flex items-center space-x-1 hover:underline">
+          </Link>
+          {/* Parts Card */}
+          <Link href="/products/spares" className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group flex flex-col justify-between">
+            <div>
+              <div className="bg-purple-50 dark:bg-purple-900/30 w-12 h-12 rounded-xl flex items-center justify-center text-purple-500 mb-4">
+                <MdSettings className="h-6 w-6" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-on-surface dark:text-white group-hover:text-primary transition-colors">Parts</h3>
+              <p className="text-textMuted dark:text-gray-400 text-sm mb-4">Extensive inventory of OEM and certified replacement components.</p>
+            </div>
+            <div className="text-primary text-sm font-medium flex items-center space-x-1 group-hover:translate-x-1 transition-transform">
               <span>Search</span>
               <FiArrowRight className="h-4 w-4" />
-            </a>
-          </div>
+            </div>
+          </Link>
         </div>
       </section>
 
-      {/* Top Selling Equipment */}
+      {/* Top Selling Equipment this month */}
       <section className="max-w-7xl mx-auto w-full px-4 md:px-8">
         <div className="mb-8 flex justify-between items-end">
           <div>
-            <h2 className="text-2xl font-bold mb-2 text-on-surface dark:text-white">Top Selling Equipment</h2>
+            <h2 className="text-2xl font-bold mb-2 text-on-surface dark:text-white">Top Selling Equipment this month</h2>
             <p className="text-textMuted dark:text-gray-400">Our most requested high-performance diagnostic systems.</p>
           </div>
         </div>
@@ -197,12 +212,12 @@ export default function LandingPage() {
           {/* Inventory Item 3 */}
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col">
             <div className="bg-gray-50 dark:bg-white rounded-xl h-40 mb-4 flex items-center justify-center relative overflow-hidden">
-              <span className="absolute top-2 right-2 bg-red-100 text-red-600 text-xs px-2 py-1 rounded font-semibold z-10">Refurbished</span>
+              <span className="absolute top-2 right-2 bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-300 text-xs px-2 py-1 rounded font-semibold z-10">New</span>
               <img alt="LifeStart AED" className="object-contain h-full p-2 mix-blend-multiply dark:mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWx4rtKz42p85xFw1WiUudfJdnqVvBXJQsyWBvDkjTp3WEdof5vd_vtcyZg31kRBpjCx6pJat6uuQReGFtnRQ2vz6e-wEyFPaZwA16FT2ohq3vR5jWy2RIE6SCkTMpgP5RrNfjiCYvncH5AL1OfRzG9JBQoWn7PyNfTHMUX3ysoMXpf8TmOSObj27MzKZzMo2meqIyZtkrC-edgluQ0SwqVQM3kAhSuX3vQBKxtFkkomcN3Ii5m9Di9g" />
             </div>
             <p className="text-xs text-textMuted dark:text-gray-400 font-semibold tracking-wider uppercase mb-1">Emergency</p>
             <h3 className="font-bold text-sm mb-2 text-on-surface dark:text-white">LifeStart AED</h3>
-            <p className="text-textMuted dark:text-gray-400 text-xs mb-4 line-clamp-2">Fully automatic external defibrillator, certified refurbished with new battery.</p>
+            <p className="text-textMuted dark:text-gray-400 text-xs mb-4 line-clamp-2">Fully automatic external defibrillator with long-life battery and diagnostic monitoring.</p>
             <div className="flex items-center justify-between mt-auto">
               <span className="text-sm font-medium text-on-surface dark:text-white">In Stock</span>
               <button className="bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-300 px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-blue-100">Add to Quote</button>
@@ -225,6 +240,73 @@ export default function LandingPage() {
 
       {/* Testimonial Section */}
       <TestimonialCarousel />
+
+      {/* Most Sold Products */}
+      <section className="max-w-7xl mx-auto w-full px-4 md:px-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4">
+          <div>
+            <div className="inline-flex items-center gap-1.5 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-2">
+              <span>Best Sellers</span>
+            </div>
+            <h2 className="text-3xl font-extrabold text-on-surface dark:text-white">Most Sold Products</h2>
+            <p className="text-textMuted dark:text-gray-400 text-sm mt-1">Our highest volume systems & transducers trusted by leading medical centers.</p>
+          </div>
+          <Link href="/products/machine" className="text-primary font-bold text-sm flex items-center space-x-1 hover:underline shrink-0">
+            <span>Explore All Products</span>
+            <FiArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {mostSoldProducts.map((product) => (
+            <div
+              key={product.id}
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col justify-between"
+            >
+              <div>
+                <div className="bg-gray-50 dark:bg-slate-800/60 p-4 h-48 relative flex items-center justify-center border-b border-gray-100 dark:border-slate-800">
+                  <Image
+                    src={product.image || "/placeholder.svg"}
+                    alt={product.name}
+                    fill
+                    className="object-contain p-4"
+                  />
+                  <span className="absolute top-3 right-3 bg-slate-900/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm border border-slate-700">
+                    Code: #{product.code}
+                  </span>
+                  {product.tier && (
+                    <span className="absolute top-3 left-3 bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-300 text-xs font-bold px-2.5 py-1 rounded-full border border-blue-200 dark:border-blue-800">
+                      {product.tier}
+                    </span>
+                  )}
+                </div>
+
+                <div className="p-6">
+                  <span className="text-xs font-bold uppercase tracking-wider text-primary dark:text-blue-400 mb-1 block">
+                    {product.manufacturer} • {product.category}
+                  </span>
+                  <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2 line-clamp-1">
+                    {product.name}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-4 leading-relaxed">
+                    {product.description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="px-6 pb-6 pt-0">
+                <Link
+                  href={`/products/${product.id}`}
+                  className="w-full bg-primary hover:bg-blue-600 text-white font-semibold py-2.5 px-4 rounded-xl transition-colors text-sm flex items-center justify-center space-x-2"
+                >
+                  <span>View Details</span>
+                  <FiChevronRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

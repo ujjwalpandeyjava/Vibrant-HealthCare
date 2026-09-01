@@ -16,15 +16,25 @@ export default function MachinesClient({ initialDevices }) {
   const tabs = ["4D Machines", "Color Doppler", "Portable"];
   
   const tiers = [
-    { name: "High-end", icon: FiStar, color: "text-purple-500", bg: "bg-purple-100 dark:bg-purple-900/30", border: "border-purple-200 dark:border-purple-800" },
-    { name: "Midrange", icon: FiHeart, color: "text-blue-500", bg: "bg-blue-100 dark:bg-blue-900/30", border: "border-blue-200 dark:border-blue-800" },
-    { name: "Economy", icon: FaLeaf, color: "text-green-500", bg: "bg-green-100 dark:bg-green-900/30", border: "border-green-200 dark:border-green-800" }
+    { name: "High-end", display: "High Range", icon: FiStar, color: "text-purple-500", bg: "bg-purple-100 dark:bg-purple-900/30", border: "border-purple-200 dark:border-purple-800" },
+    { name: "Midrange", display: "Mid Range", icon: FiHeart, color: "text-blue-500", bg: "bg-blue-100 dark:bg-blue-900/30", border: "border-blue-200 dark:border-blue-800" },
+    { name: "Economy", display: "Economy", icon: FaLeaf, color: "text-green-500", bg: "bg-green-100 dark:bg-green-900/30", border: "border-green-200 dark:border-green-800" }
   ];
+
+  const getTierInfo = (tierStr) => {
+    if (!tierStr) return tiers[1];
+    const s = tierStr.toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (s.includes("high")) return tiers[0];
+    if (s.includes("mid")) return tiers[1];
+    if (s.includes("eco")) return tiers[2];
+    return tiers[1];
+  };
 
   // Filter logic
   const filteredDevices = initialDevices.filter((device) => {
     const matchesTab = device.machineType === activeTab;
-    const matchesTier = activeTier ? device.tier === activeTier : true;
+    const deviceTierInfo = getTierInfo(device.tier);
+    const matchesTier = activeTier ? deviceTierInfo.name === activeTier : true;
     return matchesTab && matchesTier;
   });
 
@@ -36,7 +46,7 @@ export default function MachinesClient({ initialDevices }) {
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
       {/* Top Tabs */}
-      <div className="flex space-x-1 sm:space-x-4 border-b border-gray-200 dark:border-slate-800 mb-8 overflow-x-auto no-scrollbar">
+      <div className="flex flex-wrap space-x-1 sm:space-x-4 border-b border-gray-200 dark:border-slate-800 mb-8 overflow-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -62,23 +72,31 @@ export default function MachinesClient({ initialDevices }) {
         {/* Main Content Area */}
         <div className="flex-1 space-y-6">
           {filteredDevices.length > 0 ? (
-            filteredDevices.map((device) => (
-              <div key={device.id} className="bg-white dark:bg-slate-900 rounded-2xl border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col sm:flex-row">
-                
-                {/* Image Section */}
-                <div className="sm:w-1/3 bg-gray-50 dark:bg-slate-800/50 p-6 flex items-center justify-center relative min-h-[250px]">
-                  <Image 
-                    src={device.image || "/placeholder.svg"} 
-                    alt={device.name}
-                    fill
-                    className="object-contain p-4"
-                  />
-                  {device.tier && (
-                    <span className="absolute top-4 left-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur text-xs font-semibold px-3 py-1 rounded-full shadow-sm border border-gray-100 dark:border-slate-700 z-10 text-slate-700 dark:text-slate-300">
-                      {device.tier}
-                    </span>
-                  )}
-                </div>
+            filteredDevices.map((device) => {
+              const tierInfo = getTierInfo(device.tier);
+              const TierIcon = tierInfo.icon;
+              return (
+                <div key={device.id} className="bg-white dark:bg-slate-900 rounded-2xl border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col sm:flex-row">
+                  
+                  {/* Image Section */}
+                  <div className="sm:w-1/3 bg-gray-50 dark:bg-slate-800/50 p-5 flex flex-col justify-between relative min-h-[260px]">
+                    <div className="z-20 h-7">
+                      {device.tier && (
+                        <span className={`inline-flex items-center justify-center gap-1.5 w-[105px] h-7 text-xs font-semibold rounded-full shadow-sm border ${tierInfo.bg} ${tierInfo.color} ${tierInfo.border}`}>
+                          <TierIcon className="w-3.5 h-3.5 shrink-0" />
+                          <span className="truncate">{tierInfo.display}</span>
+                        </span>
+                      )}
+                    </div>
+                    <div className="relative flex-1 w-full min-h-[180px] my-2">
+                      <Image 
+                        src={device.image || "/placeholder.svg"} 
+                        alt={device.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
 
                 {/* Content Section */}
                 <div className="sm:w-2/3 p-6 sm:p-8 flex flex-col justify-between">
@@ -113,9 +131,10 @@ export default function MachinesClient({ initialDevices }) {
                   </div>
                 </div>
               </div>
-            ))
+            );
+          })
           ) : (
-            <div className="text-center py-20 bg-gray-50 dark:bg-slate-900/50 rounded-2xl border border-dashed border-gray-200 dark:border-slate-700">
+            <div className="text-center py-32 px-8 md:px-16 bg-gray-50 dark:bg-slate-900/50 rounded-3xl border border-dashed border-gray-200 dark:border-slate-700 my-4 shadow-sm">
               <p className="text-lg text-slate-500 dark:text-slate-400">No machines found for the selected category.</p>
             </div>
           )}
@@ -145,7 +164,7 @@ export default function MachinesClient({ initialDevices }) {
                       <Icon className="w-4 h-4" />
                     </div>
                     <span className={`font-medium text-sm ${isActive ? "text-slate-900 dark:text-white" : "text-slate-600 dark:text-slate-400"}`}>
-                      {tier.name}
+                      {tier.display}
                     </span>
                   </button>
                 );

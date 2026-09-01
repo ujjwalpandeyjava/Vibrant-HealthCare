@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MdBuild, MdCheckCircle } from "react-icons/md";
+import ServiceModalButton from "@/components/ServiceModalButton";
 
 export const metadata = {
   title: "Repairs | Professional Services",
@@ -51,9 +52,11 @@ export default function RepairsPage() {
           </div>
           
           <div className="pt-8">
-            <Link href="/contact" className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors inline-block">
-              Request a Repair
-            </Link>
+            <ServiceModalButton 
+              buttonText="Request a Repair" 
+              modalTitle="Request Equipment Repair"
+              prefilledMessage="I would like to request a repair service for my equipment. The issue I am experiencing is: "
+            />
           </div>
         </div>
 

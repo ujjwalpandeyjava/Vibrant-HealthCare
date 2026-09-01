@@ -9,7 +9,7 @@ const testimonials = [
     role: "Director of Operations, Metro Valley Clinic",
   },
   {
-    quote: "The quality of the refurbished equipment we purchased is indistinguishable from brand new. The installation process was seamless and the ongoing support is fantastic.",
+    quote: "The quality of the diagnostic equipment we purchased exceeded our expectations. The installation process was seamless and the ongoing support is fantastic.",
     author: "Michael Roberts",
     role: "Chief Administrator, City Health Center",
   },

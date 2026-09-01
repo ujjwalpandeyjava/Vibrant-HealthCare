@@ -1,6 +1,7 @@
 import { getAllDevices } from "@/lib/getDevices";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
-import SearchClient from "@/components/SearchClient";
+import CategoryCatalogClient from "@/components/CategoryCatalogClient";
+import ProductInquirySection from "@/components/ProductInquirySection";
 import { Suspense } from "react";
 
 export default async function AccessoriesPage() {
@@ -16,8 +17,13 @@ export default async function AccessoriesPage() {
         bannerImage="https://lh3.googleusercontent.com/aida-public/AB6AXuDOBDf5Z1GGLUeJviCgCjGZr-2oePbd75O9twv8nK3hwB8Uh4KaZ0VGuqMY6etZrXUapO-b1wD-xttjIIEfchSB9XU2qX6njszhNKOngAmtOJxIeCEcy62LcVjogwt6MtNW5LGMl1Zql4XxwYiDP__mv5Q3ssVqG9dJB2_sIyer1Z6zZAgTelNgLLRoYwLBBrawpgrUxjsI5daBybBuv2fktWp_zy8orZCMzWh8oaxsHKgaNpugF0aCWw"
       />
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-on-surface dark:text-white">Loading...</div>}>
-        <SearchClient initialDevices={accessoriesDevices.length > 0 ? accessoriesDevices : allDevices} hideBanner={true} />
+        <CategoryCatalogClient 
+          initialDevices={accessoriesDevices} 
+          categoryTitle="Accessories"
+          typeKey="accessoryType"
+        />
       </Suspense>
+      <ProductInquirySection categoryName="Medical Accessories" />
     </div>
   );
 }

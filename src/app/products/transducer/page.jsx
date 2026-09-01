@@ -1,6 +1,7 @@
 import { getAllDevices } from "@/lib/getDevices";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
-import SearchClient from "@/components/SearchClient";
+import CategoryCatalogClient from "@/components/CategoryCatalogClient";
+import ProductInquirySection from "@/components/ProductInquirySection";
 import { Suspense } from "react";
 
 export default async function TransducerPage() {
@@ -16,8 +17,13 @@ export default async function TransducerPage() {
         bannerImage="https://lh3.googleusercontent.com/aida-public/AB6AXuD7C0H1EBrANODKoLWHEivt8dZmaAEQQWyKGNYlKa8cTHuK3Yaq2j6KCZz6LandingPageq2j6KCZz6UcQs82pS6sgaINx1CszoA5Z70hqm6J4yM8hsfOfiF50Ow8sCjc7K9fSQcYatQ5UFQu1Xrissrb7U327VFfoFKs3sbYqqKRBIyZlqPrSzmmDtKr7G7QJpw-f9VpZ_82lwueR1hadSQPb2BD8JFBB3iAbsU3lI533STRrZYnPIfvGsamdPugnBj2oIFltadg"
       />
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-on-surface dark:text-white">Loading...</div>}>
-        <SearchClient initialDevices={transducerDevices.length > 0 ? transducerDevices : allDevices} hideBanner={true} />
+        <CategoryCatalogClient 
+          initialDevices={transducerDevices} 
+          categoryTitle="Transducer"
+          typeKey="probeType"
+        />
       </Suspense>
+      <ProductInquirySection categoryName="Transducers & Probes" />
     </div>
   );
 }

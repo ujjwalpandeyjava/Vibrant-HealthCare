@@ -1,15 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import { FiX } from "react-icons/fi";
 
-export default function QuoteModal({ isOpen, onClose, product }) {
+export default function QuoteModal({ isOpen, onClose, product, title = "Request a Quote", customMessage }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: product ? `I would like to request a quote for the ${product.name}.` : "",
+    message: "",
   });
+
+  useEffect(() => {
+    if (customMessage && isOpen) {
+      setFormData((prev) => ({
+        ...prev,
+        message: customMessage,
+      }));
+    } else if (product && isOpen) {
+      setFormData((prev) => ({
+        ...prev,
+        message: `I would like to request a quote for the ${product.name}. Please provide pricing, availability, and warranty details.`,
+      }));
+    }
+  }, [product, isOpen, customMessage]);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -21,18 +36,31 @@ export default function QuoteModal({ isOpen, onClose, product }) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, product }),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsSuccess(false);
+          onClose();
+        }, 2000);
+      } else {
+        console.error("Failed to submit request.");
+      }
+    } catch (error) {
+      console.error("Error submitting request:", error);
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-      setTimeout(() => {
-        setIsSuccess(false);
-        onClose();
-      }, 2000);
-    }, 1000);
+    }
   };
 
   return (
@@ -40,7 +68,7 @@ export default function QuoteModal({ isOpen, onClose, product }) {
       <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl w-full max-w-lg overflow-hidden animate-in zoom-in-95 duration-200">
         <div className="flex items-center justify-between p-6 border-b border-gray-100 dark:border-slate-800">
           <h2 className="text-xl font-bold text-slate-800 dark:text-white">
-            Request a Quote
+            {title}
           </h2>
           <button
             onClick={onClose}
@@ -60,11 +88,22 @@ export default function QuoteModal({ isOpen, onClose, product }) {
               </div>
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-2">Quote Requested!</h3>
               <p className="text-slate-600 dark:text-slate-400">
-                Thank you for your interest in the {product?.name}. Our team will get back to you shortly.
+                Thank you for your request. Our team will get back to you shortly.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
+              {product && (
+                <div className="flex items-center gap-3 p-3.5 bg-blue-50/70 dark:bg-slate-800/80 rounded-xl border border-blue-100 dark:border-slate-700">
+                  <div className="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg p-1 relative shrink-0 border border-gray-100 dark:border-slate-600">
+                    <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-contain" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-bold text-primary dark:text-blue-400 uppercase tracking-wider block">Selected Machine</span>
+                    <h4 className="font-bold text-sm text-slate-800 dark:text-white">{product.name}</h4>
+                  </div>
+                </div>
+              )}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
                   Full Name
@@ -103,6 +142,8 @@ export default function QuoteModal({ isOpen, onClose, product }) {
                   </label>
                   <input
                     type="tel"
+                    pattern="[\d\+\-\s]+"
+                    title="Phone number can only contain digits, spaces, plus, and minus signs."
                     id="phone"
                     name="phone"
                     required

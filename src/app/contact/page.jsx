@@ -1,11 +1,15 @@
 import { MdLocationOn, MdCall, MdMail, MdWarning } from "react-icons/md";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
+import ContactForm from "@/components/ContactForm";
 export const metadata = {
   title: "Contact Us | Vibrant Healthcare",
   description: "Get in touch with Vibrant Healthcare.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const defaultSubject = resolvedSearchParams?.subject || "General Inquiry";
+
   return (
     <div className="flex flex-col w-full animate-in fade-in duration-300">
       <ProfessionalServiceBanner bannerText="CONTACT US" />
@@ -19,68 +23,7 @@ export default function ContactPage() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="glass-card dark:bg-slate-800 dark:border-slate-700 p-8 md:p-10 rounded-3xl">
-            <h2 className="text-2xl font-bold text-on-surface dark:text-white mb-6">Send a Message</h2>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label htmlFor="firstName" className="text-sm font-semibold text-on-surface dark:text-gray-200">First Name</label>
-                  <input 
-                    type="text" 
-                    id="firstName"
-                    className="w-full bg-surface dark:bg-slate-900 border border-outline-variant dark:border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary text-sm dark:text-white dark:placeholder-gray-500"
-                    placeholder="Jane"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="lastName" className="text-sm font-semibold text-on-surface dark:text-gray-200">Last Name</label>
-                  <input 
-                    type="text" 
-                    id="lastName"
-                    className="w-full bg-surface dark:bg-slate-900 border border-outline-variant dark:border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary text-sm dark:text-white dark:placeholder-gray-500"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-semibold text-on-surface dark:text-gray-200">Email Address</label>
-                <input 
-                  type="email" 
-                  id="email"
-                  className="w-full bg-surface dark:bg-slate-900 border border-outline-variant dark:border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary text-sm dark:text-white dark:placeholder-gray-500"
-                  placeholder="jane@clinic.com"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-semibold text-on-surface dark:text-gray-200">Subject</label>
-                <select 
-                  id="subject"
-                  className="w-full bg-surface dark:bg-slate-900 border border-outline-variant dark:border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary text-sm dark:text-white"
-                >
-                  <option>General Inquiry</option>
-                  <option>Request Quote</option>
-                  <option>Urgent Repair</option>
-                  <option>Maintenance Plan</option>
-                </select>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-semibold text-on-surface dark:text-gray-200">Message</label>
-                <textarea 
-                  id="message"
-                  rows="4"
-                  className="w-full bg-surface dark:bg-slate-900 border border-outline-variant dark:border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-primary text-sm resize-none dark:text-white dark:placeholder-gray-500"
-                  placeholder="How can we help you?"
-                ></textarea>
-              </div>
-
-              <button type="button" className="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition-colors">
-                Send Message
-              </button>
-            </form>
-          </div>
+          <ContactForm defaultSubject={defaultSubject} />
 
           {/* Contact Info */}
           <div className="space-y-8 flex flex-col justify-center lg:px-8">

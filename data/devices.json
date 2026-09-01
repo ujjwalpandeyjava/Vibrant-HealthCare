@@ -1,5 +1,6 @@
 [
   {
+    "code": 1000,
     "id": "logiq-e10",
     "name": "Logiq E10 Ultrasound System",
     "model": "Logiq E10",
@@ -34,13 +35,14 @@
     }
   },
   {
+    "code": 1001,
     "id": "voluson-e10",
-    "name": "Voluson E10 Women's Health",
+    "name": "Voluson E10 Women\u0027s Health",
     "model": "Voluson E10",
     "category": "Ultrasound Machine",
     "machineType": "4D Machines",
     "tier": "High-end",
-    "description": "The Voluson E10 is the ultimate women's health ultrasound system, providing unmatched 4D imaging clarity. Designed specifically for complex OB/GYN and maternal-fetal medicine.",
+    "description": "The Voluson E10 is the ultimate women\u0027s health ultrasound system, providing unmatched 4D imaging clarity. Designed specifically for complex OB/GYN and maternal-fetal medicine.",
     "yearLaunched": "2015",
     "manufacturer": "GE Healthcare",
     "serialNumber": "US-GE-VE10-002",
@@ -68,6 +70,7 @@
     }
   },
   {
+    "code": 1002,
     "id": "epiq-7",
     "name": "EPIQ 7 Cardiovascular",
     "model": "EPIQ 7",
@@ -102,6 +105,7 @@
     }
   },
   {
+    "code": 1003,
     "id": "mindray-m9",
     "name": "Mindray M9 Portable Premium",
     "model": "M9",
@@ -136,6 +140,7 @@
     }
   },
   {
+    "code": 1004,
     "id": "acuson-sequoia",
     "name": "Siemens ACUSON Sequoia",
     "model": "ACUSON Sequoia",
@@ -167,6 +172,7 @@
     }
   },
   {
+    "code": 1005,
     "id": "voluson-s8",
     "name": "GE Voluson S8",
     "model": "Voluson S8",
@@ -198,6 +204,7 @@
     }
   },
   {
+    "code": 1006,
     "id": "affiniti-70",
     "name": "Philips Affiniti 70",
     "model": "Affiniti 70",
@@ -229,13 +236,14 @@
     }
   },
   {
+    "code": 1007,
     "id": "sonoscape-s22",
     "name": "SonoScape S22",
     "model": "S22",
     "category": "Ultrasound Machine",
     "machineType": "Color Doppler",
     "tier": "Economy",
-    "description": "The SonoScape S22 is a cost-effective, economy ultrasound system that doesn't compromise on essential imaging quality. Perfect for clinics and smaller hospitals.",
+    "description": "The SonoScape S22 is a cost-effective, economy ultrasound system that doesn\u0027t compromise on essential imaging quality. Perfect for clinics and smaller hospitals.",
     "yearLaunched": "2015",
     "manufacturer": "SonoScape",
     "serialNumber": "US-SS-S22-008",
@@ -260,6 +268,7 @@
     }
   },
   {
+    "code": 1008,
     "id": "chison-eco6",
     "name": "Chison ECO6 Portable",
     "model": "ECO6",
@@ -291,10 +300,128 @@
     }
   },
   {
+    "code": 1009,
+    "id": "mindray-dc40",
+    "name": "Mindray DC-40",
+    "model": "DC-40",
+    "category": "Ultrasound Machine",
+    "machineType": "4D Machines",
+    "tier": "Economy",
+    "description": "The Mindray DC-40 is a highly capable economy ultrasound system offering excellent 2D, 3D, and 4D imaging. It provides a full range of clinical applications at an affordable price.",
+    "yearLaunched": "2017",
+    "manufacturer": "Mindray",
+    "serialNumber": "US-MI-DC40-010",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/logiq-e10.svg",
+    "images": [
+      "/images/devices/logiq-e10.svg"
+    ],
+    "schematic": "/schematics/placeholder.svg",
+    "specifications": {
+      "dimensions": "1350 x 520 x 1400 mm",
+      "weight": "55 kg",
+      "powerRequirements": "100-240V, 50/60Hz",
+      "operatingTemperature": "10°C to 40°C",
+      "other": {
+        "Application": "OB/GYN, General Imaging",
+        "Monitor": "15\" LED",
+        "Architecture": "Standard",
+        "Warranty": "1 Year Included"
+      }
+    }
+  },
+  {
+    "code": 1010,
+    "id": "ge-ric5-9h",
+    "name": "GE RIC5-9H 3D/4D TV Probe",
+    "model": "RIC5-9H",
+    "category": "Transducer",
+    "probeType": "3D/4D",
+    "description": "RealTime 4D endocavitary transducer for high-resolution OB/GYN and urology imaging.",
+    "bandwidth": "3 – 10 MHz (Logiq E9, Logiq S8), 4 – 9 MHz (Voluson E6, E8 Expert)",
+    "applications": "Obstetrics, Gynecology, Urology",
+    "manufacturer": "GE",
+    "serialNumber": "TR-GE-RIC59H-001",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/l12-4-probe.svg",
+    "images": [
+      "/images/devices/l12-4-probe.svg"
+    ],
+    "specifications": {
+      "dimensions": "Standard Endocavitary Probe",
+      "weight": "0.9 kg",
+      "other": {
+        "Bandwidth": "3 – 10 MHz",
+        "Applications": "Obstetrics, Gynecology, Urology"
+      }
+    }
+  },
+  {
+    "code": 1011,
+    "id": "ge-ric5-9-rs",
+    "name": "GE RIC5-9-RS 3D/4D Endocavitary Probe",
+    "model": "RIC5-9-RS",
+    "category": "Transducer",
+    "probeType": "3D/4D",
+    "description": "Compact RS connector 3D/4D endocavitary probe designed for Voluson S-series systems.",
+    "bandwidth": "4 – 9 MHz",
+    "applications": "Obstetrics, Gynecology, Urology",
+    "manufacturer": "GE",
+    "serialNumber": "TR-GE-RIC59RS-002",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/l12-4-probe.svg",
+    "images": [
+      "/images/devices/l12-4-probe.svg"
+    ],
+    "specifications": {
+      "dimensions": "RS Connector Probe",
+      "weight": "0.85 kg",
+      "other": {
+        "Bandwidth": "4 – 9 MHz",
+        "Applications": "Obstetrics, Gynecology, Urology"
+      }
+    }
+  },
+  {
+    "code": 1012,
+    "id": "ge-ric5-9w",
+    "name": "GE RIC5-9W 3D/4D TV Probe",
+    "model": "RIC5-9W",
+    "category": "Transducer",
+    "probeType": "TV",
+    "description": "Wide-angle RealTime 4D endocavitary transducer for transvaginal diagnostic exams.",
+    "bandwidth": "5 – 9 MHz",
+    "applications": "RealTime 4D endocavitary transducer",
+    "manufacturer": "GE",
+    "serialNumber": "TR-GE-RIC59W-003",
+    "status": "In Stock",
+    "location": "Warehouse A",
+    "image": "/images/devices/l12-4-probe.svg",
+    "images": [
+      "/images/devices/l12-4-probe.svg"
+    ],
+    "specifications": {
+      "dimensions": "Wide Angle TV Probe",
+      "weight": "0.8 kg",
+      "other": {
+        "Bandwidth": "5 – 9 MHz",
+        "Applications": "Transvaginal \u0026 OB/GYN"
+      }
+    }
+  },
+  {
+    "code": 1013,
     "id": "c5-1-probe",
-    "name": "C5-1 Convex Transducer Probe",
+    "name": "Philips C5-1 Convex Transducer Probe",
     "model": "C5-1",
     "category": "Transducer",
+    "probeType": "Convex",
+    "description": "PureWave crystal technology convex transducer for deep abdominal and general imaging.",
+    "bandwidth": "1 – 5 MHz",
+    "applications": "Abdominal, OB/GYN, Renal",
     "manufacturer": "Philips",
     "serialNumber": "TR-PH-C51-004",
     "status": "In Stock",
@@ -303,25 +430,26 @@
     "images": [
       "/images/devices/logiq-e10.svg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "Standard Probe",
+      "dimensions": "Convex Probe",
       "weight": "0.8 kg",
-      "powerRequirements": "N/A",
-      "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "Abdominal & OB/GYN",
-        "Frequency": "1.0 - 5.0 MHz",
-        "Warranty": "1 Year Included"
+        "Bandwidth": "1 – 5 MHz",
+        "Applications": "Abdominal \u0026 OB/GYN"
       }
     }
   },
   {
+    "code": 1014,
     "id": "l12-4-probe",
-    "name": "L12-4 High-Resolution Linear Transducer",
+    "name": "GE L12-4 High-Resolution Linear Transducer",
     "model": "L12-4",
     "category": "Transducer",
-    "manufacturer": "GE Healthcare",
+    "probeType": "Linear",
+    "description": "High-frequency linear array transducer ideal for superficial imaging and vascular studies.",
+    "bandwidth": "4 – 12 MHz",
+    "applications": "Vascular, Small Parts, Musculoskeletal",
+    "manufacturer": "GE",
     "serialNumber": "TR-GE-L124-007",
     "status": "In Stock",
     "location": "Warehouse A",
@@ -329,25 +457,51 @@
     "images": [
       "/images/devices/l12-4-probe.svg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "Linear Probe",
       "weight": "0.7 kg",
-      "powerRequirements": "N/A",
-      "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "Vascular & Small Parts",
-        "Frequency": "4.0 - 12.0 MHz",
-        "Warranty": "1 Year Included"
+        "Bandwidth": "4 – 12 MHz",
+        "Applications": "Vascular \u0026 Small Parts"
       }
     }
   },
   {
+    "code": 1015,
+    "id": "siemens-v5m",
+    "name": "Siemens V5M Cardiac Phased Array",
+    "model": "V5M",
+    "category": "Transducer",
+    "probeType": "Cardiac",
+    "description": "Phased array cardiac transducer optimized for high-frame-rate echocardiography.",
+    "bandwidth": "3.5 – 5.5 MHz",
+    "applications": "Adult Cardiology, TEE",
+    "manufacturer": "Siemens",
+    "serialNumber": "TR-SI-V5M-008",
+    "status": "In Stock",
+    "location": "Warehouse C",
+    "image": "/images/devices/l12-4-probe.svg",
+    "images": [
+      "/images/devices/l12-4-probe.svg"
+    ],
+    "specifications": {
+      "dimensions": "Cardiac Probe",
+      "weight": "0.75 kg",
+      "other": {
+        "Bandwidth": "3.5 – 5.5 MHz",
+        "Applications": "Cardiology"
+      }
+    }
+  },
+  {
+    "code": 1016,
     "id": "csound-gpu-board",
     "name": "GE cSound GPU Beamformer Board",
     "model": "cSound GPU v2",
     "category": "Spares",
-    "manufacturer": "GE Healthcare",
+    "spareType": "Boards",
+    "description": "Replacement GPU processing board for GE Logiq E10 / E9 systems.",
+    "manufacturer": "GE",
     "serialNumber": "SP-GE-CS-005",
     "status": "In Stock",
     "location": "Warehouse A",
@@ -355,24 +509,24 @@
     "images": [
       "/images/devices/voluson-e10.svg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "Internal Board",
       "weight": "1.2 kg",
-      "powerRequirements": "12V DC",
-      "operatingTemperature": "10°C to 45°C",
       "other": {
-        "Application": "Logiq E10 / E9 Processing",
+        "Application": "Logiq E10 Processing",
         "Warranty": "6 Months Included"
       }
     }
   },
   {
+    "code": 1017,
     "id": "ct-xray-tube",
     "name": "CT High Voltage X-Ray Tube Assembly",
     "model": "Performix HD Tube",
     "category": "Spares",
-    "manufacturer": "GE Healthcare",
+    "spareType": "Tubes",
+    "description": "High voltage performix HD replacement x-ray tube for CT scanner systems.",
+    "manufacturer": "GE",
     "serialNumber": "SP-GE-CT-008",
     "status": "In Stock",
     "location": "Warehouse C",
@@ -380,25 +534,24 @@
     "images": [
       "/images/devices/ct-xray-tube.svg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "600 x 400 x 400 mm",
       "weight": "85 kg",
-      "powerRequirements": "140 kVp",
-      "operatingTemperature": "15°C to 30°C",
       "other": {
-        "Application": "CT Scanner Replacement Tube",
         "Heat Capacity": "8.0 MHU",
         "Warranty": "1 Year Included"
       }
     }
   },
   {
+    "code": 1018,
     "id": "mri-compressor",
     "name": "MRI Cryocooler Helium Compressor Unit",
     "model": "F-70 Helium Compressor",
     "category": "Spares",
-    "manufacturer": "Siemens Healthineers",
+    "spareType": "Compressors",
+    "description": "High-purity helium cryocooler compressor unit for Siemens MRI cooling systems.",
+    "manufacturer": "Siemens",
     "serialNumber": "SP-SI-HC-009",
     "status": "In Stock",
     "location": "Warehouse C",
@@ -406,71 +559,89 @@
     "images": [
       "/images/devices/mri-compressor.svg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "500 x 500 x 650 mm",
       "weight": "120 kg",
-      "powerRequirements": "480V 3-Phase",
-      "operatingTemperature": "5°C to 25°C",
       "other": {
-        "Application": "MRI Magnet Cooling",
-        "Refrigerant": "High Purity Helium",
+        "Refrigerant": "Helium",
         "Warranty": "1 Year Included"
       }
     }
   },
   {
+    "code": 1019,
     "id": "gel-warmer-cart",
     "name": "Multi-Bottle Ultrasound Gel Warmer",
     "model": "GW-3000",
     "category": "Accessories",
-    "manufacturer": "Vibrant Medical",
-    "serialNumber": "AC-VM-GW-006",
+    "accessoryType": "Warmers",
+    "manufacturer": "GE",
+    "description": "Temperature-controlled multi-bottle gel warmer designed for patient comfort during ultrasound exams.",
+    "applications": "Clinical & Diagnostic Ultrasound",
+    "serialNumber": "AC-GE-GW-006",
     "status": "In Stock",
     "location": "Warehouse A",
     "image": "/images/devices/epiq-7.svg",
-    "images": [
-      "/images/devices/epiq-7.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
+    "images": ["/images/devices/epiq-7.svg"],
     "specifications": {
-      "dimensions": "300 x 200 x 200 mm",
-      "weight": "2.5 kg",
-      "powerRequirements": "110-220V",
-      "operatingTemperature": "37°C constant",
-      "other": {
-        "Application": "Patient Comfort & Clinic Accessory",
-        "Warranty": "1 Year Included"
-      }
+        "dimensions": "300 x 200 x 200 mm",
+        "weight": "2.5 kg",
+        "other": {
+            "Application": "Patient Comfort & Clinic Accessory",
+            "Warranty": "1 Year Included"
+        }
     }
   },
   {
+    "code": 1020,
     "id": "display-monitor",
     "name": "32\" 4K Surgical Display Monitor",
     "model": "SM-3200 4K",
     "category": "Accessories",
+    "accessoryType": "Monitors",
     "manufacturer": "Philips",
+    "description": "Ultra-high-definition 4K medical-grade surgical display monitor for imaging systems.",
+    "applications": "Surgical OR & Diagnostic Display",
     "serialNumber": "AC-PH-DM-010",
     "status": "In Stock",
     "location": "Warehouse B",
     "image": "/images/devices/display-monitor.svg",
-    "images": [
-      "/images/devices/display-monitor.svg"
-    ],
-    "schematic": "/schematics/placeholder.svg",
+    "images": ["/images/devices/display-monitor.svg"],
     "specifications": {
-      "dimensions": "750 x 100 x 450 mm",
-      "weight": "8.5 kg",
-      "powerRequirements": "100-240V",
-      "operatingTemperature": "10°C to 40°C",
-      "other": {
-        "Application": "OR Surgical & Imaging Display",
-        "Resolution": "3840 x 2160 Ultra HD",
-        "Warranty": "2 Years Included"
-      }
+        "dimensions": "750 x 100 x 450 mm",
+        "weight": "8.5 kg",
+        "other": {
+            "Resolution": "3840 x 2160 Ultra HD",
+            "Warranty": "2 Years Included"
+        }
     }
   },
   {
+    "code": 1024,
+    "id": "probe-sheath-kit",
+    "name": "Sterile Ultrasound Probe Sheath & Gel Kit",
+    "model": "SPS-100",
+    "category": "Accessories",
+    "accessoryType": "Covers",
+    "manufacturer": "Siemens",
+    "description": "Latex-free sterile transducer covers with acoustic coupling gel packets for endocavitary procedures.",
+    "applications": "Sterile Interventional Procedures & OB/GYN",
+    "serialNumber": "AC-SI-SPS-011",
+    "status": "In Stock",
+    "location": "Warehouse B",
+    "image": "/images/devices/l12-4-probe.svg",
+    "images": ["/images/devices/l12-4-probe.svg"],
+    "specifications": {
+        "dimensions": "Standard Latex-Free Sheaths",
+        "weight": "1.0 kg",
+        "other": {
+            "Sterility": "Gamma Sterilized",
+            "Pack Quantity": "100 Kits / Box"
+        }
+    }
+  },
+  {
+    "code": 1021,
     "id": "magnetom-vida",
     "name": "MAGNETOM Vida",
     "model": "MAGNETOM Vida",
@@ -501,6 +672,7 @@
     }
   },
   {
+    "code": 1022,
     "id": "revolution-ct",
     "name": "Revolution CT",
     "model": "Revolution CT",
@@ -525,12 +697,13 @@
         "Coverage": "160 mm",
         "Resolution": "0.23 mm",
         "Speed": "0.28s rotation",
-        "Application": "Cardiovascular & Neuro",
+        "Application": "Cardiovascular \u0026 Neuro",
         "Warranty": "3 Years Included"
       }
     }
   },
   {
+    "code": 1023,
     "id": "optima-xr646",
     "name": "Optima XR646",
     "model": "Optima XR646",

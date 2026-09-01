@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MdAccessTime, MdCheckCircle } from "react-icons/md";
+import ServiceModalButton from "@/components/ServiceModalButton";
 
 export const metadata = {
   title: "Maintenance | Professional Services",
@@ -61,9 +62,11 @@ export default function MaintenancePage() {
           </div>
           
           <div className="pt-8">
-            <Link href="/contact" className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors inline-block">
-              Discuss a Maintenance Plan
-            </Link>
+            <ServiceModalButton 
+              buttonText="Discuss a Maintenance Plan" 
+              modalTitle="Request Maintenance Service"
+              prefilledMessage="I would like to discuss setting up a maintenance plan for my medical equipment fleet. Please provide more details on pricing and SLAs."
+            />
           </div>
         </div>
       </div>

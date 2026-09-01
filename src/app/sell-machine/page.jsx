@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { submitMachine } from "./actions";
 import { MdUploadFile, MdCheckCircle } from "react-icons/md";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
 export default function SellMachinePage() {
@@ -11,14 +10,34 @@ export default function SellMachinePage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    const file = e.target.elements.image?.files[0];
+    if (file && file.size > 10 * 1024 * 1024) {
+      alert("Please upload an image smaller than 10MB.");
+      return;
+    }
+
     setLoading(true);
     const formData = new FormData(e.target);
-    const res = await submitMachine(formData);
-    setLoading(false);
-    if (res.success) {
-      setSuccess(true);
-      e.target.reset();
-      setFileName("");
+    
+    try {
+      const res = await fetch("/api/inquiry", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        setSuccess(true);
+        e.target.reset();
+        setFileName("");
+      } else {
+        alert("Failed to submit request.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error submitting request.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -64,6 +83,8 @@ export default function SellMachinePage() {
                 <label htmlFor="phone" className="text-sm font-semibold text-on-surface dark:text-white">Contact Number</label>
                 <input 
                   type="tel" 
+                  pattern="[\d\+\-\s]+"
+                  title="Phone number can only contain digits, spaces, plus, and minus signs."
                   id="phone"
                   name="phone"
                   required
