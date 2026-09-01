@@ -10,7 +10,8 @@ const DATA_FILE = path.join(process.cwd(), 'data', 'devices.json');
 export async function getAllDevices() {
   try {
     const raw = await fs.readFile(DATA_FILE, 'utf-8');
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    return parsed.filter(device => device.status === true);
   } catch (error) {
     console.error('Error reading devices.json:', error);
     return [];

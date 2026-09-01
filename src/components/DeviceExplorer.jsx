@@ -3,13 +3,12 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import DeviceCard from "./DeviceCard";
-import StatusBadge from "./StatusBadge";
-import { Search, X, SlidersHorizontal, LayoutGrid, List, RotateCcw, ArrowUpRight, Cpu } from "lucide-react";
+
+import { Search, X, SlidersHorizontal, LayoutGrid, List, RotateCcw, ArrowUpRight } from "lucide-react";
 
 export default function DeviceExplorer({ initialDevices = [] }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("ALL");
-  const [selectedStatus, setSelectedStatus] = useState("ALL");
   const [sortBy, setSortBy] = useState("NAME_ASC");
   const [viewMode, setViewMode] = useState("GRID"); // 'GRID' | 'TABLE'
 
@@ -38,27 +37,23 @@ export default function DeviceExplorer({ initialDevices = [] }) {
         const matchesCategory =
           selectedCategory === "ALL" || device.category === selectedCategory;
 
-        const matchesStatus =
-          selectedStatus === "ALL" || device.status === selectedStatus;
-
-        return matchesSearch && matchesCategory && matchesStatus;
+        return matchesSearch && matchesCategory;
       })
       .sort((a, b) => {
         if (sortBy === "NAME_ASC") return a.name.localeCompare(b.name);
         if (sortBy === "NAME_DESC") return b.name.localeCompare(a.name);
         if (sortBy === "MODEL_ASC") return a.model.localeCompare(b.model);
-        if (sortBy === "LOCATION_ASC") return (a.location || "").localeCompare(b.location || "");
+        if (sortBy === "MFG_ASC") return a.manufacturer.localeCompare(b.manufacturer);
         return 0;
       });
-  }, [initialDevices, searchTerm, selectedCategory, selectedStatus, sortBy]);
+  }, [initialDevices, searchTerm, selectedCategory, sortBy]);
 
   const hasActiveFilters =
-    searchTerm !== "" || selectedCategory !== "ALL" || selectedStatus !== "ALL";
+    searchTerm !== "" || selectedCategory !== "ALL";
 
   const handleResetFilters = () => {
     setSearchTerm("");
     setSelectedCategory("ALL");
-    setSelectedStatus("ALL");
     setSortBy("NAME_ASC");
   };
 
@@ -87,21 +82,8 @@ export default function DeviceExplorer({ initialDevices = [] }) {
             )}
           </div>
 
-          {/* Status & Sort Controls */}
+          {/* Sort Controls */}
           <div className="flex items-center gap-2.5 w-full md:w-auto justify-end">
-            {/* Status Dropdown */}
-            <select
-              value={selectedStatus}
-              onChange={(e) => setSelectedStatus(e.target.value)}
-              className="py-2.5 px-3 rounded-xl bg-slate-950/80 border border-slate-700/80 text-xs font-medium text-slate-300 focus:border-cyan-500 outline-none cursor-pointer"
-            >
-              <option value="ALL">All Statuses</option>
-              <option value="OPERATIONAL">Operational</option>
-              <option value="IN_MAINTENANCE">In Maintenance</option>
-              <option value="STANDBY">Standby</option>
-            </select>
-
-            {/* Sort Dropdown */}
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
@@ -110,7 +92,7 @@ export default function DeviceExplorer({ initialDevices = [] }) {
               <option value="NAME_ASC">Sort: Name (A-Z)</option>
               <option value="NAME_DESC">Sort: Name (Z-A)</option>
               <option value="MODEL_ASC">Sort: Model</option>
-              <option value="LOCATION_ASC">Sort: Location</option>
+              <option value="MFG_ASC">Sort: Manufacturer</option>
             </select>
 
             {/* Grid / Table Toggle */}
@@ -216,8 +198,6 @@ export default function DeviceExplorer({ initialDevices = [] }) {
                   <th className="py-3.5 px-4">Instrument</th>
                   <th className="py-3.5 px-4">Category</th>
                   <th className="py-3.5 px-4">Model &amp; Serial</th>
-                  <th className="py-3.5 px-4">Location</th>
-                  <th className="py-3.5 px-4">Status</th>
                   <th className="py-3.5 px-4 text-right">Action</th>
                 </tr>
               </thead>
@@ -241,12 +221,6 @@ export default function DeviceExplorer({ initialDevices = [] }) {
                     <td className="py-3.5 px-4 font-mono text-xs text-slate-300">
                       <div className="text-cyan-400 font-bold">{device.model}</div>
                       <div className="text-slate-500 text-[11px]">{device.serialNumber}</div>
-                    </td>
-                    <td className="py-3.5 px-4 text-xs text-slate-300">
-                      {device.location}
-                    </td>
-                    <td className="py-3.5 px-4">
-                      <StatusBadge status={device.status} />
                     </td>
                     <td className="py-3.5 px-4 text-right">
                       <Link

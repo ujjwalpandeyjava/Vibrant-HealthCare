@@ -243,9 +243,9 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
               </div>
             </div>
 
-            {/* Modality Filter */}
+            {/* Category Filter */}
             <div className="pb-6">
-              <h3 className="text-sm font-semibold text-on-surface dark:text-white mb-4">Modality</h3>
+              <h3 className="text-sm font-semibold text-on-surface dark:text-white mb-4">Category</h3>
               <div className="flex flex-col gap-3">
                 {allCategoryKeys.map(category => {
                   const count = availableCategoriesWithCounts[category] || 0;
@@ -285,7 +285,7 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
                       <img 
                         alt={device.name} 
                         className="object-contain w-full h-full dark:drop-shadow-[0_8px_16px_rgba(59,130,246,0.12)] group-hover:scale-105 transition-transform duration-300" 
-                        src={device.image} 
+                        src={device.images?.[0] || "/placeholder.svg"} 
                       />
                     </div>
                     <div className="p-6 flex flex-col flex-grow">

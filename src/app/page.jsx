@@ -266,7 +266,7 @@ export default async function LandingPage() {
               <div>
                 <div className="bg-gray-50 dark:bg-slate-800/60 p-4 h-48 relative flex items-center justify-center border-b border-gray-100 dark:border-slate-800">
                   <Image
-                    src={product.image || "/placeholder.svg"}
+                    src={product.images?.[0] || "/placeholder.svg"}
                     alt={product.name}
                     fill
                     className="object-contain p-4"

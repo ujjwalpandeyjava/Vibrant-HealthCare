@@ -2,13 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
-import StatusBadge from "./StatusBadge";
 import { ArrowRight, Cpu, MapPin, Layers } from "lucide-react";
 
 export default function DeviceCard({ device }) {
   if (!device) return null;
 
-  const { id, name, model, category, manufacturer, serialNumber, status, location, image, specifications } = device;
+  const { id, name, model, category, manufacturer, serialNumber, image, specifications } = device;
 
   // Grab first 3 core specs to display on preview card
   const specEntries = Object.entries(specifications || {})
@@ -27,10 +26,7 @@ export default function DeviceCard({ device }) {
           </span>
         </div>
 
-        {/* Status Badge */}
-        <div className="absolute top-3 right-3 z-10">
-          <StatusBadge status={status} />
-        </div>
+
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -54,12 +50,8 @@ export default function DeviceCard({ device }) {
             {name}
           </h3>
 
-          {/* Location & Serial */}
+          {/* Serial */}
           <div className="mt-2 space-y-1 text-xs text-slate-400">
-            <div className="flex items-center gap-1.5 truncate">
-              <MapPin className="w-3.5 h-3.5 text-slate-500 shrink-0" />
-              <span className="truncate">{location}</span>
-            </div>
             <div className="flex items-center gap-1.5 font-mono text-[11px] text-slate-500">
               <Cpu className="w-3.5 h-3.5 shrink-0" />
               <span>{serialNumber}</span>

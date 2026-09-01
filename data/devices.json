@@ -11,27 +11,56 @@
     "yearLaunched": "2018",
     "manufacturer": "GE Healthcare",
     "serialNumber": "US-GE-LE10-001",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/logiq-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/logiq-e10.svg",
-      "/images/devices/logiq-e10.svg",
-      "/images/devices/logiq-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1200 x 600 x 1700 mm",
+      "dimensions": "120 x 60 x 170 cm",
       "weight": "110 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "General Imaging",
-        "Monitor": "22\" OLED",
-        "Architecture": "cSound",
-        "Processing": "GPU-based",
-        "Warranty": "3 Years Included"
-      }
+        "Application": "General Imaging"
+      },
+      "highlights": [
+        {
+          "detail": "cSound",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "22\" OLED",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "GPU-based",
+          "title": "Processing",
+          "logo": "MdMemory"
+        },
+        {
+          "detail": "3 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "cSound Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "22\" OLED Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -46,27 +75,56 @@
     "yearLaunched": "2015",
     "manufacturer": "GE Healthcare",
     "serialNumber": "US-GE-VE10-002",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/voluson-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/voluson-e10.svg",
-      "/images/devices/voluson-e10.svg",
-      "/images/devices/voluson-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1150 x 580 x 1650 mm",
+      "dimensions": "115 x 58 x 165 cm",
       "weight": "105 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "OB/GYN",
-        "Monitor": "23\" Widescreen",
-        "Architecture": "Radiance System",
-        "Processing": "Advanced",
-        "Warranty": "1 Year Included"
-      }
+        "Application": "OB/GYN"
+      },
+      "highlights": [
+        {
+          "detail": "Radiance System",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "23\" Widescreen",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "Advanced",
+          "title": "Processing",
+          "logo": "MdMemory"
+        },
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "Radiance System Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "23\" Widescreen Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -81,27 +139,56 @@
     "yearLaunched": "2013",
     "manufacturer": "Philips",
     "serialNumber": "US-PH-EQ7-003",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/epiq-7.svg",
+    "status": true,
     "images": [
-      "/images/devices/epiq-7.svg",
-      "/images/devices/epiq-7.svg",
-      "/images/devices/epiq-7.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1100 x 550 x 1600 mm",
+      "dimensions": "110 x 55 x 160 cm",
       "weight": "100 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "Cardiology",
-        "Monitor": "21.5\" LCD",
-        "Architecture": "nSIGHT",
-        "Processing": "xMATRIX",
-        "Warranty": "2 Years Included"
-      }
+        "Application": "Cardiology"
+      },
+      "highlights": [
+        {
+          "detail": "nSIGHT",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "21.5\" LCD",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "xMATRIX",
+          "title": "Processing",
+          "logo": "MdMemory"
+        },
+        {
+          "detail": "2 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "nSIGHT Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "21.5\" LCD Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -116,27 +203,56 @@
     "yearLaunched": "2016",
     "manufacturer": "Mindray",
     "serialNumber": "US-MI-M9-004",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/logiq-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/logiq-e10.svg",
-      "/images/devices/logiq-e10.svg",
-      "/images/devices/logiq-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "360 x 300 x 60 mm",
+      "dimensions": "36 x 30 x 6 cm",
       "weight": "6 kg",
       "powerRequirements": "Battery / 100-240V",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "Point of Care",
-        "Monitor": "15.6\" LED",
-        "Architecture": "mQuadro",
-        "Processing": "Compact",
-        "Warranty": "1 Year Included"
-      }
+        "Application": "Point of Care"
+      },
+      "highlights": [
+        {
+          "detail": "mQuadro",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "15.6\" LED",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "Compact",
+          "title": "Processing",
+          "logo": "MdMemory"
+        },
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "mQuadro Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "15.6\" LED Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -151,24 +267,51 @@
     "yearLaunched": "2018",
     "manufacturer": "Siemens Healthineers",
     "serialNumber": "US-SI-SEQ-005",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/epiq-7.svg",
+    "status": true,
     "images": [
-      "/images/devices/epiq-7.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1250 x 600 x 1750 mm",
+      "dimensions": "125 x 60 x 175 cm",
       "weight": "125 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "General Imaging, Liver",
-        "Monitor": "22\" OLED",
-        "Architecture": "BioAcoustic",
-        "Warranty": "3 Years Included"
-      }
+        "Application": "General Imaging, Liver"
+      },
+      "highlights": [
+        {
+          "detail": "BioAcoustic",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "22\" OLED",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "3 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "BioAcoustic Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "22\" OLED Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -183,24 +326,51 @@
     "yearLaunched": "2016",
     "manufacturer": "GE Healthcare",
     "serialNumber": "US-GE-VS8-006",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/voluson-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/voluson-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1100 x 550 x 1600 mm",
+      "dimensions": "110 x 55 x 160 cm",
       "weight": "95 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "OB/GYN",
-        "Monitor": "19\" High-Res",
-        "Architecture": "Voluson Core",
-        "Warranty": "1 Year Included"
-      }
+        "Application": "OB/GYN"
+      },
+      "highlights": [
+        {
+          "detail": "Voluson Core",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "19\" High-Res",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "Voluson Core Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "19\" High-Res Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -215,24 +385,51 @@
     "yearLaunched": "2014",
     "manufacturer": "Philips",
     "serialNumber": "US-PH-AF70-007",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/epiq-7.svg",
+    "status": true,
     "images": [
-      "/images/devices/epiq-7.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1100 x 550 x 1600 mm",
+      "dimensions": "110 x 55 x 160 cm",
       "weight": "85 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "Shared Service",
-        "Monitor": "21.5\" LCD",
-        "Architecture": "Precision Beamforming",
-        "Warranty": "2 Years Included"
-      }
+        "Application": "Shared Service"
+      },
+      "highlights": [
+        {
+          "detail": "Precision Beamforming",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "21.5\" LCD",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "2 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "Precision Beamforming Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "21.5\" LCD Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -247,24 +444,51 @@
     "yearLaunched": "2015",
     "manufacturer": "SonoScape",
     "serialNumber": "US-SS-S22-008",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/logiq-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/logiq-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1000 x 500 x 1400 mm",
+      "dimensions": "100 x 50 x 140 cm",
       "weight": "65 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "General Purpose",
-        "Monitor": "18.5\" LED",
-        "Architecture": "Standard",
-        "Warranty": "1 Year Included"
-      }
+        "Application": "General Purpose"
+      },
+      "highlights": [
+        {
+          "detail": "Standard",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "18.5\" LED",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "18.5\" LED Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -279,24 +503,51 @@
     "yearLaunched": "2017",
     "manufacturer": "Chison",
     "serialNumber": "US-CH-ECO6-009",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/logiq-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/logiq-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "335 x 155 x 350 mm",
+      "dimensions": "33.5 x 15.5 x 35 cm",
       "weight": "6.5 kg",
       "powerRequirements": "Battery / 100-240V",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "Point of Care",
-        "Monitor": "12\" LED",
-        "Architecture": "Compact",
-        "Warranty": "1 Year Included"
-      }
+        "Application": "Point of Care"
+      },
+      "highlights": [
+        {
+          "detail": "Compact",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "12\" LED",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "Compact Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "12\" LED Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -311,24 +562,51 @@
     "yearLaunched": "2017",
     "manufacturer": "Mindray",
     "serialNumber": "US-MI-DC40-010",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/logiq-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/logiq-e10.svg"
+      "/images/devices/real/img_1.jpg",
+      "/images/devices/real/img_2.jpg",
+      "/images/devices/real/img_3.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
-      "dimensions": "1350 x 520 x 1400 mm",
+      "dimensions": "135 x 52 x 140 cm",
       "weight": "55 kg",
       "powerRequirements": "100-240V, 50/60Hz",
       "operatingTemperature": "10°C to 40°C",
       "other": {
-        "Application": "OB/GYN, General Imaging",
-        "Monitor": "15\" LED",
-        "Architecture": "Standard",
-        "Warranty": "1 Year Included"
-      }
+        "Application": "OB/GYN, General Imaging"
+      },
+      "highlights": [
+        {
+          "detail": "Standard",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "15\" LED",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "15\" LED Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -343,11 +621,11 @@
     "applications": "Obstetrics, Gynecology, Urology",
     "manufacturer": "GE",
     "serialNumber": "TR-GE-RIC59H-001",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/l12-4-probe.svg",
+    "status": true,
     "images": [
-      "/images/devices/l12-4-probe.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "Standard Endocavitary Probe",
@@ -355,7 +633,22 @@
       "other": {
         "Bandwidth": "3 – 10 MHz",
         "Applications": "Obstetrics, Gynecology, Urology"
-      }
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -370,11 +663,11 @@
     "applications": "Obstetrics, Gynecology, Urology",
     "manufacturer": "GE",
     "serialNumber": "TR-GE-RIC59RS-002",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/l12-4-probe.svg",
+    "status": true,
     "images": [
-      "/images/devices/l12-4-probe.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "RS Connector Probe",
@@ -382,7 +675,22 @@
       "other": {
         "Bandwidth": "4 – 9 MHz",
         "Applications": "Obstetrics, Gynecology, Urology"
-      }
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -397,11 +705,11 @@
     "applications": "RealTime 4D endocavitary transducer",
     "manufacturer": "GE",
     "serialNumber": "TR-GE-RIC59W-003",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/l12-4-probe.svg",
+    "status": true,
     "images": [
-      "/images/devices/l12-4-probe.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "Wide Angle TV Probe",
@@ -409,7 +717,22 @@
       "other": {
         "Bandwidth": "5 – 9 MHz",
         "Applications": "Transvaginal \u0026 OB/GYN"
-      }
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -424,11 +747,11 @@
     "applications": "Abdominal, OB/GYN, Renal",
     "manufacturer": "Philips",
     "serialNumber": "TR-PH-C51-004",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/logiq-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/logiq-e10.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "Convex Probe",
@@ -436,7 +759,22 @@
       "other": {
         "Bandwidth": "1 – 5 MHz",
         "Applications": "Abdominal \u0026 OB/GYN"
-      }
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -451,11 +789,11 @@
     "applications": "Vascular, Small Parts, Musculoskeletal",
     "manufacturer": "GE",
     "serialNumber": "TR-GE-L124-007",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/l12-4-probe.svg",
+    "status": true,
     "images": [
-      "/images/devices/l12-4-probe.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "Linear Probe",
@@ -463,7 +801,22 @@
       "other": {
         "Bandwidth": "4 – 12 MHz",
         "Applications": "Vascular \u0026 Small Parts"
-      }
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -478,11 +831,11 @@
     "applications": "Adult Cardiology, TEE",
     "manufacturer": "Siemens",
     "serialNumber": "TR-SI-V5M-008",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/l12-4-probe.svg",
+    "status": true,
     "images": [
-      "/images/devices/l12-4-probe.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "Cardiac Probe",
@@ -490,7 +843,22 @@
       "other": {
         "Bandwidth": "3.5 – 5.5 MHz",
         "Applications": "Cardiology"
-      }
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -503,19 +871,39 @@
     "description": "Replacement GPU processing board for GE Logiq E10 / E9 systems.",
     "manufacturer": "GE",
     "serialNumber": "SP-GE-CS-005",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/voluson-e10.svg",
+    "status": true,
     "images": [
-      "/images/devices/voluson-e10.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
       "dimensions": "Internal Board",
       "weight": "1.2 kg",
       "other": {
-        "Application": "Logiq E10 Processing",
-        "Warranty": "6 Months Included"
-      }
+        "Application": "Logiq E10 Processing"
+      },
+      "highlights": [
+        {
+          "detail": "6 Months Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -528,19 +916,39 @@
     "description": "High voltage performix HD replacement x-ray tube for CT scanner systems.",
     "manufacturer": "GE",
     "serialNumber": "SP-GE-CT-008",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/ct-xray-tube.svg",
+    "status": true,
     "images": [
-      "/images/devices/ct-xray-tube.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
-      "dimensions": "600 x 400 x 400 mm",
+      "dimensions": "60 x 40 x 40 cm",
       "weight": "85 kg",
       "other": {
-        "Heat Capacity": "8.0 MHU",
-        "Warranty": "1 Year Included"
-      }
+        "Heat Capacity": "8.0 MHU"
+      },
+      "highlights": [
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -553,19 +961,39 @@
     "description": "High-purity helium cryocooler compressor unit for Siemens MRI cooling systems.",
     "manufacturer": "Siemens",
     "serialNumber": "SP-SI-HC-009",
-    "status": "In Stock",
-    "location": "Warehouse C",
-    "image": "/images/devices/mri-compressor.svg",
+    "status": true,
     "images": [
-      "/images/devices/mri-compressor.svg"
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
     ],
     "specifications": {
-      "dimensions": "500 x 500 x 650 mm",
+      "dimensions": "50 x 50 x 65 cm",
       "weight": "120 kg",
       "other": {
-        "Refrigerant": "Helium",
-        "Warranty": "1 Year Included"
-      }
+        "Refrigerant": "Helium"
+      },
+      "highlights": [
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -577,19 +1005,41 @@
     "accessoryType": "Warmers",
     "manufacturer": "GE",
     "description": "Temperature-controlled multi-bottle gel warmer designed for patient comfort during ultrasound exams.",
-    "applications": "Clinical & Diagnostic Ultrasound",
+    "applications": "Clinical \u0026 Diagnostic Ultrasound",
     "serialNumber": "AC-GE-GW-006",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/epiq-7.svg",
-    "images": ["/images/devices/epiq-7.svg"],
+    "status": true,
+    "images": [
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
+    ],
     "specifications": {
-        "dimensions": "300 x 200 x 200 mm",
-        "weight": "2.5 kg",
-        "other": {
-            "Application": "Patient Comfort & Clinic Accessory",
-            "Warranty": "1 Year Included"
+      "dimensions": "30 x 20 x 20 cm",
+      "weight": "2.5 kg",
+      "other": {
+        "Application": "Patient Comfort \u0026 Clinic Accessory"
+      },
+      "highlights": [
+        {
+          "detail": "1 Year Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
         }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -601,43 +1051,85 @@
     "accessoryType": "Monitors",
     "manufacturer": "Philips",
     "description": "Ultra-high-definition 4K medical-grade surgical display monitor for imaging systems.",
-    "applications": "Surgical OR & Diagnostic Display",
+    "applications": "Surgical OR \u0026 Diagnostic Display",
     "serialNumber": "AC-PH-DM-010",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/display-monitor.svg",
-    "images": ["/images/devices/display-monitor.svg"],
+    "status": true,
+    "images": [
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
+    ],
     "specifications": {
-        "dimensions": "750 x 100 x 450 mm",
-        "weight": "8.5 kg",
-        "other": {
-            "Resolution": "3840 x 2160 Ultra HD",
-            "Warranty": "2 Years Included"
+      "dimensions": "75 x 10 x 45 cm",
+      "weight": "8.5 kg",
+      "other": {},
+      "highlights": [
+        {
+          "detail": "3840 x 2160 Ultra HD",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "2 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
         }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "3840 x 2160 Ultra HD Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
     "code": 1024,
     "id": "probe-sheath-kit",
-    "name": "Sterile Ultrasound Probe Sheath & Gel Kit",
+    "name": "Sterile Ultrasound Probe Sheath \u0026 Gel Kit",
     "model": "SPS-100",
     "category": "Accessories",
     "accessoryType": "Covers",
     "manufacturer": "Siemens",
     "description": "Latex-free sterile transducer covers with acoustic coupling gel packets for endocavitary procedures.",
-    "applications": "Sterile Interventional Procedures & OB/GYN",
+    "applications": "Sterile Interventional Procedures \u0026 OB/GYN",
     "serialNumber": "AC-SI-SPS-011",
-    "status": "In Stock",
-    "location": "Warehouse B",
-    "image": "/images/devices/l12-4-probe.svg",
-    "images": ["/images/devices/l12-4-probe.svg"],
+    "status": true,
+    "images": [
+      "/images/devices/real/img_4.jpg",
+      "/images/devices/real/img_5.jpg",
+      "/images/devices/real/img_6.jpg"
+    ],
     "specifications": {
-        "dimensions": "Standard Latex-Free Sheaths",
-        "weight": "1.0 kg",
-        "other": {
-            "Sterility": "Gamma Sterilized",
-            "Pack Quantity": "100 Kits / Box"
+      "dimensions": "Standard Latex-Free Sheaths",
+      "weight": "1.0 kg",
+      "other": {
+        "Sterility": "Gamma Sterilized",
+        "Pack Quantity": "100 Kits / Box"
+      },
+      "highlights": [],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
         }
+      ]
     }
   },
   {
@@ -648,15 +1140,12 @@
     "category": "MRI",
     "manufacturer": "Siemens Healthineers",
     "serialNumber": "MRI-SI-MV-001",
-    "status": "Available",
-    "location": "Warehouse C",
-    "image": "/images/devices/magnetom-vida.svg",
+    "status": true,
     "images": [
-      "/images/devices/magnetom-vida.svg",
-      "/images/devices/magnetom-vida.svg",
-      "/images/devices/magnetom-vida.svg"
+      "/images/devices/real/img_7.jpg",
+      "/images/devices/real/img_8.jpg",
+      "/images/devices/real/img_9.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "Large Room",
       "weight": "4500 kg",
@@ -665,10 +1154,34 @@
       "other": {
         "Field Strength": "3T",
         "Bore Size": "70 cm",
-        "Technology": "BioMatrix",
-        "Application": "Whole Body",
-        "Warranty": "5 Years Included"
-      }
+        "Application": "Whole Body"
+      },
+      "highlights": [
+        {
+          "detail": "BioMatrix",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "5 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "BioMatrix Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -679,15 +1192,12 @@
     "category": "CT Scanners",
     "manufacturer": "GE Healthcare",
     "serialNumber": "CT-GE-REV-001",
-    "status": "In Stock",
-    "location": "Warehouse A",
-    "image": "/images/devices/revolution-ct.svg",
+    "status": true,
     "images": [
-      "/images/devices/revolution-ct.svg",
-      "/images/devices/revolution-ct.svg",
-      "/images/devices/revolution-ct.svg"
+      "/images/devices/real/img_7.jpg",
+      "/images/devices/real/img_8.jpg",
+      "/images/devices/real/img_9.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "Large Room",
       "weight": "2500 kg",
@@ -695,11 +1205,39 @@
       "operatingTemperature": "20°C to 24°C",
       "other": {
         "Coverage": "160 mm",
-        "Resolution": "0.23 mm",
-        "Speed": "0.28s rotation",
-        "Application": "Cardiovascular \u0026 Neuro",
-        "Warranty": "3 Years Included"
-      }
+        "Application": "Cardiovascular \u0026 Neuro"
+      },
+      "highlights": [
+        {
+          "detail": "0.23 mm",
+          "title": "Monitor / Output",
+          "logo": "MdTv"
+        },
+        {
+          "detail": "0.28s rotation",
+          "title": "Processing",
+          "logo": "MdMemory"
+        },
+        {
+          "detail": "3 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "Reliable architecture for consistent imaging performance.",
+          "title": "Standard Architecture"
+        },
+        {
+          "description": "High-resolution display tailored for clinical precision.",
+          "title": "0.23 mm Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   },
   {
@@ -710,27 +1248,52 @@
     "category": "X-Ray",
     "manufacturer": "GE Healthcare",
     "serialNumber": "XR-GE-OP-001",
-    "status": "Available",
-    "location": "Warehouse A",
-    "image": "/images/devices/optima-xr646.svg",
+    "status": true,
     "images": [
-      "/images/devices/optima-xr646.svg",
-      "/images/devices/optima-xr646.svg",
-      "/images/devices/optima-xr646.svg"
+      "/images/devices/real/img_7.jpg",
+      "/images/devices/real/img_8.jpg",
+      "/images/devices/real/img_9.jpg"
     ],
-    "schematic": "/schematics/placeholder.svg",
     "specifications": {
       "dimensions": "Medium Room",
       "weight": "800 kg",
       "powerRequirements": "200-240V",
       "operatingTemperature": "15°C to 35°C",
       "other": {
-        "Detector": "FlashPad HD",
         "Mounting": "Ceiling",
-        "Application": "General Radiography",
-        "Automation": "Auto-tracking",
-        "Warranty": "2 Years Included"
-      }
+        "Application": "General Radiography"
+      },
+      "highlights": [
+        {
+          "detail": "FlashPad HD",
+          "title": "Architecture",
+          "logo": "MdArchitecture"
+        },
+        {
+          "detail": "Auto-tracking",
+          "title": "Processing",
+          "logo": "MdMemory"
+        },
+        {
+          "detail": "2 Years Included",
+          "title": "Warranty",
+          "logo": "MdVerified"
+        }
+      ],
+      "coreSpecs": [
+        {
+          "description": "State-of-the-art framework for optimal performance and clarity.",
+          "title": "FlashPad HD Architecture"
+        },
+        {
+          "description": "Clear output for precise diagnostic assessment.",
+          "title": "Standard Output Display"
+        },
+        {
+          "description": "Automated tools included for faster throughput and efficiency.",
+          "title": "Advanced Workflow"
+        }
+      ]
     }
   }
 ]

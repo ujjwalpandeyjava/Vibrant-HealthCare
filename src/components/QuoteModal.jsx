@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { FiX } from "react-icons/fi";
 
@@ -28,8 +29,13 @@ export default function QuoteModal({ isOpen, onClose, product, title = "Request 
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!isOpen || !mounted) return null;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -63,8 +69,8 @@ export default function QuoteModal({ isOpen, onClose, product, title = "Request 
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-in fade-in duration-200">
+  return createPortal(
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-in fade-in duration-200">
       <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl w-full max-w-lg overflow-hidden animate-in zoom-in-95 duration-200">
         <div className="flex items-center justify-between p-6 border-b border-gray-100 dark:border-slate-800">
           <h2 className="text-xl font-bold text-slate-800 dark:text-white">
@@ -96,7 +102,7 @@ export default function QuoteModal({ isOpen, onClose, product, title = "Request 
               {product && (
                 <div className="flex items-center gap-3 p-3.5 bg-blue-50/70 dark:bg-slate-800/80 rounded-xl border border-blue-100 dark:border-slate-700">
                   <div className="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg p-1 relative shrink-0 border border-gray-100 dark:border-slate-600">
-                    <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-contain" />
+                    <Image src={product.images?.[0] || "/placeholder.svg"} alt={product.name} fill className="object-contain" />
                   </div>
                   <div>
                     <span className="text-[11px] font-bold text-primary dark:text-blue-400 uppercase tracking-wider block">Selected Machine</span>
@@ -195,6 +201,7 @@ export default function QuoteModal({ isOpen, onClose, product, title = "Request 
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

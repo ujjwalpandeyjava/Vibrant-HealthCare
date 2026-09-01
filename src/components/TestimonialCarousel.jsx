@@ -22,6 +22,33 @@ const testimonials = [
 
 export default function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }
+    if (isRightSwipe) {
+      setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    }
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,7 +58,13 @@ export default function TestimonialCarousel() {
   }, []);
 
   return (
-    <section className="bg-primary text-white py-24 px-8 text-center rounded-3xl mx-4 lg:mx-auto max-w-[1248px] w-full mt-8 relative overflow-hidden">
+    <div className="px-4 md:px-8 max-w-[1248px] mx-auto w-full mt-8">
+      <section 
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+        className="bg-primary text-white py-24 px-8 text-center rounded-3xl relative overflow-hidden"
+      >
       <div className="max-w-4xl mx-auto flex flex-col space-y-8">
         <div className="text-6xl text-blue-300 opacity-50 font-serif leading-none">"</div>
         
@@ -66,7 +99,8 @@ export default function TestimonialCarousel() {
             />
           ))}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   );
 }

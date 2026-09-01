@@ -34,7 +34,7 @@ export default async function ProductDetailsPage({ params }) {
             <div className="lg:w-1/2 p-8 lg:p-12 bg-gray-50/50 dark:bg-slate-900/50 border-r border-gray-100 dark:border-slate-700 flex items-center justify-center min-h-[400px]">
               <div className="relative w-full aspect-square max-w-md mx-auto">
                 <Image
-                  src={product.image || "/placeholder.svg"}
+                  src={product.images?.[0] || "/placeholder.svg"}
                   alt={product.name}
                   fill
                   className="object-contain drop-shadow-xl"

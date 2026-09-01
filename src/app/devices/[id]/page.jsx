@@ -1,9 +1,10 @@
-import { getAllDevices, getDeviceById } from "@/lib/getDevices";
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
-import { MdChevronRight, MdArchitecture, MdDesktopWindows, MdSmartToy, MdCheckCircle, MdRequestQuote, MdDownload, MdSpeed, MdTv, MdMemory, MdVerified, MdRadioButtonChecked } from "react-icons/md";
 import DeviceGallery from "@/components/DeviceGallery";
+import ProductActions from "@/components/ProductActions";
+import { getAllDevices, getDeviceById } from "@/lib/getDevices";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import * as Icons from "react-icons/md";
+import { MdArchitecture, MdChevronRight, MdDesktopWindows, MdRadioButtonChecked, MdSmartToy } from "react-icons/md";
 
 export async function generateStaticParams() {
   const devices = await getAllDevices();
@@ -24,18 +25,16 @@ export default async function DeviceDetailPage({ params }) {
     name,
     category,
     manufacturer,
-    image,
-    status,
+    images,
     specifications,
   } = device;
 
-  // Derive top specs from 'other' object
+  const highlights = specifications?.highlights || [];
   const otherSpecs = specifications?.other || {};
-  const architecture = otherSpecs["Architecture"] || otherSpecs["Technology"] || otherSpecs["Detector"] || "Standard";
-  const monitor = otherSpecs["Monitor"] || otherSpecs["Resolution"] || "N/A";
-  const processing = otherSpecs["Processing"] || otherSpecs["Speed"] || otherSpecs["Automation"] || "Standard";
-  const warranty = otherSpecs["Warranty"] || "1 Year Included";
-  const application = otherSpecs["Application"] || "General";
+
+  // Find core specs from highlights if possible, fallback to standard text
+  const architecture = highlights.find(h => h.title.includes("Architecture"))?.detail || "Standard";
+  const monitor = highlights.find(h => h.title.includes("Monitor"))?.detail || "N/A";
 
   return (
     <div className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 py-8 space-y-8 animate-in fade-in duration-300">
@@ -64,10 +63,10 @@ export default async function DeviceDetailPage({ params }) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Column: Images */}
         <div className="lg:col-span-7 space-y-4">
-          <DeviceGallery 
-            images={device.images || [device.image, device.image, device.image]} 
-            manufacturer={manufacturer} 
-            name={name} 
+          <DeviceGallery
+            images={images || []}
+            manufacturer={manufacturer}
+            name={name}
           />
         </div>
 
@@ -84,81 +83,47 @@ export default async function DeviceDetailPage({ params }) {
           <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-2xl p-8 space-y-6">
             <h3 className="text-sm font-semibold text-outline dark:text-gray-400 uppercase tracking-wider">Core Specifications</h3>
             <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container dark:bg-slate-700 flex items-center justify-center flex-shrink-0">
-                  <MdArchitecture className="text-primary text-[24px]" />
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold text-on-surface dark:text-white">{architecture} Architecture</h4>
-                  <p className="text-sm text-on-surface-variant dark:text-gray-300">State-of-the-art framework for optimal performance.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container dark:bg-slate-700 flex items-center justify-center flex-shrink-0">
-                  <MdDesktopWindows className="text-primary text-[24px]" />
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold text-on-surface dark:text-white">{monitor} Display</h4>
-                  <p className="text-sm text-on-surface-variant dark:text-gray-300">High-resolution monitor for clinical precision.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container dark:bg-slate-700 flex items-center justify-center flex-shrink-0">
-                  <MdSmartToy className="text-primary text-[24px]" />
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold text-on-surface dark:text-white">Advanced Workflow</h4>
-                  <p className="text-sm text-on-surface-variant dark:text-gray-300">Automated tools included for faster throughput.</p>
-                </div>
-              </div>
+              {(specifications.coreSpecs || []).map((spec, idx) => {
+                const CoreIcon = idx === 0 ? MdArchitecture : idx === 1 ? MdDesktopWindows : MdSmartToy;
+                return (
+                  <div key={idx} className="flex gap-4">
+                    <div className="w-12 h-12 rounded-full bg-surface-container dark:bg-slate-700 flex items-center justify-center flex-shrink-0">
+                      <CoreIcon className="text-primary text-[24px]" />
+                    </div>
+                    <div>
+                      <h4 className="text-base font-semibold text-on-surface dark:text-white">{spec.title}</h4>
+                      <p className="text-sm text-on-surface-variant dark:text-gray-300">{spec.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
           {/* Action Card */}
           <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-2xl p-8 space-y-6 mt-auto">
-            <div className="flex flex-col gap-4">
-              <button className="w-full py-3 bg-primary-container dark:bg-slate-700 text-on-primary rounded-full hover:bg-primary transition-colors font-semibold flex items-center justify-center gap-2 shadow-sm">
-                <MdRequestQuote className="text-sm" /> Request Quote
-              </button>
-              <button className="w-full py-3 bg-transparent border border-outline dark:border-slate-600 text-on-surface dark:text-white rounded-full hover:bg-surface-container-low dark:bg-slate-800 transition-colors font-semibold flex items-center justify-center gap-2">
-                <MdDownload className="text-sm" /> Download Brochure
-              </button>
-            </div>
+            <ProductActions device={device} />
           </div>
         </div>
       </div>
 
       {/* Quick Specs Bento Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
-        <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-xl p-4 flex items-center gap-4">
-          <MdSpeed className="text-primary text-[24px]" />
-          <div>
-            <div className="text-[10px] uppercase tracking-wider text-outline dark:text-gray-400 font-semibold">Architecture</div>
-            <div className="text-sm font-medium text-on-surface dark:text-white">{architecture}</div>
-          </div>
+      {highlights.length > 0 && (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+          {highlights.map((h, i) => {
+            const IconComponent = Icons[h.logo] || Icons.MdSpeed;
+            return (
+              <div key={i} className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-xl p-4 flex items-center gap-4">
+                <IconComponent className="text-primary text-[24px]" />
+                <div>
+                  <div className="text-[10px] uppercase tracking-wider text-outline dark:text-gray-400 font-semibold">{h.title}</div>
+                  <div className="text-sm font-medium text-on-surface dark:text-white">{h.detail}</div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-        <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-xl p-4 flex items-center gap-4">
-          <MdTv className="text-primary text-[24px]" />
-          <div>
-            <div className="text-[10px] uppercase tracking-wider text-outline dark:text-gray-400 font-semibold">Monitor / Output</div>
-            <div className="text-sm font-medium text-on-surface dark:text-white">{monitor}</div>
-          </div>
-        </div>
-        <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-xl p-4 flex items-center gap-4">
-          <MdMemory className="text-primary text-[24px]" />
-          <div>
-            <div className="text-[10px] uppercase tracking-wider text-outline dark:text-gray-400 font-semibold">Processing</div>
-            <div className="text-sm font-medium text-on-surface dark:text-white">{processing}</div>
-          </div>
-        </div>
-        <div className="glass-card dark:bg-slate-800 dark:border-slate-700 rounded-xl p-4 flex items-center gap-4">
-          <MdVerified className="text-primary text-[24px]" />
-          <div>
-            <div className="text-[10px] uppercase tracking-wider text-outline dark:text-gray-400 font-semibold">Warranty</div>
-            <div className="text-sm font-medium text-on-surface dark:text-white">{warranty}</div>
-          </div>
-        </div>
-      </div>
+      )}
 
       {/* Detailed Specs Tabs */}
       <div className="pt-8">

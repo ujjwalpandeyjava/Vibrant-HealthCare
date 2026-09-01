@@ -156,7 +156,7 @@ export default function CategoryCatalogClient({
                 {/* Product Image */}
                 <div className="w-full sm:w-48 h-48 bg-gray-50 dark:bg-slate-800/50 rounded-xl p-4 relative flex items-center justify-center shrink-0 border border-gray-100 dark:border-slate-800">
                   <Image
-                    src={device.image || "/placeholder.svg"}
+                    src={device.images?.[0] || "/placeholder.svg"}
                     alt={device.name}
                     fill
                     className="object-contain p-2"

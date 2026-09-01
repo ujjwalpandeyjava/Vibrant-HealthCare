@@ -90,7 +90,7 @@ export default function MachinesClient({ initialDevices }) {
                     </div>
                     <div className="relative flex-1 w-full min-h-[180px] my-2">
                       <Image 
-                        src={device.image || "/placeholder.svg"} 
+                        src={device.images?.[0] || "/placeholder.svg"} 
                         alt={device.name}
                         fill
                         className="object-contain"

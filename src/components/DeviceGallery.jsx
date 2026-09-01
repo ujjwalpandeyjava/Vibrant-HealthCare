@@ -11,13 +11,16 @@ export default function DeviceGallery({ images, manufacturer, name }) {
     <div className="space-y-4">
       {/* Main Large Image */}
       <div className="relative rounded-2xl overflow-hidden bg-white dark:bg-slate-800 aspect-[4/3] flex items-center justify-center border border-outline-variant/30 dark:border-slate-700/30">
-        <div className="absolute top-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-3 py-1 rounded-full text-sm flex items-center gap-2 shadow-sm z-10 text-on-surface dark:text-white">
+        <div 
+          title="Manufacturer"
+          className="absolute top-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-3 py-1 rounded-full text-sm flex items-center gap-2 shadow-sm z-10 text-on-surface dark:text-white cursor-help"
+        >
           <div className="w-2 h-2 rounded-full bg-primary"></div>
           {manufacturer}
         </div>
         <img 
           alt={`${name} main view`} 
-          className="object-cover w-full h-full mix-blend-multiply p-4 transition-opacity duration-300" 
+          className="object-contain w-full h-full p-2 transition-opacity duration-300 rounded-xl" 
           src={images[currentIndex]} 
         />
       </div>
@@ -37,7 +40,7 @@ export default function DeviceGallery({ images, manufacturer, name }) {
             >
               <img 
                 alt={`Thumbnail ${idx + 1}`} 
-                className="w-full h-full object-cover mix-blend-multiply p-2" 
+                className="w-full h-full object-cover p-1" 
                 src={img} 
               />
             </button>
