@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import EnquireNowDrawer from "@/components/EnquireNowDrawer";
 import { Geist, Inter } from "next/font/google";
 
 const geist = Geist({
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <EnquireNowDrawer />
       </body>
     </html>
   );
