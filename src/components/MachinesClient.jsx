@@ -93,6 +93,7 @@ export default function MachinesClient({ initialDevices }) {
                         src={device.images?.[0] || "/placeholder.svg"} 
                         alt={device.name}
                         fill
+                        sizes="(max-width: 640px) 100vw, 320px"
                         className="object-contain"
                       />
                     </div>

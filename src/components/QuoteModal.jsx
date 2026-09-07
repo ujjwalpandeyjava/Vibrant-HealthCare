@@ -102,7 +102,7 @@ export default function QuoteModal({ isOpen, onClose, product, title = "Request 
               {product && (
                 <div className="flex items-center gap-3 p-3.5 bg-blue-50/70 dark:bg-slate-800/80 rounded-xl border border-blue-100 dark:border-slate-700">
                   <div className="w-12 h-12 bg-white dark:bg-slate-700 rounded-lg p-1 relative shrink-0 border border-gray-100 dark:border-slate-600">
-                    <Image src={product.images?.[0] || "/placeholder.svg"} alt={product.name} fill className="object-contain" />
+                    <Image src={product.images?.[0] || "/placeholder.svg"} alt={product.name} fill sizes="48px" className="object-contain" />
                   </div>
                   <div>
                     <span className="text-[11px] font-bold text-primary dark:text-blue-400 uppercase tracking-wider block">Selected Machine</span>

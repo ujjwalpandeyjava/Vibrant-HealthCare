@@ -40,6 +40,7 @@ export default function MostSoldProducts({ products = [] }) {
                   src={product.images?.[0] || "/placeholder.svg"}
                   alt={product.name}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-contain p-4"
                 />
                 <span className="absolute top-3 right-3 bg-slate-900/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm border border-slate-700">

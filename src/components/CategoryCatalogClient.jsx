@@ -159,6 +159,7 @@ export default function CategoryCatalogClient({
                     src={device.images?.[0] || "/placeholder.svg"}
                     alt={device.name}
                     fill
+                    sizes="(max-width: 640px) 100vw, 192px"
                     className="object-contain p-2"
                   />
                 </div>
