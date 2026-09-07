@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MdLocalShipping, MdCheckCircle } from "react-icons/md";
 import ServiceModalButton from "@/components/ServiceModalButton";
@@ -62,10 +63,12 @@ export default function DispatchPage() {
 
         <div className="relative">
           <div className="aspect-square md:aspect-[4/3] bg-surface-container dark:bg-slate-700 rounded-3xl overflow-hidden relative border border-outline-variant/30">
-            <img 
+            <Image 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1EWoXS3j2_5-wW_hjlHJOu4wld9dwFF3wWtLlfiLVE8F2qHUe9Xhq7IqdTOA75EJw8KnkQVl80ONgfeC3eN439S-okNnmTSg0v9MzB6wOtlfE8-xhN1HLUmUB9plZuWuupwk6NoWYaseDPe85or4NOabmdp-TWWcsSJgOcO0jzOG1oboCMbn57YyILZuag5GFfgCfrAU7riyX1ZEPsthRY6d2_wUEhCPnOV-I198nN0YgF_g4DDUgww" 
               alt="Dispatch and delivery"
-              className="w-full h-full object-cover mix-blend-multiply"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover mix-blend-multiply"
             />
           </div>
         </div>

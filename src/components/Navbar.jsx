@@ -2,18 +2,20 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
-import { MdDarkMode, MdLightMode, MdCall } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
+import { usePathname, useRouter } from "next/navigation";
+import { FiChevronDown, FiMenu, FiX, FiSearch } from "react-icons/fi";
+import { MdDarkMode, MdLightMode, MdCall, MdMail, MdLanguage } from "react-icons/md";
+import { FaWhatsapp, FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import TopBar from "./TopBar";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -39,6 +41,14 @@ export default function Navbar() {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
       setIsDarkMode(true);
+    }
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      setIsMobileMenuOpen(false);
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
     }
   };
 
@@ -156,96 +166,172 @@ export default function Navbar() {
 
         {/* Mobile / Tablet Drawer Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-gray-100 dark:border-slate-800 mt-3 pt-4 pb-6 px-2 space-y-3 animate-in fade-in slide-in-from-top-2 duration-200">
-            <Link
-              href="/"
-              className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
-            >
-              Home
-            </Link>
-
-            <Link
-              href="/about-us"
-              className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
-            >
-              About Us
-            </Link>
-
-            {/* Mobile Products Accordion */}
-            <div>
+          <div className="lg:hidden border-t border-gray-100 dark:border-slate-800 mt-3 pt-4 pb-6 px-3 space-y-4 animate-in fade-in slide-in-from-top-2 duration-200">
+            {/* Mobile Search Bar */}
+            <form onSubmit={handleSearch} className="flex items-center bg-gray-100 dark:bg-slate-800/90 rounded-xl overflow-hidden p-1 border border-gray-200 dark:border-slate-700 shadow-xs">
+              <input
+                type="text"
+                placeholder="Search products & equipment..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="bg-transparent border-none focus:outline-none focus:ring-0 text-sm text-slate-800 dark:text-white placeholder-gray-400 px-3 py-1.5 w-full font-medium"
+              />
               <button
-                onClick={() => setProductsOpen(!productsOpen)}
-                className="w-full flex items-center justify-between px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+                type="submit"
+                className="bg-primary hover:bg-blue-700 text-white p-2 rounded-lg transition-colors flex-shrink-0 flex items-center justify-center"
+                aria-label="Submit Search"
               >
-                <span>Products</span>
-                <FiChevronDown className={`w-5 h-5 transition-transform ${productsOpen ? "rotate-180" : ""}`} />
+                <FiSearch className="w-4 h-4" />
               </button>
-              {productsOpen && (
-                <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 dark:bg-slate-800/50 rounded-lg mt-1">
-                  <Link href="/products/ultrasound-machine" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Machines
-                  </Link>
-                  <Link href="/products/transducer" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Transducer
-                  </Link>
-                  <Link href="/products/spares" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Spares
-                  </Link>
-                  <Link href="/products/accessories" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Accessories
-                  </Link>
-                </div>
-              )}
+            </form>
+
+            {/* Global Shipping Notice Banner */}
+            <div className="flex items-center gap-2.5 px-3 py-2 bg-blue-50/80 dark:bg-blue-900/30 rounded-xl border border-blue-200/60 dark:border-blue-800/60 text-[#1176b6] dark:text-blue-300 font-semibold text-xs sm:text-sm">
+              <div className="w-6 h-6 rounded-full bg-[#1176b6] dark:bg-blue-600 text-white flex items-center justify-center shrink-0">
+                <MdLanguage className="text-sm" />
+              </div>
+              <span>We Ship Globally</span>
             </div>
 
-            {/* Mobile Professional Service Accordion */}
-            <div>
-              <button
-                onClick={() => setServicesOpen(!servicesOpen)}
-                className="w-full flex items-center justify-between px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+            {/* Main Navigation Links */}
+            <div className="space-y-1">
+              <Link
+                href="/"
+                className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
               >
-                <span>Professional Service</span>
-                <FiChevronDown className={`w-5 h-5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
-              </button>
-              {servicesOpen && (
-                <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 dark:bg-slate-800/50 rounded-lg mt-1">
-                  <Link href="/professional-service/repairs" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Repairs
-                  </Link>
-                  <Link href="/professional-service/maintenance" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Maintenance
-                  </Link>
-                  <Link href="/professional-service/dispatch" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
-                    Dispatch
-                  </Link>
-                </div>
-              )}
+                Home
+              </Link>
+
+              <Link
+                href="/about-us"
+                className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+              >
+                About Us
+              </Link>
+
+              {/* Mobile Products Accordion */}
+              <div>
+                <button
+                  onClick={() => setProductsOpen(!productsOpen)}
+                  className="w-full flex items-center justify-between px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+                >
+                  <span>Products</span>
+                  <FiChevronDown className={`w-5 h-5 transition-transform ${productsOpen ? "rotate-180" : ""}`} />
+                </button>
+                {productsOpen && (
+                  <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 dark:bg-slate-800/50 rounded-lg mt-1">
+                    <Link href="/products/machine" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Machines
+                    </Link>
+                    <Link href="/products/transducer" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Transducer
+                    </Link>
+                    <Link href="/products/spares" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Spares
+                    </Link>
+                    <Link href="/products/accessories" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Accessories
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Professional Service Accordion */}
+              <div>
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="w-full flex items-center justify-between px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+                >
+                  <span>Professional Service</span>
+                  <FiChevronDown className={`w-5 h-5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
+                </button>
+                {servicesOpen && (
+                  <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 dark:bg-slate-800/50 rounded-lg mt-1">
+                    <Link href="/professional-service/repairs" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Repairs
+                    </Link>
+                    <Link href="/professional-service/maintenance" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Maintenance
+                    </Link>
+                    <Link href="/professional-service/dispatch" className="block py-2 text-sm text-textMuted dark:text-gray-300 hover:text-primary dark:hover:text-blue-400">
+                      Dispatch
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href="/sell-machine"
+                className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+              >
+                Sell Your Machine
+              </Link>
+
+              <Link
+                href="/contact"
+                className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
+              >
+                Contact Us
+              </Link>
             </div>
 
-            <Link
-              href="/sell-machine"
-              className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
-            >
-              Sell Your Machine
-            </Link>
-
-            <Link
-              href="/contact"
-              className="block px-4 py-2.5 rounded-lg text-base font-medium text-on-surface dark:text-white hover:bg-gray-50 dark:hover:bg-slate-800"
-            >
-              Contact Us
-            </Link>
-
-            {/* Quick Contact & Info for Mobile */}
-            <div className="pt-4 border-t border-gray-100 dark:border-slate-800 space-y-3 px-4 text-sm text-textMuted dark:text-gray-400">
-              <a href="tel:+919447393488" className="flex items-center gap-2 hover:text-primary">
-                <MdCall className="text-primary text-base" />
+            {/* Quick Contact Info */}
+            <div className="pt-3 border-t border-gray-100 dark:border-slate-800 space-y-2 px-2">
+              <a href="tel:+919447393488" className="flex items-center gap-3 px-2 py-1.5 rounded-lg text-slate-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 font-medium text-sm transition-colors">
+                <div className="w-7 h-7 rounded-full bg-[#1176b6] dark:bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <MdCall className="text-sm" />
+                </div>
                 <span>+919447393488</span>
               </a>
-              <a href="https://wa.me/918589825825" className="flex items-center gap-2 hover:text-primary">
-                <FaWhatsapp className="text-green-500 text-base" />
+
+              <a href="https://wa.me/918589825825" className="flex items-center gap-3 px-2 py-1.5 rounded-lg text-slate-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 font-medium text-sm transition-colors">
+                <div className="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <FaWhatsapp className="text-sm" />
+                </div>
                 <span>+918589825825</span>
               </a>
+
+              <a href="mailto:info@vibranthealthcare.com" className="flex items-center gap-3 px-2 py-1.5 rounded-lg text-slate-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-800 font-medium text-sm transition-colors">
+                <div className="w-7 h-7 rounded-full bg-[#1176b6] dark:bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <MdMail className="text-sm" />
+                </div>
+                <span className="truncate">info@vibranthealthcare.com</span>
+              </a>
+            </div>
+
+            {/* Theme Switcher & Social Media Bar */}
+            <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-slate-800 px-2">
+              <button
+                onClick={toggleTheme}
+                className="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-gray-300 px-3 py-2 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors shadow-xs"
+              >
+                {isDarkMode ? (
+                  <>
+                    <MdLightMode className="w-4 h-4 text-yellow-400" />
+                    <span>Light Mode</span>
+                  </>
+                ) : (
+                  <>
+                    <MdDarkMode className="w-4 h-4 text-slate-700 dark:text-slate-300" />
+                    <span>Dark Mode</span>
+                  </>
+                )}
+              </button>
+
+              <div className="flex items-center space-x-2">
+                <a href="#" aria-label="Facebook" className="w-7 h-7 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-80 transition-opacity shadow-xs">
+                  <FaFacebookF className="w-3 h-3" />
+                </a>
+                <a href="#" aria-label="Twitter" className="w-7 h-7 rounded-full bg-[#00aced] text-white flex items-center justify-center hover:opacity-80 transition-opacity shadow-xs">
+                  <FaTwitter className="w-3 h-3" />
+                </a>
+                <a href="#" aria-label="YouTube" className="w-7 h-7 rounded-full bg-[#bb0000] text-white flex items-center justify-center hover:opacity-80 transition-opacity shadow-xs">
+                  <FaYoutube className="w-3 h-3" />
+                </a>
+                <a href="#" aria-label="LinkedIn" className="w-7 h-7 rounded-full bg-[#007bb6] text-white flex items-center justify-center hover:opacity-80 transition-opacity shadow-xs">
+                  <FaLinkedinIn className="w-3 h-3" />
+                </a>
+              </div>
             </div>
           </div>
         )}

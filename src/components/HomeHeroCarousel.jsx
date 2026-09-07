@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { FiChevronLeft, FiChevronRight, FiArrowRight } from "react-icons/fi";
 
@@ -154,10 +155,13 @@ export default function HomeHeroCarousel() {
                 <div className="w-full lg:w-2/5 flex items-center justify-center lg:justify-end relative mt-6 sm:mt-8 lg:mt-0 z-10">
                   {/* Clean cutout container - mix-blend-multiply eliminates the white image background completely */}
                   <div className="relative z-10 w-full max-w-[210px] sm:max-w-[270px] lg:max-w-[340px] h-[190px] sm:h-[230px] lg:h-[310px] flex items-center justify-center">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.alt}
-                      className="max-w-full max-h-full object-contain mix-blend-multiply select-none"
+                      fill
+                      priority={idx === 0}
+                      sizes="(max-width: 640px) 210px, (max-width: 1024px) 270px, 340px"
+                      className="object-contain mix-blend-multiply select-none"
                     />
                   </div>
                 </div>

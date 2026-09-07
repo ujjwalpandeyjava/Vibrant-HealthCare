@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { MdSearch, MdClose } from "react-icons/md";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
@@ -282,10 +283,12 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
                 {filteredDevices.map(device => (
                   <Link key={device.id} href={`/devices/${device.id}`} className="bg-white dark:bg-slate-900/90 border border-gray-200/80 dark:border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:shadow-xl hover:border-primary/50 dark:hover:border-blue-500/50 transition-all duration-300 group">
                     <div className="aspect-video bg-gradient-to-b from-gray-50 to-gray-100/60 dark:from-slate-950 dark:to-slate-900/90 flex items-center justify-center p-6 relative overflow-hidden border-b border-gray-100 dark:border-slate-800/80">
-                      <img 
+                      <Image 
                         alt={device.name} 
-                        className="object-contain w-full h-full dark:drop-shadow-[0_8px_16px_rgba(59,130,246,0.12)] group-hover:scale-105 transition-transform duration-300" 
+                        className="object-contain p-4 dark:drop-shadow-[0_8px_16px_rgba(59,130,246,0.12)] group-hover:scale-105 transition-transform duration-300" 
                         src={device.images?.[0] || "/placeholder.svg"} 
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </div>
                     <div className="p-6 flex flex-col flex-grow">

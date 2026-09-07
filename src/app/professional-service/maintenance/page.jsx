@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MdAccessTime, MdCheckCircle } from "react-icons/md";
 import ServiceModalButton from "@/components/ServiceModalButton";
@@ -20,10 +21,12 @@ export default function MaintenancePage() {
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="order-2 lg:order-1 relative">
           <div className="aspect-square md:aspect-[4/3] bg-surface-container dark:bg-slate-700 rounded-3xl overflow-hidden relative border border-outline-variant/30">
-            <img 
+            <Image 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI2L2RbbbmqKfxbkHwPNVaCkNHgky_8NSFrfBouY6xhI-H3KPYBPRKTHeU9-WUPhr_PieBIZuEew227oopmgQ84v_3KRcxfzNhW1PIZVLacu06WmLtvGUTaGNj4_u-oVcwngxbJ0eXeOH0kDDOvS01BTVbmZTSOSAaCE5MbpSDVeUq_SiDz4QY2TQdRKvxHliREeolHLla2vEne7EL2O6kAkQSyQvWm8Nd9B2fx43cQh5-u_7xtxk_6Q" 
               alt="Medical equipment maintenance"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
           </div>
         </div>

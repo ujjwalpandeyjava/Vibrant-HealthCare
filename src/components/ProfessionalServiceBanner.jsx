@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const DEFAULT_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuDgg4LKGbJwySt-yQyn-jN7Qa-6xoo96ICIXnlz3iZBqcF18P5Nlfqu0rTke2xIyB0bnPWnJOIboog6w8KekWPYwtbCR4PNJSgleWF2ODOjTg31ofCuHvwsXiQuZSzV2zgLFT_ainMpSczZbxl_ANkxOMYDNuqlwVK7YM3u4Js7KNcNCDi79AvsJf6qAjRWf_QowEZVgQRbjb9jWB7vEUUxd3abZdepGvpiZBw-AMoKCwLo3Ywb8k4Sng";
 
 export default function ProfessionalServiceBanner({ 
@@ -8,10 +10,13 @@ export default function ProfessionalServiceBanner({
 }) {
   return (
     <div className="relative w-full h-48 md:h-72 overflow-hidden bg-gray-900 dark:bg-slate-950 border-b-4 border-primary">
-      <img 
+      <Image 
         src={bannerImage} 
         alt={bannerText} 
-        className="absolute inset-0 w-full h-full object-cover opacity-80"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover opacity-80"
       />
       <div className="absolute inset-0 w-full h-full">
         {/* Angled blue overlay */}

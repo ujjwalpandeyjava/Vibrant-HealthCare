@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MdBuild, MdCheckCircle } from "react-icons/md";
 import ServiceModalButton from "@/components/ServiceModalButton";
@@ -62,10 +63,12 @@ export default function RepairsPage() {
 
         <div className="relative">
           <div className="aspect-square md:aspect-[4/3] bg-surface-container dark:bg-slate-700 rounded-3xl overflow-hidden relative border border-outline-variant/30">
-            <img 
+            <Image 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgg4LKGbJwySt-yQyn-jN7Qa-6xoo96ICIXnlz3iZBqcF18P5Nlfqu0rTke2xIyB0bnPWnJOIboog6w8KekWPYwtbCR4PNJSgleWF2ODOjTg31ofCuHvwsXiQuZSzV2zgLFT_ainMpSczZbxl_ANkxOMYDNuqlwVK7YM3u4Js7KNcNCDi79AvsJf6qAjRWf_QowEZVgQRbjb9jWB7vEUUxd3abZdepGvpiZBw-AMoKCwLo3Ywb8k4Sng" 
               alt="Technician repairing equipment"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
           </div>
           <div className="absolute -bottom-6 -left-6 glass-card dark:bg-slate-800 dark:border-slate-700 p-6 rounded-2xl max-w-xs shadow-xl hidden md:block">

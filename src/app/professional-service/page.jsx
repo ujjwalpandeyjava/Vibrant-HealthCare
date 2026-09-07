@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MdBuild, MdAccessTime, MdLocalShipping, MdArrowForward, MdSupportAgent, MdMedicalServices, MdHeadsetMic, MdSensors, MdHandshake, MdOutlineAutorenew } from "react-icons/md";
 
@@ -65,11 +66,13 @@ export default function ProfessionalServicePage() {
       
       {/* Detailed Overview Section */}
       <div className="grid lg:grid-cols-12 gap-12 items-start mt-20 mb-8">
-        <div className="lg:col-span-4 rounded-xl overflow-hidden shadow-sm border border-outline-variant/30">
-          <img 
+        <div className="lg:col-span-4 relative rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square">
+          <Image 
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgg4LKGbJwySt-yQyn-jN7Qa-6xoo96ICIXnlz3iZBqcF18P5Nlfqu0rTke2xIyB0bnPWnJOIboog6w8KekWPYwtbCR4PNJSgleWF2ODOjTg31ofCuHvwsXiQuZSzV2zgLFT_ainMpSczZbxl_ANkxOMYDNuqlwVK7YM3u4Js7KNcNCDi79AvsJf6qAjRWf_QowEZVgQRbjb9jWB7vEUUxd3abZdepGvpiZBw-AMoKCwLo3Ywb8k4Sng" 
             alt="Technician working on machine" 
-            className="w-full h-auto object-cover aspect-square"
+            fill
+            sizes="(max-width: 1024px) 100vw, 33vw"
+            className="object-cover"
           />
         </div>
         <div className="lg:col-span-8 space-y-6">

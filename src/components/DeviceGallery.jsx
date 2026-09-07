@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function DeviceGallery({ images, manufacturer, name }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,10 +19,13 @@ export default function DeviceGallery({ images, manufacturer, name }) {
           <div className="w-2 h-2 rounded-full bg-primary"></div>
           {manufacturer}
         </div>
-        <img 
+        <Image 
           alt={`${name} main view`} 
-          className="object-contain w-full h-full p-2 transition-opacity duration-300 rounded-xl" 
+          className="object-contain p-4 transition-opacity duration-300 rounded-xl" 
           src={images[currentIndex]} 
+          fill
+          priority
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
       </div>
       
@@ -32,16 +36,18 @@ export default function DeviceGallery({ images, manufacturer, name }) {
             <button 
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border-2 transition-all duration-200 bg-white dark:bg-slate-800 ${
+              className={`relative flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border-2 transition-all duration-200 bg-white dark:bg-slate-800 ${
                 currentIndex === idx 
                   ? "border-primary shadow-md scale-100 opacity-100" 
                   : "border-transparent hover:border-primary/50 opacity-70 hover:opacity-100 scale-95 hover:scale-100"
               }`}
             >
-              <img 
+              <Image 
                 alt={`Thumbnail ${idx + 1}`} 
-                className="w-full h-full object-cover p-1" 
+                className="object-cover p-1" 
                 src={img} 
+                fill
+                sizes="96px"
               />
             </button>
           ))}

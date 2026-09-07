@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Cpu, MapPin, Layers } from "lucide-react";
 
@@ -26,14 +27,15 @@ export default function DeviceCard({ device }) {
           </span>
         </div>
 
-
-
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-contain filter group-hover:scale-105 transition-transform duration-300"
-        />
+        {image && (
+          <Image
+            src={image}
+            alt={name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-contain p-4 filter group-hover:scale-105 transition-transform duration-300"
+          />
+        )}
       </div>
 
       {/* Body Details */}
