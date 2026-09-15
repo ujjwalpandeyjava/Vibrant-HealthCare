@@ -224,7 +224,7 @@ export default function DeviceExplorer({ initialDevices = [] }) {
                     </td>
                     <td className="py-3.5 px-4 text-right">
                       <Link
-                        href={`/devices/${device.id}`}
+                        href={`/products/${device.id}#model_${device.model.replace(/\s+/g, '_')}`}
                         className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-cyan-600 text-slate-200 hover:text-white text-xs font-medium transition-colors"
                       >
                         <span>Inspect</span>

@@ -124,7 +124,7 @@ export default function MachinesClient({ initialDevices }) {
                       Get a Quote
                     </button>
                     <Link 
-                      href={`/products/${device.id}`}
+                      href={`/products/${device.id}#model_${device.model.replace(/\s+/g, '_')}`}
                       className="bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium py-2.5 px-6 rounded-lg transition-colors border border-gray-200 dark:border-slate-700 flex-1 text-center sm:flex-none"
                     >
                       View Details

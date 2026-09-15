@@ -36,7 +36,7 @@ export async function POST(request) {
     console.log("==========================================");
     console.log("📩 NEW REQUEST RECEIVED (SERVER-SIDE)");
     if (pageCategory) console.log(`Category Page: ${pageCategory}`);
-    if (product) console.log(`Product/Service: ${product.name} ${product.code ? `(Code: ${product.code})` : ''}`);
+    if (product) console.log(`Product/Service: ${product.name} ${product.id ? `(ID: ${product.id})` : ''}`);
     if (imageFile) console.log(`Attached Image: ${imageFile.name} (${(imageFile.size / 1024 / 1024).toFixed(2)} MB)`);
     console.log(`Name: ${name}`);
     console.log(`Email: ${email}`);

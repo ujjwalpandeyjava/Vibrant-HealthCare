@@ -73,7 +73,7 @@ export default function DeviceCard({ device }) {
 
         {/* View Details Action Link */}
         <Link
-          href={`/devices/${id}`}
+          href={`/products/${id}#model_${device.model.replace(/\s+/g, '_')}`}
           className="mt-4 w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-slate-800/80 hover:bg-cyan-600 text-slate-200 hover:text-white text-xs font-semibold uppercase tracking-wider transition-all duration-200 border border-slate-700/80 hover:border-cyan-400 shadow-md"
         >
           <span>Inspect Specifications</span>

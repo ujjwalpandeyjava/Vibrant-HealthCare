@@ -1,7 +1,6 @@
 [
     {
-        "code": 1000,
-        "id": "logiq-e10",
+        "id": 1000,
         "name": "Logiq E10 Ultrasound System",
         "model": "Logiq E10",
         "category": "Ultrasound Machine",
@@ -21,7 +20,7 @@
             "dimensions": "120 x 60 x 170 cm",
             "weight": "110 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "cSound",
@@ -68,16 +67,23 @@
                 ],
                 "details": [
                     {
-                        "description": "General Imaging",
-                        "title": "Application"
+                        "title": "Clinical Applications",
+                        "description": "Comprehensive General Imaging, Abdominal, Vascular, Small Parts, Musculoskeletal, and Pediatric Radiology"
+                    },
+                    {
+                        "title": "Imaging Modes",
+                        "description": "2D, M-Mode, Color Doppler, Power Doppler, Pulse Wave Doppler, Shear Wave Elastography, B-Flow"
+                    },
+                    {
+                        "title": "System Architecture",
+                        "description": "cSound 3.0 Real-time GPU Beamforming engine paired with a 22-inch high-resolution OLED display"
                     }
                 ]
             }
         }
     },
     {
-        "code": 1001,
-        "id": "voluson-e10",
+        "id": 1001,
         "name": "Voluson E10 Women\u0027s Health",
         "model": "Voluson E10",
         "category": "Ultrasound Machine",
@@ -89,15 +95,15 @@
         "serialNumber": "US-GE-VE10-002",
         "status": true,
         "images": [
-            "/images/devices/real/img_1.jpg",
             "/images/devices/real/img_2.jpg",
+            "/images/devices/real/img_1.jpg",
             "/images/devices/real/img_3.jpg"
         ],
         "specifications": {
             "dimensions": "115 x 58 x 165 cm",
             "weight": "105 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "Radiance System",
@@ -144,16 +150,23 @@
                 ],
                 "details": [
                     {
-                        "description": "OB/GYN",
-                        "title": "Application"
+                        "title": "Clinical Applications",
+                        "description": "Advanced Obstetrics, Gynecology, Maternal-Fetal Medicine, Reproductive Health, and Fetal Echocardiography"
+                    },
+                    {
+                        "title": "3D/4D Volume Technologies",
+                        "description": "HDlive Silhouette, HDlive Flow, Radiant View, and Electronic 4D Matrix array rendering"
+                    },
+                    {
+                        "title": "Probe Compatibility",
+                        "description": "eM6C G2 Curved Matrix, RIC5-9-D Endocavitary, RM6C Volume Convex, and C1-5-D abdominal transducers"
                     }
                 ]
             }
         }
     },
     {
-        "code": 1002,
-        "id": "epiq-7",
+        "id": 1002,
         "name": "EPIQ 7 Cardiovascular",
         "model": "EPIQ 7",
         "category": "Ultrasound Machine",
@@ -165,15 +178,15 @@
         "serialNumber": "US-PH-EQ7-003",
         "status": true,
         "images": [
+            "/images/devices/real/img_3.jpg",
             "/images/devices/real/img_1.jpg",
-            "/images/devices/real/img_2.jpg",
-            "/images/devices/real/img_3.jpg"
+            "/images/devices/real/img_2.jpg"
         ],
         "specifications": {
             "dimensions": "110 x 55 x 160 cm",
             "weight": "100 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "nSIGHT",
@@ -218,13 +231,25 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Cardiovascular Applications",
+                        "description": "Adult and Pediatric Echocardiography, Stress Echo, Transesophageal (TEE), and Vascular imaging"
+                    },
+                    {
+                        "title": "Imaging Technologies",
+                        "description": "nSIGHT Architecture with PureWave single-crystal transducers and xMATRIX live 3D/4D volume acquisition"
+                    },
+                    {
+                        "title": "Quantification Tools",
+                        "description": "Automated Cardiac Motion Quantification (aCMQ), Auto LV Strain, and 2D Anatomical M-Mode"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1003,
-        "id": "mindray-m9",
+        "id": 1003,
         "name": "Mindray M9 Portable Premium",
         "model": "M9",
         "category": "Ultrasound Machine",
@@ -244,7 +269,7 @@
             "dimensions": "36 x 30 x 6 cm",
             "weight": "6 kg",
             "powerRequirements": "Battery / 100-240V",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "0C to 40C",
             "highlights": [
                 {
                     "detail": "mQuadro",
@@ -289,13 +314,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Point-of-Care Applications",
+                        "description": "Emergency Medicine, ICU Bedside Triage, Critical Care, Anesthesia, and Vascular Access"
+                    },
+                    {
+                        "title": "Hardware \u0026 Portability",
+                        "description": "Fast cold boot under 30 seconds, magnesium-alloy chassis, and dual hot-swappable batteries for 3.5 hours continuous scanning"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1004,
-        "id": "acuson-sequoia",
+        "id": 1004,
         "name": "Siemens ACUSON Sequoia",
         "model": "ACUSON Sequoia",
         "category": "Ultrasound Machine",
@@ -315,7 +348,7 @@
             "dimensions": "125 x 60 x 175 cm",
             "weight": "125 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "BioAcoustic",
@@ -356,13 +389,25 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "BioAcoustic Technology",
+                        "description": "InFocus coherent imaging providing ultra-deep acoustic penetration for high-BMI and difficult-to-image patients"
+                    },
+                    {
+                        "title": "Liver Elastography",
+                        "description": "Point Shear Wave Elastography (pSWE) and 2D Shear Wave with real-time tissue stiffness quantification"
+                    },
+                    {
+                        "title": "Console \u0026 Ergonomics",
+                        "description": "15.6-inch high-resolution touch interface, gesture control, and ultra-silent cooling operation below 20 dB"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1005,
-        "id": "voluson-s8",
+        "id": 1005,
         "name": "GE Voluson S8",
         "model": "Voluson S8",
         "category": "Ultrasound Machine",
@@ -382,7 +427,7 @@
             "dimensions": "110 x 55 x 160 cm",
             "weight": "95 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "Voluson Core",
@@ -423,13 +468,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Women\u0027s Health Suite",
+                        "description": "Routine and specialized OB/GYN scanning, SonoBiometry automated fetal measurements, and SonoRenderlive"
+                    },
+                    {
+                        "title": "Volume Features",
+                        "description": "HDlive surface rendering, Advanced VCI (Volume Contrast Imaging), and BetaView electronic beam steering"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1006,
-        "id": "affiniti-70",
+        "id": 1006,
         "name": "Philips Affiniti 70",
         "model": "Affiniti 70",
         "category": "Ultrasound Machine",
@@ -449,7 +502,7 @@
             "dimensions": "110 x 55 x 160 cm",
             "weight": "85 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "Precision Beamforming",
@@ -490,13 +543,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Shared Service Capabilities",
+                        "description": "Multi-specialty performance across General Radiology, Cardiology, Small Parts, Vascular, and OB/GYN"
+                    },
+                    {
+                        "title": "Acoustic Performance",
+                        "description": "PureWave transducer support with precision beamforming and auto-adaptive color Doppler sensitivity"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1007,
-        "id": "sonoscape-s22",
+        "id": 1007,
         "name": "SonoScape S22",
         "model": "S22",
         "category": "Ultrasound Machine",
@@ -516,7 +577,7 @@
             "dimensions": "100 x 50 x 140 cm",
             "weight": "65 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "Standard",
@@ -557,13 +618,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Clinical Scope",
+                        "description": "Abdominal, OB/GYN, Small Parts, Urology, Musculoskeletal, and Peripheral Vascular examinations"
+                    },
+                    {
+                        "title": "Signal Processing",
+                        "description": "Spatial Compound Imaging, u-Scan Speckle Reduction technology, and Pulse Inversion Harmonic Imaging"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1008,
-        "id": "chison-eco6",
+        "id": 1008,
         "name": "Chison ECO6 Portable",
         "model": "ECO6",
         "category": "Ultrasound Machine",
@@ -583,7 +652,7 @@
             "dimensions": "33.5 x 15.5 x 35 cm",
             "weight": "6.5 kg",
             "powerRequirements": "Battery / 100-240V",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "Compact",
@@ -624,13 +693,17 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Mobile Diagnostics",
+                        "description": "Compact 6.5 kg laptop design with rotatable LED display optimized for bedside triage, field clinics, sports medicine, and veterinary use"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1009,
-        "id": "mindray-dc40",
+        "id": 1009,
         "name": "Mindray DC-40",
         "model": "DC-40",
         "category": "Ultrasound Machine",
@@ -650,7 +723,7 @@
             "dimensions": "135 x 52 x 140 cm",
             "weight": "55 kg",
             "powerRequirements": "100-240V, 50/60Hz",
-            "operatingTemperature": "10°C to 40°C",
+            "operatingTemperature": "10C to 40C",
             "highlights": [
                 {
                     "detail": "Standard",
@@ -691,19 +764,27 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Clinical Applications",
+                        "description": "Primary Healthcare, General Abdominal, OB/GYN, Thyroid, and Superficial Organ diagnostics"
+                    },
+                    {
+                        "title": "Productivity Suite",
+                        "description": "Smart OB automatic biometry calculation, Smart FLC follicle analysis, and iTouch one-click image optimization"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1010,
-        "id": "ge-ric5-9h",
+        "id": 1010,
         "name": "GE RIC5-9H 3D/4D TV Probe",
         "model": "RIC5-9H",
         "category": "Transducer",
         "probeType": "3D/4D",
         "description": "RealTime 4D endocavitary transducer for high-resolution OB/GYN and urology imaging.",
-        "bandwidth": "3 – 10 MHz (Logiq E9, Logiq S8), 4 – 9 MHz (Voluson E6, E8 Expert)",
+        "bandwidth": "3 - 10 MHz",
         "applications": "Obstetrics, Gynecology, Urology",
         "manufacturer": "GE",
         "serialNumber": "TR-GE-RIC59H-001",
@@ -734,7 +815,7 @@
             "tabs": {
                 "techSpec": [
                     {
-                        "description": "3 – 10 MHz",
+                        "description": "3 - 10 MHz",
                         "title": "Bandwidth"
                     },
                     {
@@ -747,19 +828,27 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Transducer Type",
+                        "description": "Micro-convex real-time 4D endocavitary and transvaginal transducer with 3 - 10 MHz wideband frequency"
+                    },
+                    {
+                        "title": "System Compatibility",
+                        "description": "GE Logiq E9, Logiq S8, Voluson E6, and Voluson E8 Expert ultrasound systems"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1011,
-        "id": "ge-ric5-9-rs",
+        "id": 1011,
         "name": "GE RIC5-9-RS 3D/4D Endocavitary Probe",
         "model": "RIC5-9-RS",
         "category": "Transducer",
         "probeType": "3D/4D",
         "description": "Compact RS connector 3D/4D endocavitary probe designed for Voluson S-series systems.",
-        "bandwidth": "4 – 9 MHz",
+        "bandwidth": "4 - 9 MHz",
         "applications": "Obstetrics, Gynecology, Urology",
         "manufacturer": "GE",
         "serialNumber": "TR-GE-RIC59RS-002",
@@ -790,7 +879,7 @@
             "tabs": {
                 "techSpec": [
                     {
-                        "description": "4 – 9 MHz",
+                        "description": "4 - 9 MHz",
                         "title": "Bandwidth"
                     },
                     {
@@ -803,19 +892,27 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Transducer Architecture",
+                        "description": "Compact RS-connector 4D endocavitary probe designed for real-time pelvic, obstetrical, and urological scanning"
+                    },
+                    {
+                        "title": "System Compatibility",
+                        "description": "GE Voluson S6, Voluson S8, Voluson S10, Voluson P8, and Logiq P9 consoles"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1012,
-        "id": "ge-ric5-9w",
+        "id": 1012,
         "name": "GE RIC5-9W 3D/4D TV Probe",
         "model": "RIC5-9W",
         "category": "Transducer",
         "probeType": "TV",
         "description": "Wide-angle RealTime 4D endocavitary transducer for transvaginal diagnostic exams.",
-        "bandwidth": "5 – 9 MHz",
+        "bandwidth": "5 - 9 MHz",
         "applications": "RealTime 4D endocavitary transducer",
         "manufacturer": "GE",
         "serialNumber": "TR-GE-RIC59W-003",
@@ -846,7 +943,7 @@
             "tabs": {
                 "techSpec": [
                     {
-                        "description": "5 – 9 MHz",
+                        "description": "5 - 9 MHz",
                         "title": "Bandwidth"
                     },
                     {
@@ -859,19 +956,23 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Transducer Specifications \u0026 Field of View",
+                        "description": "Ultra wide-angle 180-degree field-of-view 4D transvaginal transducer (5 - 9 MHz) for comprehensive single-sweep pelvic visualization"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1013,
-        "id": "c5-1-probe",
+        "id": 1013,
         "name": "Philips C5-1 Convex Transducer Probe",
         "model": "C5-1",
         "category": "Transducer",
         "probeType": "Convex",
         "description": "PureWave crystal technology convex transducer for deep abdominal and general imaging.",
-        "bandwidth": "1 – 5 MHz",
+        "bandwidth": "1 - 5 MHz",
         "applications": "Abdominal, OB/GYN, Renal",
         "manufacturer": "Philips",
         "serialNumber": "TR-PH-C51-004",
@@ -902,7 +1003,7 @@
             "tabs": {
                 "techSpec": [
                     {
-                        "description": "1 – 5 MHz",
+                        "description": "1 - 5 MHz",
                         "title": "Bandwidth"
                     },
                     {
@@ -915,19 +1016,27 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Crystal Technology",
+                        "description": "PureWave single-crystal curved array broadband transducer (1 - 5 MHz) for deep abdominal and obstetrical imaging"
+                    },
+                    {
+                        "title": "System Compatibility",
+                        "description": "Philips EPIQ 5, EPIQ 7, Affiniti 50, and Affiniti 70 ultrasound systems"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1014,
-        "id": "l12-4-probe",
+        "id": 1014,
         "name": "GE L12-4 High-Resolution Linear Transducer",
         "model": "L12-4",
         "category": "Transducer",
         "probeType": "Linear",
         "description": "High-frequency linear array transducer ideal for superficial imaging and vascular studies.",
-        "bandwidth": "4 – 12 MHz",
+        "bandwidth": "4 - 12 MHz",
         "applications": "Vascular, Small Parts, Musculoskeletal",
         "manufacturer": "GE",
         "serialNumber": "TR-GE-L124-007",
@@ -958,7 +1067,7 @@
             "tabs": {
                 "techSpec": [
                     {
-                        "description": "4 – 12 MHz",
+                        "description": "4 - 12 MHz",
                         "title": "Bandwidth"
                     },
                     {
@@ -971,19 +1080,27 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Acoustic Aperture",
+                        "description": "High-density broadband linear array probe (4 - 12 MHz) optimized for vascular, superficial small parts, and MSK applications"
+                    },
+                    {
+                        "title": "System Compatibility",
+                        "description": "GE Logiq Series, Vivid Series, and Voluson Series ultrasound consoles"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1015,
-        "id": "siemens-v5m",
+        "id": 1015,
         "name": "Siemens V5M Cardiac Phased Array",
         "model": "V5M",
         "category": "Transducer",
         "probeType": "Cardiac",
         "description": "Phased array cardiac transducer optimized for high-frame-rate echocardiography.",
-        "bandwidth": "3.5 – 5.5 MHz",
+        "bandwidth": "3.5 - 5.5 MHz",
         "applications": "Adult Cardiology, TEE",
         "manufacturer": "Siemens",
         "serialNumber": "TR-SI-V5M-008",
@@ -1014,7 +1131,7 @@
             "tabs": {
                 "techSpec": [
                     {
-                        "description": "3.5 – 5.5 MHz",
+                        "description": "3.5 - 5.5 MHz",
                         "title": "Bandwidth"
                     },
                     {
@@ -1027,13 +1144,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Transesophageal Design",
+                        "description": "Multiplane adult transesophageal echocardiography (TEE) phased array probe (3.5 - 5.5 MHz) with motorized plane rotation"
+                    },
+                    {
+                        "title": "System Compatibility",
+                        "description": "Siemens ACUSON SC2000, ACUSON Sequoia, and ACUSON S2000 echocardiography platforms"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1016,
-        "id": "csound-gpu-board",
+        "id": 1016,
         "name": "GE cSound GPU Beamformer Board",
         "model": "cSound GPU v2",
         "category": "Spares",
@@ -1082,13 +1207,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Board Functionality",
+                        "description": "High-speed parallel GPU acoustic processing module executing real-time digital beamforming and raw RF data channel acquisition"
+                    },
+                    {
+                        "title": "Hardware Compatibility",
+                        "description": "GE Logiq E10 and GE Logiq E9 XDclear ultrasound system backplanes"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1017,
-        "id": "ct-xray-tube",
+        "id": 1017,
         "name": "CT High Voltage X-Ray Tube Assembly",
         "model": "Performix HD Tube",
         "category": "Spares",
@@ -1137,13 +1270,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Thermal \u0026 Tube Specifications",
+                        "description": "8.0 MHU liquid-bearing rotating anode X-ray tube assembly engineered for continuous high-load helical CT scanning"
+                    },
+                    {
+                        "title": "Scanner Compatibility",
+                        "description": "GE Revolution CT, Optima CT660, and Discovery CT750 HD scanner gantries"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1018,
-        "id": "mri-compressor",
+        "id": 1018,
         "name": "MRI Cryocooler Helium Compressor Unit",
         "model": "F-70 Helium Compressor",
         "category": "Spares",
@@ -1153,8 +1294,8 @@
         "serialNumber": "SP-SI-HC-009",
         "status": true,
         "images": [
-            "/images/devices/real/img_4.jpg",
             "/images/devices/real/img_5.jpg",
+            "/images/devices/real/img_4.jpg",
             "/images/devices/real/img_6.jpg"
         ],
         "specifications": {
@@ -1192,13 +1333,21 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Cryogenic Cooling Architecture",
+                        "description": "High-purity closed-cycle helium gas compressor unit maintaining zero-boiloff superconductive magnet thermal equilibrium"
+                    },
+                    {
+                        "title": "System Compatibility",
+                        "description": "Siemens MAGNETOM Avanto, Skyra, Vida, and Aera 1.5T / 3.0T MRI systems"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1019,
-        "id": "gel-warmer-cart",
+        "id": 1019,
         "name": "Multi-Bottle Ultrasound Gel Warmer",
         "model": "GW-3000",
         "category": "Accessories",
@@ -1248,13 +1397,17 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Thermal Regulation \u0026 Housing",
+                        "description": "Microprocessor-regulated 3-bottle heating chamber maintaining 37 deg C to 40 deg C with flame-retardant hospital-grade ABS housing"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1020,
-        "id": "display-monitor",
+        "id": 1020,
         "name": "32\" 4K Surgical Display Monitor",
         "model": "SM-3200 4K",
         "category": "Accessories",
@@ -1297,19 +1450,36 @@
                 }
             ],
             "tabs": {
-                "techSpec": [],
+                "techSpec": [
+                    {
+                        "title": "Resolution",
+                        "description": "3840 x 2160 UHD 4K"
+                    },
+                    {
+                        "title": "Screen Size",
+                        "description": "32 Inch"
+                    }
+                ],
                 "warrantyandSupport": [
                     "2 Years Included",
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Panel \u0026 Calibration",
+                        "description": "32-inch 3840x2160 UHD medical-grade IPS display calibrated to DICOM Part 14 Grayscale Standard Display Function"
+                    },
+                    {
+                        "title": "Multi-Modality Connectivity",
+                        "description": "12G-SDI, DisplayPort 1.2, HDMI 2.0, and DVI-D supporting Picture-in-Picture (PiP) and Picture-by-Picture (PbP) surgical feeds"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1024,
-        "id": "probe-sheath-kit",
+        "id": 1021,
         "name": "Sterile Ultrasound Probe Sheath \u0026 Gel Kit",
         "model": "SPS-100",
         "category": "Accessories",
@@ -1358,13 +1528,17 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Package Contents \u0026 Sterility",
+                        "description": "100 individually sterile-wrapped kits per box, each featuring a latex-free 14 x 147 cm polyethylene telescopic probe cover, sterile gel pouch, and colored elastic bands"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1021,
-        "id": "magnetom-vida",
+        "id": 1022,
         "name": "MAGNETOM Vida",
         "model": "MAGNETOM Vida",
         "category": "MRI",
@@ -1380,7 +1554,7 @@
             "dimensions": "Large Room",
             "weight": "4500 kg",
             "powerRequirements": "400V, 3-Phase",
-            "operatingTemperature": "20°C to 24°C",
+            "operatingTemperature": "18C to 22C",
             "highlights": [
                 {
                     "detail": "BioMatrix",
@@ -1425,13 +1599,25 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "BioMatrix Patient Adaptation",
+                        "description": "Integrated BioMatrix respiratory, beat, and kinetic sensors automatically adapting acquisition parameters to patient physiological variance"
+                    },
+                    {
+                        "title": "RF \u0026 Gradient Architecture",
+                        "description": "Tim 4G matrix system with up to 128 independent RF receiver channels and high-performance gradient coils"
+                    },
+                    {
+                        "title": "Magnet Specifications",
+                        "description": "3.0 Tesla 70 cm open-bore superconductive magnet featuring zero helium boil-off technology and 50 cm field-of-view"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1022,
-        "id": "revolution-ct",
+        "id": 1023,
         "name": "Revolution CT",
         "model": "Revolution CT",
         "category": "CT Scanners",
@@ -1447,7 +1633,7 @@
             "dimensions": "Large Room",
             "weight": "2500 kg",
             "powerRequirements": "400V, 3-Phase",
-            "operatingTemperature": "20°C to 24°C",
+            "operatingTemperature": "18C to 24C",
             "highlights": [
                 {
                     "detail": "0.23 mm",
@@ -1492,13 +1678,25 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Whole-Organ Coverage",
+                        "description": "160 mm Gemstone Clarity detector providing single-heartbeat whole-heart scans at 0.23-second gantry rotation speed"
+                    },
+                    {
+                        "title": "Spectral Imaging",
+                        "description": "Fast kV-switching dual-energy imaging with monoenergetic spectral reconstruction and material decomposition"
+                    },
+                    {
+                        "title": "Dose Optimization",
+                        "description": "ASiR-V next-generation iterative reconstruction reducing radiation dose by up to 82% while preserving spatial detail"
+                    }
+                ]
             }
         }
     },
     {
-        "code": 1023,
-        "id": "optima-xr646",
+        "id": 1024,
         "name": "Optima XR646",
         "model": "Optima XR646",
         "category": "X-Ray",
@@ -1514,7 +1712,7 @@
             "dimensions": "Medium Room",
             "weight": "800 kg",
             "powerRequirements": "200-240V",
-            "operatingTemperature": "15°C to 35°C",
+            "operatingTemperature": "15C to 35C",
             "highlights": [
                 {
                     "detail": "FlashPad HD",
@@ -1559,7 +1757,20 @@
                     "24/7 Online Support Access",
                     "Remote Troubleshooting Available"
                 ],
-                "details": []
+                "details": [
+                    {
+                        "title": "Digital Detector Technology",
+                        "description": "FlashPad wireless Cesium Iodide (CsI) digital flat panel detector (41 x 41 cm) delivering superior detective quantum efficiency (DQE)"
+                    },
+                    {
+                        "title": "Robotic Auto-Tracking",
+                        "description": "Ceiling-suspended X-ray tube column with synchronized motorized auto-tracking to wall stand and elevating table"
+                    },
+                    {
+                        "title": "Clinical Workflow",
+                        "description": "3-second instant image preview, DICOM Modality Worklist integration, and automated anatomical program selection"
+                    }
+                ]
             }
         }
     }

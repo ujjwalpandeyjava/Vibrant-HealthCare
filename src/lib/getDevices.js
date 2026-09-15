@@ -25,7 +25,7 @@ export async function getAllDevices() {
  */
 export async function getDeviceById(id) {
   const devices = await getAllDevices();
-  return devices.find((device) => device.id === id) || null;
+  return devices.find((device) => String(device.id) === String(id)) || null;
 }
 
 /**

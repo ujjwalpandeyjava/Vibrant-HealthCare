@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { MdSearch, MdClose } from "react-icons/md";
 import ProfessionalServiceBanner from "@/components/ProfessionalServiceBanner";
+import SearchProductCard from "@/components/SearchProductCard";
 
 export default function SearchClient({ initialDevices = [], hideBanner = false }) {
   const searchParams = useSearchParams();
@@ -41,8 +41,8 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
   // Compute available categories (modalities) based on current search term & selected brands
   const devicesMatchingBrandAndSearch = initialDevices.filter(device => {
     const sTerm = searchTerm.toLowerCase();
-    const matchesSearch = !sTerm || 
-      (device.name && device.name.toLowerCase().includes(sTerm)) || 
+    const matchesSearch = !sTerm ||
+      (device.name && device.name.toLowerCase().includes(sTerm)) ||
       (device.model && device.model.toLowerCase().includes(sTerm)) ||
       (device.category && device.category.toLowerCase().includes(sTerm)) ||
       (device.manufacturer && device.manufacturer.toLowerCase().includes(sTerm));
@@ -68,13 +68,13 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
   // Compute available brands based on current search term & selected categories
   const devicesMatchingCategoryAndSearch = initialDevices.filter(device => {
     const sTerm = searchTerm.toLowerCase();
-    const matchesSearch = !sTerm || 
-      (device.name && device.name.toLowerCase().includes(sTerm)) || 
+    const matchesSearch = !sTerm ||
+      (device.name && device.name.toLowerCase().includes(sTerm)) ||
       (device.model && device.model.toLowerCase().includes(sTerm)) ||
       (device.category && device.category.toLowerCase().includes(sTerm)) ||
       (device.manufacturer && device.manufacturer.toLowerCase().includes(sTerm));
 
-    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(cat => 
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(cat =>
       device.category && (
         device.category.toLowerCase() === cat.toLowerCase() ||
         device.category.toLowerCase().includes(cat.toLowerCase()) ||
@@ -126,13 +126,13 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
 
   const filteredDevices = initialDevices.filter(device => {
     const sTerm = searchTerm.toLowerCase();
-    const matchesSearch = !sTerm || 
-      (device.name && device.name.toLowerCase().includes(sTerm)) || 
+    const matchesSearch = !sTerm ||
+      (device.name && device.name.toLowerCase().includes(sTerm)) ||
       (device.model && device.model.toLowerCase().includes(sTerm)) ||
       (device.category && device.category.toLowerCase().includes(sTerm)) ||
       (device.manufacturer && device.manufacturer.toLowerCase().includes(sTerm));
 
-    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(cat => 
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(cat =>
       device.category && (
         device.category.toLowerCase() === cat.toLowerCase() ||
         device.category.toLowerCase().includes(cat.toLowerCase()) ||
@@ -148,13 +148,14 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
   return (
     <div className="flex flex-col w-full animate-in fade-in duration-300">
       {!hideBanner && (
-        <ProfessionalServiceBanner 
-          bannerText="MEDICAL EQUIPMENT" 
-          bannerImage="https://lh3.googleusercontent.com/aida-public/AB6AXuA60cjCj6J8WH_Q5RNrTtWAyHNYo3fo9Z7qIsugj1OqpP0Q5GBxmLzhCV-R0uKg29x-sl6LI_Y7cX8KlbMPThSIe0fUvrnfCCmqmM9PCft1RrlFdEwPLelV-uOMDFYdH_X_FF3qbVbCxjnwdGty7WLwmT3EscBGhoYD3FgjD6NJLWdQimut0vpwLENt5MNPRYIerLeJansXTGSrkwzHIxQ6xn6x2-f3W59QGgGqepXT9qtTxvBlUEPC-w" 
+        <ProfessionalServiceBanner
+          bannerText="MEDICAL EQUIPMENT"
+          bannerImage="https://lh3.googleusercontent.com/aida-public/AB6AXuA60cjCj6J8WH_Q5RNrTtWAyHNYo3fo9Z7qIsugj1OqpP0Q5GBxmLzhCV-R0uKg29x-sl6LI_Y7cX8KlbMPThSIe0fUvrnfCCmqmM9PCft1RrlFdEwPLelV-uOMDFYdH_X_FF3qbVbCxjnwdGty7WLwmT3EscBGhoYD3FgjD6NJLWdQimut0vpwLENt5MNPRYIerLeJansXTGSrkwzHIxQ6xn6x2-f3W59QGgGqepXT9qtTxvBlUEPC-w"
         />
       )}
       <div className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 py-8">
-        {/* Breadcrumb & Header Area */}
+
+        {/* Breadcrumb & Header Area Starts */}
         <div className="mb-8">
           <nav className="flex text-sm text-outline dark:text-gray-400 mb-2 uppercase tracking-wide">
             <Link href="/" className="hover:text-primary transition-colors">HOME</Link>
@@ -168,9 +169,9 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
           <div className="mt-4 max-w-md">
             <div className="relative">
               <MdSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-outline dark:text-gray-400 text-[24px]" />
-              <input 
-                type="text" 
-                placeholder="Search products..." 
+              <input
+                type="text"
+                placeholder="Search products..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 border border-outline-variant dark:border-slate-700 rounded-full text-sm focus:outline-none focus:border-primary text-on-surface dark:text-white bg-surface dark:bg-slate-800"
@@ -178,9 +179,11 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
             </div>
           </div>
         </div>
+        {/* Breadcrumb & Header Area Ends */}
 
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Sidebar Filters */}
+
+          {/* Sidebar Filters Starts Here*/}
           <aside className="w-full md:w-64 flex-shrink-0 flex flex-col gap-6">
             <div className="flex items-center justify-between pb-4 border-b border-outline-variant dark:border-slate-700">
               <h2 className="text-2xl font-bold text-on-surface dark:text-white">Filters</h2>
@@ -227,11 +230,11 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
                   return (
                     <label key={brand} className="flex items-center justify-between cursor-pointer group">
                       <div className="flex items-center gap-3">
-                        <input 
-                          type="checkbox" 
+                        <input
+                          type="checkbox"
                           checked={isChecked}
                           onChange={() => handleBrandToggle(brand)}
-                          className="w-5 h-5 rounded border-outline dark:border-slate-600 text-primary focus:ring-primary bg-surface dark:bg-slate-800" 
+                          className="w-5 h-5 rounded border-outline dark:border-slate-600 text-primary focus:ring-primary bg-surface dark:bg-slate-800"
                         />
                         <span className="text-base text-on-surface dark:text-white group-hover:text-primary transition-colors">{brand}</span>
                       </div>
@@ -254,11 +257,11 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
                   return (
                     <label key={category} className="flex items-center justify-between cursor-pointer group">
                       <div className="flex items-center gap-3">
-                        <input 
-                          type="checkbox" 
+                        <input
+                          type="checkbox"
                           checked={isChecked}
                           onChange={() => handleCategoryToggle(category)}
-                          className="w-5 h-5 rounded border-outline dark:border-slate-600 text-primary focus:ring-primary bg-surface dark:bg-slate-800" 
+                          className="w-5 h-5 rounded border-outline dark:border-slate-600 text-primary focus:ring-primary bg-surface dark:bg-slate-800"
                         />
                         <span className="text-base text-on-surface dark:text-white group-hover:text-primary transition-colors">{category}</span>
                       </div>
@@ -271,8 +274,9 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
               </div>
             </div>
           </aside>
+          {/* Sidebar Filters Ends Here */}
 
-          {/* Product Grid */}
+          {/* Product Grid Starts */}
           <div className="flex-grow">
             {filteredDevices.length === 0 ? (
               <div className="text-center py-12 text-on-surface-variant dark:text-gray-400">
@@ -280,39 +284,12 @@ export default function SearchClient({ initialDevices = [], hideBanner = false }
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredDevices.map(device => (
-                  <Link key={device.id} href={`/devices/${device.id}`} className="bg-white dark:bg-slate-900/90 border border-gray-200/80 dark:border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:shadow-xl hover:border-primary/50 dark:hover:border-blue-500/50 transition-all duration-300 group">
-                    <div className="aspect-video bg-gradient-to-b from-gray-50 to-gray-100/60 dark:from-slate-950 dark:to-slate-900/90 flex items-center justify-center p-6 relative overflow-hidden border-b border-gray-100 dark:border-slate-800/80">
-                      <Image 
-                        alt={device.name} 
-                        className="object-contain p-4 dark:drop-shadow-[0_8px_16px_rgba(59,130,246,0.12)] group-hover:scale-105 transition-transform duration-300" 
-                        src={device.images?.[0] || "/placeholder.svg"} 
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-                    <div className="p-6 flex flex-col flex-grow">
-                      <span className="text-primary dark:text-blue-400 text-xs font-bold mb-1.5 uppercase tracking-wider">{device.manufacturer}</span>
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-4 flex-grow group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">{device.name}</h3>
-                      
-                      <div className="mb-4">
-                        <span className="inline-block bg-blue-50/80 dark:bg-blue-950/70 text-primary dark:text-blue-300 text-xs px-3 py-1 rounded-full font-semibold border border-blue-200/60 dark:border-blue-800/60 shadow-xs">
-                          {device.category}
-                        </span>
-                      </div>
-
-                      <div className="flex flex-col gap-3 pt-3.5 border-t border-gray-100 dark:border-slate-800/80 text-sm">
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-500 dark:text-gray-400 font-medium">Application</span>
-                          <span className="text-gray-900 dark:text-slate-200 font-semibold text-right">{device.specifications?.other?.Application || "General"}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+                {filteredDevices.map(device => <SearchProductCard key={device.id} device={device} />)}
               </div>
             )}
           </div>
+          {/* Product Grid Ends */}
+
         </div>
       </div>
     </div>

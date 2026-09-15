@@ -1,46 +1,34 @@
+import { getAllDevices } from "@/lib/getDevices";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
-const inventory = [
-  {
-    category: "Cardiology",
-    title: "Apex V4 Monitor",
-    description: "Advanced continuous monitoring system with wireless telemetry capabilities.",
-    badge: "New",
-    availability: "In Stock",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDOBDf5Z1GGLUeJviCgCjGZr-2oePbd75O9twv8nK3hwB8Uh4KaZ0VGuqMY6etZrXUapO-b1wD-xttjIIEfchSB9XU2qX6njszhNKOngAmtOJxIeCEcy62LcVjogwt6MtNW5LGMl1Zql4XxwYiDP__mv5Q3ssVqG9dJB2_sIyer1Z6zZAgTelNgLLRoYwLBBrawpgrUxjsI5daBybBuv2fktWp_zy8orZCMzWh8oaxsHKgaNpugF0aCWw",
-    canQuote: true,
-  },
-  {
-    category: "Imaging",
-    title: "Sonar Pro Probe",
-    description: "High-frequency linear array transducer for detailed superficial imaging.",
-    availability: "2 Available",
-    image: "/images/banners/ultrasound-transducer.jpg",
-    canQuote: true,
-  },
-  {
-    category: "Emergency",
-    title: "LifeStart AED",
-    description: "Fully automatic external defibrillator with long-life battery and diagnostic monitoring.",
-    badge: "New",
-    availability: "In Stock",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBWx4rtKz42p85xFw1WiUudfJdnqVvBXJQsyWBvDkjTp3WEdof5vd_vtcyZg31kRBpjCx6pJat6uuQReGFtnRQ2vz6e-wEyFPaZwA16FT2ohq3vR5jWy2RIE6SCkTMpgP5RrNfjiCYvncH5AL1OfRzG9JBQoWn7PyNfTHMUX3ysoMXpf8TmOSObj27MzKZzMo2meqIyZtkrC-edgluQ0SwqVQM3kAhSuX3vQBKxtFkkomcN3Ii5m9Di9g",
-    canQuote: true,
-  },
-  {
-    category: "Surgical",
-    title: "Lumina OR Light",
-    description: "Ceiling-mounted surgical light with shadow-reduction.",
-    availability: "Call for availability",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBjCcTyHj9HDYHqCG-GgxPC4odLTuKjT6-uKJlBAVgFNeqQeJDUn9gRFFrruCCpbDBTACQb9sa6h5dlXllrWYl8suoULtUEZ78HdKHdFMdzYrS4na51uZX43Q6X5JxO6vx_n3xBUV-xht_7LESJpFvlzbG_Tsh0jpIyrS-iybIuZncTk1npH0s2X_4jSIvoJMHB6fQFPGJLcDo0h4QtpTIiVIlt0FqQOEsqyWDaN_GH-UgWMCTGY6Afdg",
-    canQuote: false,
-    opacity: "opacity-50",
-  },
-];
+export default async function FeaturedInventory() {
+  const allDevices = await getAllDevices();
+  const featureIds = [1006, 1018, 1015, 1019];
 
-export default function FeaturedInventory() {
+  const inventory = featureIds
+    .map((id, index) => {
+      const device = allDevices.find((d) => d.id === id);
+      if (!device) return null;
+
+      const badges = ["New", null, "New", null];
+      const availabilities = ["In Stock", "In Stock", "In Stock", "Call for availability"];
+      const canQuotes = [true, true, true, false];
+      const opacities = [null, null, null, "opacity-50"];
+
+      return {
+        ...device,
+        badge: badges[index],
+        availability: availabilities[index],
+        canQuote: canQuotes[index],
+        opacity: opacities[index],
+      };
+    })
+    .filter(Boolean);
+
+  if (!inventory || inventory.length === 0) return null;
+
   return (
     <section className="max-w-7xl mx-auto w-full px-4 md:px-8">
       <div className="flex justify-between items-end mb-8">
@@ -60,23 +48,29 @@ export default function FeaturedInventory() {
             className={`bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col ${item.opacity || ""}`}
           >
             <div className="bg-gray-50 dark:bg-white rounded-xl h-40 mb-4 flex items-center justify-center relative overflow-hidden">
+              <span className="absolute top-2 left-2 bg-slate-900/90 text-white text-[11px] font-bold px-2 py-1 rounded-md shadow-sm border border-slate-700 z-10">
+                #{item.id}
+              </span>
               {item.badge && (
                 <span className="absolute top-2 right-2 bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-300 text-xs px-2 py-1 rounded font-semibold z-10">
                   {item.badge}
                 </span>
               )}
               <Image
-                alt={item.title}
-                src={item.image}
+                alt={item.name || item.title || "Product"}
+                src={item.images?.[0] || "/placeholder.svg"}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-contain p-2 mix-blend-multiply dark:mix-blend-normal"
               />
             </div>
-            <p className="text-xs text-textMuted dark:text-gray-400 font-semibold tracking-wider uppercase mb-1">
-              {item.category}
-            </p>
-            <h3 className="font-bold text-sm mb-2 text-on-surface dark:text-white">{item.title}</h3>
+            <div className="flex items-center gap-1.5 mb-1 text-textMuted dark:text-gray-400">
+              {item.icon && <item.icon className="w-3 h-3 text-primary" />}
+              <p className="text-xs font-semibold tracking-wider uppercase">
+                {item.category}
+              </p>
+            </div>
+            <h3 className="font-bold text-sm mb-2 text-on-surface dark:text-white">{item.name || item.title}</h3>
             <p className="text-textMuted dark:text-gray-400 text-xs mb-4 line-clamp-2">
               {item.description}
             </p>
@@ -86,10 +80,10 @@ export default function FeaturedInventory() {
               </span>
               {item.canQuote && (
                 <Link
-                  href={`/search?q=${encodeURIComponent(item.title)}`}
+                  href={`/products/${item.id}#model_${(item.model || "").replace(/\s+/g, '_')}`}
                   className="bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-300 px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
                 >
-                  Add to Quote
+                  View Details
                 </Link>
               )}
             </div>

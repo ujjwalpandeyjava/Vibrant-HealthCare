@@ -1,8 +1,15 @@
-import Link from "next/link";
+import { getAllDevices } from "@/lib/getDevices";
 import Image from "next/image";
+import Link from "next/link";
 import { FiArrowRight, FiChevronRight } from "react-icons/fi";
 
-export default function MostSoldProducts({ products = [] }) {
+export default async function MostSoldProducts({ }) {
+  const allDevices = await getAllDevices();
+  const products = [1000, 1001, 1002, 1005, 1004]
+    .map((id) => allDevices.find((d) => String(d.id) === String(id)))
+    .filter(Boolean);
+
+
   if (!products || products.length === 0) return null;
 
   return (
@@ -44,7 +51,7 @@ export default function MostSoldProducts({ products = [] }) {
                   className="object-contain p-4"
                 />
                 <span className="absolute top-3 right-3 bg-slate-900/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm border border-slate-700">
-                  Code: #{product.code}
+                  #{product.model}
                 </span>
                 {product.tier && (
                   <span className="absolute top-3 left-3 bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-300 text-xs font-bold px-2.5 py-1 rounded-full border border-blue-200 dark:border-blue-800">

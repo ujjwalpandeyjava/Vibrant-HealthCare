@@ -196,7 +196,7 @@ export default function CategoryCatalogClient({
                   {/* Buttons */}
                   <div className="flex flex-wrap gap-3 mt-4 pt-2">
                     <Link
-                      href={`/products/${device.id}`}
+                      href={`/products/${device.id}#model_${device.model.replace(/\s+/g, '_')}`}
                       className="bg-primary hover:bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg transition-colors text-sm text-center"
                     >
                       View Details
