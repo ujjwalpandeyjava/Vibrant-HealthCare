@@ -1490,8 +1490,8 @@
         "serialNumber": "AC-SI-SPS-011",
         "status": true,
         "images": [
-            "/images/devices/real/img_4.jpg",
             "/images/devices/real/img_5.jpg",
+            "/images/devices/real/img_4.jpg",
             "/images/devices/real/img_6.jpg"
         ],
         "specifications": {
